@@ -2,7 +2,7 @@
 
 ### Quick Start
 
-Please refer to [README.md](https://github.com/BlockRazorinc/gesyerstream-client-rust/blob/main/README.md)
+Please refer to [README.md](https://github.com/BlockRazorinc/geyserstream-client-rust/blob/main/README.md)
 
 
 
