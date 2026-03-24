@@ -30,7 +30,7 @@ High Stability: Operates across multiple cloud instances with seamless failover,
 
 ## Endpoint
 
-<table><thead><tr><th width="171.8828125">Region</th><th>Endpoint</th></tr></thead><tbody><tr><td>Frankfurt</td><td>geyserstream-frankfurt.blockrazor.xyz:443</td></tr><tr><td>Amsterdam</td><td>geyserstream-amsterdam.blockrazor.xyz:443</td></tr><tr><td>New York</td><td>geyserstream-newyork.blockrazor.xyz:443</td></tr><tr><td>Tokyo</td><td>geyserstream-tokyo.blockrazor.xyz:443</td></tr></tbody></table>
+<table><thead><tr><th width="171.8828125">Region</th><th>Endpoint</th></tr></thead><tbody><tr><td>Frankfurt</td><td>geyserstream-frankfurt.blockrazor.xyz:443</td></tr><tr><td>Tokyo</td><td>geyserstream-tokyo.blockrazor.xyz:443</td></tr></tbody></table>
 
 
 
