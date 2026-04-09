@@ -5,7 +5,7 @@ description: This page describes how to build and send Solana transactions using
 # Go
 
 {% hint style="info" %}
-Solana's transaction sending service is no longer bound to the subscription plan. API key could be required from [Authentication](../../../../authentication.md). If you need to increase the TPS limit, please [contact](https://discord.com/invite/qqJuwRb8Nh) us and we will handle it as soon as possible.
+Solana's transaction sending service is no longer bound to the subscription plan, with rate limit default to 3 TPS. API key could be required from [Authentication](../../../../authentication.md). If you need to increase the TPS limit, please [contact](https://discord.com/invite/qqJuwRb8Nh) us and we will handle it as soon as possible.
 {% endhint %}
 
 ## HTTP <a href="#jiao-yi-gou-jian-dai-ma-shi-li" id="jiao-yi-gou-jian-dai-ma-shi-li"></a>
@@ -38,7 +38,7 @@ const (
 	privateKey       = ""
 	publicKey        = ""
 	amount           = 200_000
-	tipAmount        = 1_000_000
+	tipAmount        = 100_000
 	mode             = "fast"
 	safeWindow       = 5
 	revertProtection = false
@@ -284,7 +284,7 @@ const (
 	// revertProtection
 	revertProtection = false
 	// tip amount
-	tipAmount = 1_000_000
+	tipAmount = 100_000
 )
 
 var tipAccounts = []string{

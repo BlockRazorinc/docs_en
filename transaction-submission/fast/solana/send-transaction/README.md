@@ -3,7 +3,7 @@
 ## Introduction <a href="#jie-shao" id="jie-shao"></a>
 
 {% hint style="warning" %}
-Solana's transaction sending service is not bound to the subscription plan, with rate limit default to 1 TPS. API key could be required from [Authentication](../../../../authentication.md). If you need to increase the TPS limit, please [contact](https://discord.com/invite/qqJuwRb8Nh) us and we will handle it as soon as possible.
+Solana's transaction sending service is not bound to the subscription plan, with rate limit default to 3 TPS. API key could be required from [Authentication](../../../../authentication.md). If you need to increase the TPS limit, please [contact](https://discord.com/invite/qqJuwRb8Nh) us and we will handle it as soon as possible.
 {% endhint %}
 
 BlockRazor achieves subsecond-level transaction inclusion based on globally distributed high-performance network and high-quality SWQoS(see the [Benchmark](https://www.blockrazor.io/#/blogs/20250801Benchmarking)), and also provides multiple modes such as sandwich mitigation.
@@ -58,7 +58,7 @@ Priority Fee is an additional transaction fee charged by Solana on top of Base F
 
 ## Tip <a href="#priority-fee-and-tip" id="priority-fee-and-tip"></a>
 
-When constructing a transaction, you need to add a instruction of Tip transfer into the transaction(preferably added at the front position) to further speed up the inclusion. BlockRazor does not charge service fees from Tips. The Tip transfer amount is at least 1,000,000 Lamports (0.001 Sol) . It is recommended to set it to the value returned by [`getTransactionfee`](../../../../streams/network-fee-stream/solana/get-transactionfee.md). The account to receive Tip is:
+When constructing a transaction, you need to add a instruction of Tip transfer into the transaction(preferably added at the front position) to further speed up the inclusion. BlockRazor does not charge service fees from Tips. The Tip transfer amount is at least 100,000 Lamports (0.0001 Sol) . It is recommended to set it to the value returned by [`getTransactionfee`](../../../../streams/network-fee-stream/solana/get-transactionfee.md). The account to receive Tip is:
 
 ```
 "FjmZZrFvhnqqb9ThCuMVnENaM3JGVuGWNyCAxRJcFpg9",

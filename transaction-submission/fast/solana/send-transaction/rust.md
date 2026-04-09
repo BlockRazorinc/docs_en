@@ -5,7 +5,7 @@ description: This page describes how to build and send Solana transactions using
 # Rust
 
 {% hint style="info" %}
-Solana's transaction sending service is no longer bound to the subscription plan. API key could be required from [Authentication](../../../../authentication.md). If you need to increase the TPS limit, please [contact](https://discord.com/invite/qqJuwRb8Nh) us and we will handle it as soon as possible.
+Solana's transaction sending service is no longer bound to the subscription plan, with rate limit default to 3 TPS. API key could be required from [Authentication](../../../../authentication.md). If you need to increase the TPS limit, please [contact](https://discord.com/invite/qqJuwRb8Nh) us and we will handle it as soon as possible.
 {% endhint %}
 
 ## HTTP <a href="#jiao-yi-gou-jian-dai-ma-shi-li" id="jiao-yi-gou-jian-dai-ma-shi-li"></a>
@@ -65,7 +65,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     // transaction amount
     let amount: u64 = 200_000;
     // tip amount
-    let tipamount: u64 = 1_000_000;
+    let tipamount: u64 = 100_000;
     // safe window
     let safe_window: u32 = 5; // only take effect in sandwichMitigation mod
     // revert protection
@@ -301,7 +301,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     // revert protection
     let revert_protection = false;
     // tip amount
-    let tipamount = 1_000_000;
+    let tipamount = 100_000;
 
     let tip_accounts = [
         "Gywj98ophM7GmkDdaWs4isqZnDdFCW7B46TXmKfvyqSm",
