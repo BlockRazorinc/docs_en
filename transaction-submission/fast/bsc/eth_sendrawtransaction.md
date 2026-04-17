@@ -53,7 +53,7 @@ curl http://bsc-fast.blockrazor.io \
 {
  "jsonrpc":"2.0",
  "id":"1",
- "result":"0xa06b……f7e8ec"  // 交易哈希
+ "result":"0xa06b……f7e8ec"
 }‍
 ```
 
