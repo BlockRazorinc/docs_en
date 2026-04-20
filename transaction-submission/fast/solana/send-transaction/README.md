@@ -6,7 +6,7 @@
 Solana's transaction sending service is not bound to the subscription plan, with rate limit default to 3 TPS. API key could be required from [Authentication](../../../../authentication.md). If you need to increase the TPS limit, please [contact](https://discord.com/invite/qqJuwRb8Nh) us and we will handle it as soon as possible.
 {% endhint %}
 
-BlockRazor achieves subsecond-level transaction inclusion based on globally distributed high-performance network and high-quality SWQoS(see the [Benchmark](https://www.blockrazor.io/#/blogs/20250801Benchmarking)), and also provides multiple modes such as sandwich mitigation.
+BlockRazor achieves subsecond-level transaction inclusion based on globally distributed high-performance network and high-quality SWQoS(see the [Benchmark](https://www.blockrazor.io/blog/20250801Benchmarking)), and also provides multiple modes such as sandwich mitigation.
 
 `Send Transaction` is used to send signed transaction on Solana based on HTTP and gRPC.
 
