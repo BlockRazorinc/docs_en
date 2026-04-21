@@ -73,3 +73,19 @@ curl -X POST 'http://bsc-fast.blockrazor.io/v2/sendRawTransaction?auth=<auth_tok
 	"data": null
 }
 ```
+
+
+
+#### Keep Alive <a href="#keep-alive" id="keep-alive"></a>
+
+Please send a POST request to the health check endpoint to keep the connection alive. We recommend sending a request every 10 seconds. Below is a request example:
+
+{% tabs %}
+{% tab title="Curl" %}
+```json
+curl -X POST 'http://bsc-fast.blockrazor.io/health' \
+-H "Content-Type: text/plain" \
+-d ""
+```
+{% endtab %}
+{% endtabs %}

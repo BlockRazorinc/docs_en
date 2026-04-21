@@ -1,6 +1,6 @@
 # Send Transaction v2
 
-## Introduction <a href="#jie-shao" id="jie-shao"></a>
+### Introduction <a href="#jie-shao" id="jie-shao"></a>
 
 {% hint style="warning" %}
 Solana's transaction sending service is not bound to the subscription plan, with rate limit default to 3 TPS. If you need to increase the TPS limit, please [contact](https://discord.com/invite/qqJuwRb8Nh) us and we will handle it as soon as possible.
@@ -16,7 +16,7 @@ BlockRazor achieves subsecond-level transaction inclusion based on globally dist
 
 
 
-## Endpoint <a href="#xian-liu" id="xian-liu"></a>
+### Endpoint <a href="#xian-liu" id="xian-liu"></a>
 
 {% tabs %}
 {% tab title="HTTP" %}
@@ -30,7 +30,7 @@ BlockRazor achieves subsecond-level transaction inclusion based on globally dist
 
 
 
-## Rate Limit <a href="#xian-liu" id="xian-liu"></a>
+### Rate Limit <a href="#xian-liu" id="xian-liu"></a>
 
 {% hint style="info" %}
 Solana's transaction sending service is no longer bound to the subscription plan, with rate limit default to 3 TPS. If you need to increase the TPS limit, please [contact](https://discord.com/invite/qqJuwRb8Nh) us and we will handle it as soon as possible.
@@ -38,7 +38,7 @@ Solana's transaction sending service is no longer bound to the subscription plan
 
 
 
-## Request Example <a href="#jiao-yi-gou-jian-dai-ma-shi-li" id="jiao-yi-gou-jian-dai-ma-shi-li"></a>
+### Request Example <a href="#jiao-yi-gou-jian-dai-ma-shi-li" id="jiao-yi-gou-jian-dai-ma-shi-li"></a>
 
 {% tabs %}
 {% tab title="CURL" %}
@@ -60,19 +60,19 @@ curl -X POST 'http://frankfurt.solana.blockrazor.xyz:443/v2/sendTransaction?auth
 
 
 
-## Request Parameter
+### Request Parameter
 
 <table><thead><tr><th width="111.44921875">Parameters</th><th width="115.421875">Mandatory</th><th width="109.98046875">Example</th><th>Description</th></tr></thead><tbody><tr><td>transaction</td><td>Mandatory</td><td>"4hXTCk……tAnaAT"</td><td>Fully signed transactions, Base64 encoded</td></tr><tr><td>mode</td><td>Optional</td><td>"fast"<br>"sandwichMitigation"</td><td>BlockRazor offers two modes: Fast and SandwichMitigation, with Fast as the default.<br><br>In fast mode, transactions are sent based on globally distributed high-performance network and high-quality SWQoS, reaching the Leader node with the lowest latency.<br><br>In sandwichMitigation mode, BlockRazoz will route transactions to the trusted SWQoS and skip the slot of the blacklisted Leader (dynamically identified by the BlockRazor sandwich monitoring mechanism). In this mode, <strong>DO NOT</strong> send transactions using durable nonce, as it will cause the sandwich protection to become ineffective.</td></tr><tr><td>safeWindow</td><td>Optional</td><td>3</td><td>safeWindow is used to determine the timing of transaction sending in sandwichMitigation mode and represents the number of consecutive slots of  whitelist validators. For example, if it is set to 3, the transaction will only be sent when 3 consecutive slots from the current slot belong to whitelist validators.<br><br>The range of safeWindow is 3-13. The larger the number, the better the effect of mitigating the sandwich attack, but it may have a certain impact on the rate of inclusion. If not set, the default is 3.</td></tr><tr><td>revertProtection</td><td>Optional</td><td>false</td><td>The default value is false. If set to true, the transaction will not fail on chain, but the speed of inclusion will be affected and there is a possibility that it cannot be included. Please choose to enable it carefully according to actual needs.</td></tr></tbody></table>
 
 
 
-## **Priority** Fee <a href="#priority-fee-and-tip" id="priority-fee-and-tip"></a>
+### **Priority** Fee <a href="#priority-fee-and-tip" id="priority-fee-and-tip"></a>
 
 Priority Fee is an additional transaction fee charged by Solana on top of Base Fee (the minimum cost of sending a transaction, 5,000 lamports for each signature included in the transaction). Due to limited computing resources, Leader nodes order transactions mainly by transaction value when producing blocks. Transactions with higher Priority Fee have a higher probability of being included in the next block. The CU Price of Priority Fee is provided by [`getTransactionfee`](../../../streams/network-fee-stream/solana/get-transactionfee.md) and is recommended to be set at least 1,000,000 when conscructing transactions.
 
 
 
-## Tip <a href="#priority-fee-and-tip" id="priority-fee-and-tip"></a>
+### Tip <a href="#priority-fee-and-tip" id="priority-fee-and-tip"></a>
 
 When constructing a transaction, you need to add a instruction of Tip transfer into the transaction(preferably added at the front position) to further speed up the inclusion. BlockRazor does not charge service fees from Tips. The Tip transfer amount is at least 100,000 Lamports (0.0001 Sol) . It is recommended to set it to the value returned by [`getTransactionfee`](../../../streams/network-fee-stream/solana/get-transactionfee.md). The account to receive Tip is:
 
@@ -99,7 +99,7 @@ To avoid the degradation of performance due to address occupation, causing trans
 
 
 
-## Keep Alive <a href="#gou-jian-jiao-yi" id="gou-jian-jiao-yi"></a>
+### Keep Alive <a href="#gou-jian-jiao-yi" id="gou-jian-jiao-yi"></a>
 
 Send post request to the health endpoint to keep connection alive, the request is as follows:
 
@@ -115,7 +115,7 @@ curl -X POST 'http://frankfurt.solana.blockrazor.xyz:443/v2/health?auth=<auth_to
 
 
 
-## Response
+### Response
 
 <table><thead><tr><th width="141.20703125">Status Code</th><th width="201.421875">Message</th><th>Meaning</th></tr></thead><tbody><tr><td>200</td><td>OK</td><td>The request is normal</td></tr><tr><td>400</td><td>BadRequest</td><td>Invalid parameter</td></tr><tr><td>403</td><td>Forbidden</td><td>Request denied, as the authentication (auth) is empty, invalid, or expired.</td></tr><tr><td>500</td><td>InternalServerError</td><td>The server encountered an unexpected condition that prevented it from fulfilling the request</td></tr></tbody></table>
 

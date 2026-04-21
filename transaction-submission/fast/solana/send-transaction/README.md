@@ -1,6 +1,6 @@
 # Send Transaction
 
-## Introduction <a href="#jie-shao" id="jie-shao"></a>
+### Introduction <a href="#jie-shao" id="jie-shao"></a>
 
 {% hint style="warning" %}
 Solana's transaction sending service is not bound to the subscription plan, with rate limit default to 3 TPS. API key could be required from [Authentication](../../../../authentication.md). If you need to increase the TPS limit, please [contact](https://discord.com/invite/qqJuwRb8Nh) us and we will handle it as soon as possible.
@@ -12,13 +12,11 @@ BlockRazor achieves subsecond-level transaction inclusion based on globally dist
 
 
 
-## Endpoint <a href="#xian-liu" id="xian-liu"></a>
+### Endpoint <a href="#xian-liu" id="xian-liu"></a>
 
 **HTTP**
 
 <table><thead><tr><th width="135.50390625">Region</th><th>URL</th></tr></thead><tbody><tr><td>Frankfurt</td><td>http://frankfurt.solana.blockrazor.xyz:443/sendTransaction</td></tr><tr><td>New York</td><td>http://newyork.solana.blockrazor.xyz:443/sendTransaction</td></tr><tr><td>Tokyo</td><td>http://tokyo.solana.blockrazor.xyz:443/sendTransaction</td></tr><tr><td>Amsterdam</td><td>http://amsterdam.solana.blockrazor.xyz:443/sendTransaction</td></tr><tr><td>London</td><td>http://london.solana.blockrazor.xyz:443/sendTransaction</td></tr></tbody></table>
-
-
 
 #### gRPC
 
@@ -26,7 +24,7 @@ BlockRazor achieves subsecond-level transaction inclusion based on globally dist
 
 
 
-## Rate Limit <a href="#xian-liu" id="xian-liu"></a>
+### Rate Limit <a href="#xian-liu" id="xian-liu"></a>
 
 {% hint style="info" %}
 Solana's transaction sending service is no longer bound to the subscription plan. API key could be required from [Authentication](../../../../authentication.md). If you need to increase the TPS limit, please [contact](https://discord.com/invite/qqJuwRb8Nh) us and we will handle it as soon as possible.
@@ -34,7 +32,7 @@ Solana's transaction sending service is no longer bound to the subscription plan
 
 
 
-## Transaction Construction Example <a href="#jiao-yi-gou-jian-dai-ma-shi-li" id="jiao-yi-gou-jian-dai-ma-shi-li"></a>
+### Transaction Construction Example <a href="#jiao-yi-gou-jian-dai-ma-shi-li" id="jiao-yi-gou-jian-dai-ma-shi-li"></a>
 
 * [Go](go.md)
 * [Rust](rust.md)
@@ -42,21 +40,19 @@ Solana's transaction sending service is no longer bound to the subscription plan
 
 
 
-## Request Parameter
+### Request Parameter
 
 <table><thead><tr><th width="111.44921875">Parameters</th><th width="115.421875">Mandatory</th><th width="109.98046875">Example</th><th>Description</th></tr></thead><tbody><tr><td>transaction</td><td>Mandatory</td><td>"4hXTCk……tAnaAT"</td><td>Fully signed transactions, compatible with encoding protocal base 64 and base 58, with base 64 being recommended</td></tr><tr><td>mode</td><td>Optional</td><td>"fast"<br>"sandwichMitigation"</td><td>BlockRazor offers two modes: Fast and SandwichMitigation, with Fast as the default.<br><br>In fast mode, transactions are sent based on globally distributed high-performance network and high-quality SWQoS, reaching the Leader node with the lowest latency.<br><br>In sandwichMitigation mode, BlockRazoz will route transactions to the trusted SWQoS and skip the slot of the blacklisted Leader (dynamically identified by the BlockRazor sandwich monitoring mechanism). In this mode, <strong>DO NOT</strong> send transactions using durable nonce, as it will cause the sandwich protection to become ineffective.</td></tr><tr><td>safeWindow</td><td>Optional</td><td>3</td><td>safeWindow is used to determine the timing of transaction sending in sandwichMitigation mode and represents the number of consecutive slots of  whitelist validators. For example, if it is set to 3, the transaction will only be sent when 3 consecutive slots from the current slot belong to whitelist validators.<br><br>The range of safeWindow is 3-13. The larger the number, the better the effect of mitigating the sandwich attack, but it may have a certain impact on the rate of inclusion. If not set, the default is 3.</td></tr><tr><td>revertProtection</td><td>Optional</td><td>false</td><td>The default value is false. If set to true, the transaction will not fail on chain, but the speed of inclusion will be affected and there is a possibility that it cannot be included. Please choose to enable it carefully according to actual needs.</td></tr></tbody></table>
 
 
 
-
-
-## **Priority** Fee <a href="#priority-fee-and-tip" id="priority-fee-and-tip"></a>
+### **Priority** Fee <a href="#priority-fee-and-tip" id="priority-fee-and-tip"></a>
 
 Priority Fee is an additional transaction fee charged by Solana on top of Base Fee (the minimum cost of sending a transaction, 5,000 lamports for each signature included in the transaction). Due to limited computing resources, Leader nodes order transactions mainly by transaction value when producing blocks. Transactions with higher Priority Fee have a higher probability of being included in the next block. The CU Price of Priority Fee is provided by [`getTransactionfee`](../../../../streams/network-fee-stream/solana/get-transactionfee.md) and is recommended to be set at least 1,000,000 when conscructing transactions.
 
 
 
-## Tip <a href="#priority-fee-and-tip" id="priority-fee-and-tip"></a>
+### Tip <a href="#priority-fee-and-tip" id="priority-fee-and-tip"></a>
 
 When constructing a transaction, you need to add a instruction of Tip transfer into the transaction(preferably added at the front position) to further speed up the inclusion. BlockRazor does not charge service fees from Tips. The Tip transfer amount is at least 100,000 Lamports (0.0001 Sol) . It is recommended to set it to the value returned by [`getTransactionfee`](../../../../streams/network-fee-stream/solana/get-transactionfee.md). The account to receive Tip is:
 
@@ -82,4 +78,19 @@ To avoid the degradation of performance due to address occupation, causing trans
 {% endhint %}
 
 
+
+### Keep Alive <a href="#gou-jian-jiao-yi" id="gou-jian-jiao-yi"></a>
+
+Send post request to the health endpoint to keep connection alive, the request is as follows:
+
+{% tabs %}
+{% tab title="CURL" %}
+```bash
+curl -X POST 'http://frankfurt.solana.blockrazor.xyz:443/health' \
+-H "Content-Type: application/json" \
+-H "apikey: <auth_token>" \
+-d ""
+```
+{% endtab %}
+{% endtabs %}
 
