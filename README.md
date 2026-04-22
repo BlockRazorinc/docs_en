@@ -2,7 +2,7 @@
 
 ### Introduction
 
-BlockRazor is a leading Web3 transaction infrastructure provider. Leveraging top-tier distributed network communication technology and architecture, BlockRazor serves a diverse range of users, including wallets, DEXs, trading bots, searchers, and quantitative trading systems. BlockRazor has launched core services such as Transaction Submission, Streams, and Block Builder across mainstream public chains including Ethereum, BSC, Solana, and Base, helping clients achieve optimal trade execution.
+[BlockRazor](https://blockrazor.io/) is a leading Web3 transaction infrastructure provider. Leveraging top-tier distributed network communication technology and architecture, BlockRazor serves a diverse range of users, including wallets, DEXs, trading bots, searchers, and quantitative trading systems. BlockRazor has launched core services such as Transaction Submission, Streams, and Block Builder across mainstream public chains including Ethereum, BSC, Solana, and Base, helping clients achieve optimal trade execution.
 
 ### Transaction Submission
 

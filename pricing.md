@@ -5,7 +5,7 @@ description: This page primarily introduces the pricing of BlockRazor products a
 # Pricing
 
 {% hint style="info" %}
-* BlockRazor has upgraded subscription plan, splitting each tier by blockchain
+* [BlockRazor](https://blockrazor.io/) has upgraded subscription plan, splitting each tier by blockchain
 * Newly registered users have access to Tier 4 services of all chains (Tier 4-BSC, Tier 4-Solana, and Tier 4-Base)&#x20;
 * Users can subscribe and renew for a single chain (e.g., subscribing to Tier 2-BSC grants Tier 2-level BSC services, while Solana and Base services remain at Tier 4)
 * Subscribing to Tier 1 or Tier 0 automatically includes services of all chains
