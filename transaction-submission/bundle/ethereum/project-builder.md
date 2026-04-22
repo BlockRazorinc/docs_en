@@ -22,7 +22,7 @@ https://eth.blockrazor.xyz
 curl -X POST -H "Content-Type: application/json" --data '{
   "id": 1,
   "jsonrpc": "2.0",
-  "method": "eth_sendMevBundle",
+  "method": "eth_sendBundle",
   "params": [{
     "Txs": [
 "0xf8668203988405f5e100825208942ee393c739036a7660ec11bf2101d537eb52f3ac80808193a06836d5f4052376dc3114794da5fedd7a5b8090ddae0ec45dfa66c234fcabb6efa07cf17dad992c33e8e3e4d82355cfe12d3be2560fc2b0873c36dce398088d8e4f"
@@ -30,7 +30,7 @@ curl -X POST -H "Content-Type: application/json" --data '{
     "revertingTxHashes":[],
     "maxBlockNumber":62934913
   }]
-}' https://bsc.blockrazor.xyz
+}' https://eth.blockrazor.xyz
 ```
 
 
