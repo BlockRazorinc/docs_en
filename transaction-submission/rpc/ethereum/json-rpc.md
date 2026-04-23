@@ -48,7 +48,7 @@ curl -X POST -H "Content-Type: application/json" --data '{
 
 
 
-### eth\_sendMevBundle <a href="#eth_sendmevbundle" id="eth_sendmevbundle"></a>
+### eth\_sendBundle <a href="#eth_sendmevbundle" id="eth_sendmevbundle"></a>
 
 Bundle Submission is supported in BlockRazor RPC, please refer to [Bundle](../../bundle/ethereum/project-builder.md)
 
