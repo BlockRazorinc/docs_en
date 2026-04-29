@@ -4,7 +4,7 @@
 
 The Fast Mode leverages BlockRazor's global high-performance network to achieve the lowest latency for transaction inclusion, making it suitable for users who have extreme requirements for transaction inclusion speed.
 
-The transaction submission method of Fast Mode supports HTTP and gRPC. The HTTP is compatible with [`sui_executeTransactionBlock`](https://docs.sui.io/sui-api-ref#sui_executetransactionblock)and the gRPC is compatible with [`sui_rpc_v2_transaction-execution-service-proto`](https://docs.sui.io/references/fullnode-protocol#sui_rpc_v2_transaction-execution-service-proto) .
+The transaction submission method of Fast Mode supports gRPC, which is compatible with [`sui_rpc_v2_transaction-execution-service-proto`](https://docs.sui.io/references/fullnode-protocol#sui_rpc_v2_transaction-execution-service-proto) .
 
 {% hint style="info" %}
 Fast Mode is not tied to the subscription plan, but each transaction sent in Fast Mode must include a tip. The minimum tip amount is the greater of 0.001 SUI or Gas Budget × 0.05 SUI.&#x20;
