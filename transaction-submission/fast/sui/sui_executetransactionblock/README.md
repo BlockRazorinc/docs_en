@@ -16,7 +16,7 @@ Tip Method: Integrate the BlockRazor SDK in [TS](ts.md) or [Go](go.md), and invo
 
 ### Endpoint
 
-http://sui-fast.blockrazor.io
+sui-fast.blockrazor.io:80
 
 
 
