@@ -19,7 +19,17 @@ Compared with [eth\_sendRawTransaction](eth_sendrawtransaction.md), `eth_sendRaw
 
 ### Endpoint <a href="#xian-liu" id="xian-liu"></a>
 
+{% tabs %}
+{% tab title="General" %}
+```
 http://bsc-fast.blockrazor.io/v2/sendRawTransaction
+```
+{% endtab %}
+
+{% tab title="Geographic" %}
+<table><thead><tr><th width="117.94140625">Region</th><th>Domain</th></tr></thead><tbody><tr><td>Frankfurt</td><td>http://frankfurt.bsc-fast.blockrazor.io/v2/sendRawTransaction</td></tr><tr><td>Japan</td><td>http://japan.bsc-fast.blockrazor.io/v2/sendRawTransaction</td></tr><tr><td>Virginia</td><td>http://virginia.bsc-fast.blockrazor.io/v2/sendRawTransaction</td></tr></tbody></table>
+{% endtab %}
+{% endtabs %}
 
 
 

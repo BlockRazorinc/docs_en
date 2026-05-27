@@ -14,7 +14,15 @@ Fast Mode is not tied to the subscription plan, but each transaction sent in Fas
 
 ### Endpoint
 
+{% tabs %}
+{% tab title="General" %}
 http://bsc-fast.blockrazor.io
+{% endtab %}
+
+{% tab title="Geographic" %}
+<table><thead><tr><th width="146.0703125">Region</th><th>Domain</th></tr></thead><tbody><tr><td>Frankfurt</td><td>http://frankfurt.bsc-fast.blockrazor.io</td></tr><tr><td>Japan</td><td>http://japan.bsc-fast.blockrazor.io</td></tr><tr><td>Virginia</td><td>http://virginia.bsc-fast.blockrazor.io</td></tr></tbody></table>
+{% endtab %}
+{% endtabs %}
 
 
 
