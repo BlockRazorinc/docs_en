@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Monad
 
 ### Introduction
