@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Ethereum
 
 ### Introduction
@@ -7,8 +11,6 @@ The Ethereum Private Mempool delivers private transaction stream data, which is 
 Private Mempool can be applied to a variety of scenarios, including backrunning, copy trading, and sniping.
 
 To avoid data interruption due to network fluctuations, it is recommended to establish a reconnection mechanism.
-
-
 
 ### Endpoint
 
@@ -21,8 +23,6 @@ Private data streams vary across regions. It is recommended to subscribe to both
 {% endhint %}
 
 <table><thead><tr><th width="129.359375">地區</th><th>端點</th></tr></thead><tbody><tr><td>Tokyo</td><td>https://eth-bscscutum.blockrazor.xyz/stream</td></tr><tr><td>New York</td><td>https://eth-bscscutum.blockrazor.xyz/stream</td></tr></tbody></table>
-
-
 
 ### Authentication
 
@@ -48,8 +48,6 @@ The \<token> in the example must be obtained after registering for BlockRazor. T
 2. On the registration page, enter your email and password, then click \[Register], the system will send an account activation email to your mailbox.
 3. Go to your mailbox, check the account activation email, and click on the account activation link.
 4. After completing the account activation, proceed to log in, check your account information, and copy the auth token.
-
-
 
 ### Data Stream Structure
 
