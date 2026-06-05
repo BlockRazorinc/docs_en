@@ -4,19 +4,13 @@
 
 This API is used to receive requests for simulating bundles. The method name is `eth_callBundle`.
 
+### Price
 
-
-### Rate Limit
-
-<table><thead><tr><th width="165.7890625"></th><th>Tier 4</th><th>Tier 3</th><th>Tier 2</th><th>Tier 1</th><th>Tier 0</th></tr></thead><tbody><tr><td><code>eth_callBundle</code></td><td>-</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr></tbody></table>
-
-
+Call Bundle is only included in the Package; please go to the [Pricing](https://blockrazor.io/#/pricing) page to purchase the Package. Rate limit default to 1 TPS.
 
 ### Request Parameter
 
 <table><thead><tr><th width="156">Parameters</th><th width="124">Mandatory</th><th width="122">Format</th><th>Example</th><th>Description</th></tr></thead><tbody><tr><td>txs</td><td>Mandatory</td><td>array[hex]</td><td>["0x…4b", "0x…5c"]</td><td>List of signed raw transactions</td></tr><tr><td>blockNumber</td><td>Mandatory</td><td>number</td><td>39177941</td><td>Current block number + 1</td></tr></tbody></table>
-
-
 
 ### Request Example
 
@@ -40,8 +34,6 @@ curl https://virginia.builder.blockrazor.io \
 ```
 {% endtab %}
 {% endtabs %}
-
-
 
 ### Response Example
 

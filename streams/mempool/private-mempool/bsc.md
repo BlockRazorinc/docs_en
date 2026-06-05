@@ -8,8 +8,6 @@ Private Mempool can be applied to a variety of scenarios, including backrunning,
 
 To avoid data interruption due to network fluctuations, it is recommended to establish a reconnection mechanism.
 
-
-
 ### Endpoint
 
 {% hint style="info" %}
@@ -21,8 +19,6 @@ Private data streams vary across regions. It is recommended to subscribe to all 
 {% endhint %}
 
 <table><thead><tr><th width="129.359375">地區</th><th>端點</th></tr></thead><tbody><tr><td>Tokyo</td><td>https://jp-bscscutum.blockrazor.xyz/stream</td></tr><tr><td>New York</td><td>https://us-bscscutum.blockrazor.xyz/stream</td></tr><tr><td>Frankfurt</td><td>https://ger-bscscutum.blockrazor.xyz/stream</td></tr><tr><td>Dublin</td><td>https://ire-bscscutum.blockrazor.xyz/stream</td></tr></tbody></table>
-
-
 
 ### Authentication
 
@@ -47,15 +43,9 @@ The \<token> in the example must be obtained after registering for BlockRazor. T
 3. Go to your mailbox, check the account activation email, and click on the account activation link.
 4. After completing the account activation, proceed to log in, check your account information, and copy the auth token.
 
-
-
 ### Rate Limit
 
-|             | Tier 4 | Tier 3 | Tier 2    | Tier 1    | Tier 0    |
-| ----------- | ------ | ------ | --------- | --------- | --------- |
-| Data Stream | -      | -      | 2 streams | 2 streams | 2 streams |
-
-
+The monthly price is $300; ​​please visit the [Pricing](https://blockrazor.io/#/pricing) page to purchase. Two data streams are allowed per region.
 
 ### Bundle Type
 
@@ -71,8 +61,6 @@ For the Raw Bundle submitted through `eth_sendMevBundle`, the transactions come 
 
 After the client executes the backrun, coping trading or sniping strategy on Raw Bundle, it can choose to continue to disclose the bundle to Private Mempool to execute the nested backrun strategy. At this time, the bundle disclosed to the Private Mempool is the Followed Bundle, which contains all transactions in Raw Bundle, and one strategy transaction.
 
-
-
 ### Data Stream Structure
 
 **Bundle**
@@ -87,8 +75,6 @@ After the client executes the backrun, coping trading or sniping strategy on Raw
 
 <table><thead><tr><th width="199">Patameters</th><th width="132">Format</th><th>Remark</th></tr></thead><tbody><tr><td>address</td><td>string</td><td>the smart contract address that triggered the event</td></tr><tr><td>topics</td><td>[]string</td><td>event log topcis</td></tr><tr><td>data</td><td>string</td><td>storage area for non-index data</td></tr></tbody></table>
 
-
-
 #### **state**
 
 {% hint style="info" %}
@@ -96,8 +82,6 @@ the default data stream does not contain `state` field, if you need it, please m
 {% endhint %}
 
 <table><thead><tr><th width="208">Patameters</th><th width="123">Format</th><th>Remark</th></tr></thead><tbody><tr><td>"0x7C3b……3cb9E2"</td><td>[]string</td><td>The address of the state object where the data changes, which can be EOA or smart contract</td></tr><tr><td>"0x935b……6cf608"</td><td>string</td><td>the Key of the changed data in state object</td></tr><tr><td>"0x0000……3ffc00"</td><td>string</td><td>the Value of changed data in state object</td></tr></tbody></table>
-
-
 
 ### Data Stream Example(default)
 
@@ -133,8 +117,6 @@ the default data stream does not contain `state` field, if you need it, please m
     "refundCfg":10380050 //refund configuration
 }
 ```
-
-
 
 ### Data Stream Example(including state)
 

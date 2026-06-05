@@ -1,26 +1,18 @@
 # GetGasPriceStream
 
-## Introduction
+### Introduction
 
 `GetGasPriceStream` provides gas price subscription service on BSC. It pushes the gas price of BSC transactions in recent block to users at a specified percentile based on gRPC stream. The endpoint is: <mark style="color:$primary;">grpc.bsc-fee.blockrazor.me:443</mark>
 
+### Rate Limit
 
+The price is $300 per data stream per month. Please go to the [Pricing](https://blockrazor.io/#/pricing) page to purchase.
 
-## Rate Limit
-
-|         | Tier 4 | Tier 3 | Tier 2 | Tier 1 | Tier 0 |
-| ------- | ------ | ------ | ------ | ------ | ------ |
-| Streams | -      | -      | -      | -      | 10     |
-
-
-
-## Request Parameter
+### Request Parameter
 
 <table><thead><tr><th width="131.4765625">Parameters</th><th width="131.76171875">Mandatory</th><th width="86.74609375">Format</th><th width="104.44140625">Example</th><th>Remarks</th></tr></thead><tbody><tr><td>percentile</td><td>mandatory</td><td>int</td><td>50</td><td>Get the gas price of the specified percentile, enumerated value: 25, 50, 75, 95, 99</td></tr><tr><td>blockRange</td><td>mandatory</td><td>int</td><td>20</td><td>Statistics of gas prices of transactions in the last N blocks, where N ranges from 1 to 20</td></tr></tbody></table>
 
-
-
-## Request Example
+### Request Example
 
 ```go
 package main
@@ -94,9 +86,7 @@ func (a *Authentication) RequireTransportSecurity() bool {
 
 ```
 
-
-
-### Proto
+#### Proto
 
 ```json
 syntax = "proto3";
@@ -127,9 +117,7 @@ message TransactionFeeStreamResponse {
 }
 ```
 
-
-
-## Response Example
+### Response Example
 
 ```json
 2025/03/26 10:25:42 Received message: 2025-03-26 02:25:42

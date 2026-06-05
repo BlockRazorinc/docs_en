@@ -1,4 +1,4 @@
-# Send RawTxBatch
+# Fast-Tx
 
 ### Introduction
 
@@ -6,29 +6,170 @@
 This method does not provide MEV protection. Transactions sent through this method will be broadcast to the public mempool.
 {% endhint %}
 
-`SendTxs`is used to broadcast raw transaction batch on the high-performance network of BSC.
-
-
+Fast-Tx is used to broadcast a single rawtx or a batch of transactions on the BSC high-performance network. Broadcasting a single rawtx uses the method name `SendTx`, which supports HTTP and gRPC protocols. Broadcasting a batch of rawtxes uses the method name `SendTxs`, which also supports the gRPC protocol.
 
 ### Endpoint
 
 <table><thead><tr><th width="160">Region</th><th>Availability Zone(AWS)</th><th>Relay Address</th></tr></thead><tbody><tr><td>Frankfurt</td><td>euc1-az2</td><td>35.157.64.49:50051</td></tr><tr><td>Tokyo</td><td>apne1-az4</td><td>54.249.93.63:50051</td></tr><tr><td>Ireland</td><td>euw1-az1</td><td>3.248.65.151:50051</td></tr><tr><td>Virginia</td><td>use1-az4</td><td>52.205.173.134:50051</td></tr></tbody></table>
 
-
-
 ### Rate Limit
 
-<table><thead><tr><th></th><th>Tier 4</th><th width="104.27734375">Tier 3</th><th>Tier 2</th><th>Tier 1</th><th>Tier 0</th></tr></thead><tbody><tr><td>BPS</td><td>-</td><td>-</td><td>2 batches / 1s</td><td>4 batches / 1s</td><td>12 batches / 1s</td></tr><tr><td>Transactions per batch</td><td>-</td><td>-</td><td>10 Txs / batch</td><td>10 Txs / batch</td><td>20 Txs / batch</td></tr></tbody></table>
+| User Type            | Limit                                                                                                                                                                          | Price        |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------ |
+| New registered users | <p><code>SendTx</code></p><ul><li>TPS：10 Txs / 5s</li><li>Daily Tx Limit：10</li></ul>                                                                                          | Free         |
+| Paid users           | <p><code>SendTx</code></p><ul><li>TPS：100 Txs / 5s</li><li>每日交易上限：100000<br></li></ul><p><code>SendTxs</code></p><ul><li>BPS：4 batches / 1s</li><li>Txs per Batch：10</li></ul> | $500 / month |
+
+### SendTx
+
+#### Request Parameter
+
+<table><thead><tr><th width="156">Parameters</th><th width="125">Mandatory</th><th width="93">Format</th><th>Example</th><th>Description</th></tr></thead><tbody><tr><td>Transaction</td><td>Mandatory</td><td>String</td><td>"0xf8……8219"</td><td>signed raw tx</td></tr></tbody></table>
+
+#### Request Example
+
+[https://github.com/BlockRazorinc/relay\_example](https://github.com/BlockRazorinc/relay_example)
+
+{% tabs %}
+{% tab title="gRPC" %}
+```go
+package main
+
+import (
+	"context"
+	"encoding/hex"
+	"fmt"
+	"math/big"
+
+	// directory of the generated code using the provided relay.proto file
+	pb "github.com/BlockRazorinc/relay_example/protobuf"
+	"github.com/ethereum/go-ethereum/common"
+	"github.com/ethereum/go-ethereum/core/types"
+	"github.com/ethereum/go-ethereum/crypto"
+	"github.com/ethereum/go-ethereum/rlp"
+	"google.golang.org/grpc"
+)
+
+// auth will be used to verify the credential
+type Authentication struct {
+	apiKey string
+}
+
+func (a *Authentication) GetRequestMetadata(context.Context, ...string) (map[string]string, error) {
+	return map[string]string{"apiKey": a.apiKey}, nil
+}
+
+func (a *Authentication) RequireTransportSecurity() bool {
+	return false
+}
+
+func main() {
+
+	// BlockRazor relay endpoint address
+	blzrelayEndPoint := "ip:port"
+
+	// auth will be used to verify the credential
+	auth := Authentication{
+		"your auth token",
+	}
+
+	// open gRPC connection to BlockRazor relay
+	var err error
+	conn, err := grpc.Dial(blzrelayEndPoint, grpc.WithInsecure(), grpc.WithPerRPCCredentials(&auth), grpc.WithWriteBufferSize(0), grpc.WithInitialConnWindowSize(128*1024))
+	if err != nil {
+		fmt.Println("error: ", err)
+		return
+	}
+
+	// use the Gateway client connection interface.
+	client := pb.NewGatewayClient(conn)
+
+	// create context
+	ctx := context.Background()
+
+	// replace with your address
+	from_private_address := "42b565……44d05c"
+	to_public_address := "0x4321……3f1c66"
+
+	// replace with your transaction data
+	nonce := uint64(1)
+	toAddress := common.HexToAddress(to_public_address)
+	var data []byte
+	gasPrice := big.NewInt(1e9)
+	gasLimit := uint64(22000)
+	value := big.NewInt(0)
+	chainid := types.NewEIP155Signer(big.NewInt(56))
+
+	// create new transaction
+	tx := types.NewTransaction(nonce, toAddress, value, gasLimit, gasPrice, data)
+
+	privateKey, err := crypto.HexToECDSA(from_private_address)
+	if err != nil {
+		fmt.Println("fail to casting private key to ECDSA")
+		return
+	}
+
+	// sign transaction by private key
+	signedTx, err := types.SignTx(tx, chainid, privateKey)
+	if err != nil {
+		fmt.Println("fail to sign transaction")
+		return
+	}
+
+	// use rlp to encode your transaction
+	body, _ := rlp.EncodeToBytes([]types.Transaction{*signedTx})
+
+	// encode []byte to string
+	encode_tx := hex.EncodeToString(body)
+
+	// send raw tx by BlockRazor
+	res, err := client.SendTx(ctx, &pb.SendTxRequest{Transaction: encode_tx})
+
+	if err != nil {
+		fmt.Println("failed to send raw tx: ", err)
+		return
+	} else {
+		fmt.Println("raw tx sent by BlockRazor, tx hash is ", res.TxHash)
+	}
+
+}
+```
+{% endtab %}
+
+{% tab title="HTTP" %}
+```bash
+curl <Endpoint_URL> \
+    -X POST \
+    -H "Content-Type: application/json" \
+    -d '{"jsonrpc":"2.0","method":"eth_sendRawTransaction","params":["0x02f8……869514"],"id":1}'
+```
+{% endtab %}
+{% endtabs %}
+
+#### Response Example
+
+**Success**
+
+```json
+{
+ "tx_hash":"0x2944……b2188f"
+}
+```
+
+**Error**
+
+```
+rpc error: code = Unknown desc = invalid transaction format
+```
 
 
 
-### Request Parameter
+### SendTxs
+
+#### Request Parameter
 
 <table><thead><tr><th>Parameters</th><th width="124">Mandatory</th><th width="131">Format</th><th>Example</th><th>Description</th></tr></thead><tbody><tr><td>Transactions</td><td>Mandatory</td><td>Array[String]</td><td>["0xf8……8219", "0xcb……2ac0"]</td><td>signed raw txs</td></tr></tbody></table>
 
-
-
-### Request Example
+#### Request Example
 
 [https://github.com/BlockRazorinc/relay\_example](https://github.com/BlockRazorinc/relay_example)
 
@@ -150,7 +291,23 @@ func main() {
 }
 ```
 
-#### Proto
+#### Response Example
+
+**Success**
+
+```json
+{
+ "tx_hash":["0xdb95……584813", "0x887d……7aba19"]
+}
+```
+
+**Error**
+
+```
+rpc error: code = Unknown desc = invalid transaction format
+```
+
+### **Proto**
 
 The code of `relay.proto` is as follows:
 
@@ -244,26 +401,3 @@ message SendTxsReply {
   repeated string tx_hashs = 1;
 }
 ```
-
-
-
-### Response Example
-
-**Success**
-
-```json
-{
- "tx_hash":["0xdb95……584813", "0x887d……7aba19"]
-}
-```
-
-**Error**
-
-```
-rpc error: code = Unknown desc = invalid transaction format
-```
-
-
-
-
-

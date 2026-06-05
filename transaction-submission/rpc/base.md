@@ -1,6 +1,6 @@
 # Base
 
-## Introduction
+### Introduction
 
 {% hint style="info" %}
 Currently, the Base RPC only supports the `eth_sendRawTransaction` method
@@ -8,9 +8,7 @@ Currently, the Base RPC only supports the `eth_sendRawTransaction` method
 
 This API is used to send signed raw transactions on Base, supporting the gRPC and HTTPS protocol.
 
-
-
-## Endpoint
+### Endpoint
 
 {% tabs %}
 {% tab title="gRPC" %}
@@ -22,23 +20,18 @@ This API is used to send signed raw transactions on Base, supporting the gRPC an
 {% endtab %}
 {% endtabs %}
 
+### Rate Limit
 
+| User Type            | Limit      | Price     |
+| -------------------- | ---------- | --------- |
+| New registered users | 1 Tx / 5s  | 免費        |
+| Paid users           | 5 Txs / 1s | $1000 / 月 |
 
-## Rate Limit
-
-|     | Tier 4    | Tier 3    | Tier 2 | Tier 1 | Tier 0 |
-| --- | --------- | --------- | ------ | ------ | ------ |
-| TPS | 1 Tx / 5s | 1 Tx / 5s | 3 TPS  | 5 TPS  | Custom |
-
-
-
-## Request Parameter
+### Request Parameter
 
 <table><thead><tr><th width="106.7421875">Parameter</th><th width="111.046875">Mandatory</th><th width="121.6796875">Format</th><th>Example</th><th>Remark</th></tr></thead><tbody><tr><td>rawTransaction</td><td>mandatory</td><td>string[hex]</td><td>"0xd46e8dd67c5d32be8d24c6b0afe7c5c3f4e9c3b2dae18d0c6b0cf5c8f3e8b2c1"</td><td>signed raw transaction</td></tr></tbody></table>
 
-
-
-## Request Example
+### Request Example
 
 {% tabs %}
 {% tab title="gRPC" %}
@@ -155,17 +148,13 @@ service BaseApi {
 }
 ```
 
-
-
-## Response
+### Response
 
 **Normal**
 
 ```go
 res: txHash:"0xaf430540d20eae2448947ffb254b03180b82333ef0c56bd526f7047489c195b5"
 ```
-
-
 
 **Abnormal**
 

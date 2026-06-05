@@ -16,7 +16,3 @@
 
 <table><thead><tr><th width="240.02734375">Service</th><th>Index</th></tr></thead><tbody><tr><td>Transaction Submission</td><td><ul><li><a href="transaction-submission/rpc/base.md">RPC</a></li><li><a href="transaction-submission/fast/base.md">Fast</a></li></ul></td></tr><tr><td>Streams</td><td><ul><li><a href="streams/block-stream/base/">Block Stream</a></li></ul></td></tr></tbody></table>
 
-### Monad
-
-<table><thead><tr><th width="247.6796875">Service</th><th>Index</th></tr></thead><tbody><tr><td>Transaction Submission</td><td><ul><li><a href="transaction-submission/rpc/monad.md">RPC</a></li><li><a href="transaction-submission/fast/monad.md">Fast</a></li></ul></td></tr></tbody></table>
-

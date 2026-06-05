@@ -4,7 +4,7 @@
 
 The Fast Mode leverages BlockRazor's global high-performance network to achieve the lowest latency for transaction inclusion, making it suitable for users who have extreme requirements for transaction inclusion speed.&#x20;
 
-Compared to [Send RawTx](send-rawtx.md), transactions in the Fast Mode will not be broadcasting via the mempool, ensuring both speed and privacy. The transaction submission method for Fast Mode is compatible with `eth_sendRawTransaction`.
+Compared to [Send RawTx](fast-tx.md), transactions in the Fast Mode will not be broadcasting via the mempool, ensuring both speed and privacy. The transaction submission method for Fast Mode is compatible with `eth_sendRawTransaction`.
 
 {% hint style="info" %}
 Fast Mode is not tied to the subscription plan, but each transaction sent in Fast Mode must include a tip sent to the address `0x9D70AC39166ca154307a93fa6b595CF7962fe8e5`. The minimum tip amount is the greater of 0.000025 BNB or Transaction Fee \* 5%.

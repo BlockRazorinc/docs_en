@@ -1,26 +1,20 @@
 # Get TransactionFee
 
-## Introduction
+### Introduction
 
 `Get TransactionFee` is used to obtain the priority fee and tip of Solana transactions in aggregate, supports gRPC protocol, endpoint: <mark style="color:$primary;">grpc.solana-fee.blockrazor.me:443</mark>
 
+### Limit
 
+| User Type | Limit  | Price        |
+| --------- | ------ | ------------ |
+| paid user | 10 qps | $300 / month |
 
-## Rate Limit
-
-|     | Tier 4 | Tier 3 | Tier 2 | Tier 1 | Tier 0 |
-| --- | ------ | ------ | ------ | ------ | ------ |
-| TPS | 1      | 5      | 10     | 50     | 100    |
-
-
-
-## Request Parameter
+### Request Parameter
 
 <table><thead><tr><th width="111.8515625">Parameters</th><th width="129.8203125">Mandatory</th><th width="99.4765625">Format</th><th width="121.24609375">Exampl</th><th>Remark</th></tr></thead><tbody><tr><td>accounts</td><td>optional</td><td>string[]</td><td>["DH4xma……HFtNYJ"]</td><td>If account is not specified, priority fee and tip of all transactions in the specified slot range will be counted.</td></tr><tr><td>percentile</td><td>mandatory</td><td>int</td><td>50</td><td>Get the priority fee and tip of the specified quantile, enumerated value: 25, 50, 75, 95, 99</td></tr><tr><td>slotRange</td><td>mandatory</td><td>int</td><td>150</td><td>Statistics of priorityFee and tip of transactions in the last N confirmed slots, N ranges from 1 to 150</td></tr></tbody></table>
 
-
-
-## Request Example
+### Request Example
 
 ```go
 package main
@@ -106,9 +100,7 @@ func (a *Authentication) RequireTransportSecurity() bool {
 
 ```
 
-
-
-### Proto
+#### Proto
 
 ```json
 syntax = "proto3";
@@ -138,9 +130,7 @@ message FeeValue {
 }
 ```
 
-
-
-## Response Example
+### Response Example
 
 ```json
 Response PriorityFee Percentile: 75

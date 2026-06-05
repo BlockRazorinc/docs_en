@@ -4,27 +4,17 @@
 
 `NewTxs` is used to subscribe to the transaction data stream in the high-performance network.
 
-
-
 ### Endpoint
 
 <table><thead><tr><th width="160">Region</th><th>Availability Zone(AWS)</th><th>Relay Address</th></tr></thead><tbody><tr><td>Frankfurt</td><td>euc1-az2</td><td>35.157.64.49:50051</td></tr><tr><td>Tokyo</td><td>apne1-az4</td><td>54.249.93.63:50051</td></tr><tr><td>Ireland</td><td>euw1-az1</td><td>3.248.65.151:50051</td></tr><tr><td>Virginia</td><td>use1-az4</td><td>52.205.173.134:50051</td></tr></tbody></table>
 
-
-
 ### Rate Limit
 
-|                       | Tier 4 | Tier 3 | Tier 2 | Tier 1 | Tier 0 |
-| --------------------- | ------ | ------ | ------ | ------ | ------ |
-| Parallel data streams | -      | 1      | 5      | 10     | 30     |
-
-
+The price is $300 per data stream per month. Please go to the [Pricing](https://blockrazor.io/#/pricing) page to purchase.
 
 ### Request Parameters
 
 <table><thead><tr><th width="168">Parameters</th><th width="119">Mandatory</th><th width="103">Format</th><th width="98">Example</th><th>Description</th></tr></thead><tbody><tr><td>NodeValidation</td><td>Mandatory</td><td>boolean</td><td>false</td><td>This field currently only supports being set to <code>false</code>, and the relay will push all new transactions (unchecked) with lower latency.</td></tr></tbody></table>
-
-
 
 ### Request Example
 

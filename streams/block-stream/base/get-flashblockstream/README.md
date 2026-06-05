@@ -1,14 +1,12 @@
 # Get FlashBlockStream
 
-## Introduction
+### Introduction
 
 This method is used to retrieve FlashBlock data from Base, supporting both gRPC and WebSocket protocols.
 
 Flashblocks are "sub-blocks" streamed on Base every 200 milliseconds, enabling transaction pre-confirmation 10 times faster than the standard 2-second block time. These sub-blocks, called Flashblocks, contain approximately 10% of a full block's transaction data, allowing applications to receive near-instant transaction feedback, suitable for low-latency scenarios.
 
-
-
-## Endpoint
+### Endpoint
 
 {% tabs %}
 {% tab title="gRPC" %}
@@ -20,17 +18,11 @@ Flashblocks are "sub-blocks" streamed on Base every 200 milliseconds, enabling t
 {% endtab %}
 {% endtabs %}
 
+### Price
 
+The price is $250 per data stream per month. Please go to the [Pricing](https://blockrazor.io/#/pricing) page to purchase.
 
-## Rate Limit
-
-|                  | Tier 4 | Tier 3 | Tier 2 | Tier 1 | Tier 0 |
-| ---------------- | ------ | ------ | ------ | ------ | ------ |
-| FlashBlockStream | -      | -      | -      | ✅      | ✅      |
-
-
-
-## Request Example
+### Request Example
 
 {% tabs %}
 {% tab title="gRPC" %}
@@ -364,9 +356,7 @@ service BaseApi {
 }
 ```
 
-
-
-## Response
+### Response
 
 **Normal**
 
@@ -375,8 +365,6 @@ service BaseApi {
     message: "185329……7e04b7"
 }
 ```
-
-
 
 **Abnormal**
 

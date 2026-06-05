@@ -1,12 +1,10 @@
 # Get BlockStream
 
-## Introduction
+### Introduction
 
 This method is used to retrieve block data from Base and supports the gRPC protocol.
 
-
-
-## Endpoint
+### Endpoint
 
 {% tabs %}
 {% tab title="gRPC" %}
@@ -14,17 +12,11 @@ This method is used to retrieve block data from Base and supports the gRPC proto
 {% endtab %}
 {% endtabs %}
 
+### Price
 
+The price is $300 per data stream per month. Please go to the [Pricing](https://blockrazor.io/#/pricing) page to purchase.
 
-## Rate Limit
-
-|             | Tier 4 | Tier 3 | Tier 2 | Tier 1 | Tier 0 |
-| ----------- | ------ | ------ | ------ | ------ | ------ |
-| BlockStream | -      | -      | -      | ✅      | ✅      |
-
-
-
-## Request Example
+### Request Example
 
 {% tabs %}
 {% tab title="gRPC" %}

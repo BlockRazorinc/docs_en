@@ -7,4 +7,4 @@ When integrating with BlockRazor services, if "auth" is required in the request,
 3. Go to your mailbox, check the account activation email, and click on the account activation link.
 4. After completing the account activation, proceed to log in, check your account information, and copy the auth token.
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (75).png" alt=""><figcaption></figcaption></figure>
