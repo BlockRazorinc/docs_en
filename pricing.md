@@ -18,7 +18,7 @@ Users can freely combine and purchase services across chains. Stream-type servic
 
 {% tabs %}
 {% tab title="BSC" %}
-<table><thead><tr><th width="194.09765625">Service</th><th>Description</th><th>Price</th></tr></thead><tbody><tr><td>Fast-Tx</td><td>Propagating transactions and transaction batches using high-performance networks</td><td>$500 / month</td></tr><tr><td>Public Mempool</td><td>Subscribe to high-performance network transaction data</td><td>$300 / stream / month</td></tr><tr><td>Private Mempool</td><td>Subscribe to BlockRazor RPC orderflow stream data</td><td>$1000 / month</td></tr><tr><td>Block Stream</td><td>Subscribe to high-performance network block data</td><td>$500 / stream / month</td></tr><tr><td>Node Stream</td><td>Low-latency synchronized world state</td><td>$800 / enode / month</td></tr><tr><td>Network Fee Stream</td><td>Obtain BSC gas price data</td><td>$500 / month</td></tr><tr><td>Dedicate Connection</td><td>Create dedicate connection to BSC Block Builder</td><td>$1500 / month</td></tr><tr><td>Bundle Tracing &#x26; Explorer</td><td>Tracing and explore bundle of Block Builder</td><td>$1500 / month</td></tr><tr><td>Tx Trace</td><td>Monitoring transaction propagation paths and cross-regional latency distribution</td><td>$500 / month</td></tr></tbody></table>
+<table><thead><tr><th width="194.09765625">Service</th><th>Description</th><th>Price</th></tr></thead><tbody><tr><td>Fast-Tx</td><td>Propagating transactions and transaction batches using high-performance networks</td><td>$500 / month</td></tr><tr><td>Public Mempool</td><td>Subscribe to high-performance network transaction data</td><td>$300 / stream / month</td></tr><tr><td>Private Mempool</td><td>Subscribe to BlockRazor RPC orderflow stream data</td><td>$1000 / month</td></tr><tr><td>Block Stream</td><td>Subscribe to high-performance network block data</td><td>$500 / stream / month</td></tr><tr><td>Node Stream</td><td>Low-latency synchronized world state</td><td>$800 / enode / month</td></tr><tr><td>Network Fee Stream</td><td>Obtain BSC gas price data</td><td>$500 / month</td></tr><tr><td>Bundle Tracing &#x26; Explorer</td><td>Tracing and explore bundle of Block Builder</td><td>$1500 / month</td></tr></tbody></table>
 {% endtab %}
 
 {% tab title="Solana" %}
@@ -32,7 +32,7 @@ Users can freely combine and purchase services across chains. Stream-type servic
 {% tab title="General" %}
 | Service           | Description                 | Price     |
 | ----------------- | --------------------------- | --------- |
-| Dedicated Channel | Dedicated technical support | $1500 / 月 |
+| Dedicated Channel | Dedicated technical support | $1000 / 月 |
 {% endtab %}
 {% endtabs %}
 
