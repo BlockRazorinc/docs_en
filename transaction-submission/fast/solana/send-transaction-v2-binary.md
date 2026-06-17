@@ -1,6 +1,6 @@
 ---
 description: >-
-  Introduction to Send Transaction v2 of BlockRazor Solana Fast mode and
+  Introduction to Send Transaction v2(binary) of BlockRazor Solana Fast mode and
   integration methods
 ---
 
