@@ -4,8 +4,6 @@ description: Pain points for Individual Trader, and how they can use BlockRazorâ
 
 # Individual Trader
 
-## Introduction
-
 {% hint style="info" %}
 Individual users can use general RPC without subscribing to a plan.
 {% endhint %}
@@ -58,8 +56,6 @@ Advanced users can choose to [add different modes of the RPC](individual-trader.
 <figure><img src="../../.gitbook/assets/image (39).png" alt="" width="563"><figcaption></figcaption></figure>
 
 4. Confirm the RPC mode, click on **Click to Add,** and approve the addition of the new network in the Metamask
-
-
 
 #### Other Wallets(using Coinbase as an example)
 

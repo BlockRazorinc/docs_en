@@ -8,7 +8,7 @@ description: >-
 
 `scutum_queryTxProcessStatus` is used to query the real-time process status of transactions sent to BlockRazor RPC. It is currently available on BSC.
 
-#### Request Example
+### Request Example
 
 ```json
 curl -X POST -H "Content-Type: application/json" --data'{
@@ -19,7 +19,7 @@ curl -X POST -H "Content-Type: application/json" --data'{
 }'<ETH_NODE_URL>
 ```
 
-#### Response Example
+### Response Example
 
 **Normal**
 

@@ -8,13 +8,13 @@ description: >-
 
 In the current DeFi ecosystem, wallets andvDEXs are facing increasingly severe challenges in user retention. As the market matures, users are no longer satisfied with basic transaction fulfillment; their expectations for security, convenience, and real-time execution are rising. Furthermore, there is a growing interest in emerging trading models such as copy trading and token sniping.
 
-#### Pain Point Analysis
+### Pain Point Analysis
 
 * MEV Attacks and Value Leakage: When swap transactions are submitted to standard RPC nodes, the user's intent is fully exposed in the public Mempool. MEV bots can monitor these transactions and employ "sandwich attacks" to exploit slippage, resulting in execution prices far worse than expected.
 * Barriers to Native Token-less Transactions: New users withdrawing from CEXs or multi-chain players often face the dilemma of having no native tokens to pay for Gas fees. This interrupts the transaction flow and lowers conversion rates.
 * On-chain Latency: During periods of network congestion or volatility, standard RPC nodes propagate transactions slowly, causing users to miss the optimal timing for on-chain inclusion.
 
-#### Product Services
+### Services
 
 BlockRazor provides targeted product services for wallets and DEXs to address the aforementioned pain points.
 
