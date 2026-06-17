@@ -2,6 +2,7 @@
 description: >-
   Introduction to eth_sendRawTransaction of BlockRazor BSC Fast mode and
   integration methods
+hidden: true
 ---
 
 # eth\_sendRawTransaction

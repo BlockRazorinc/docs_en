@@ -2,6 +2,7 @@
 description: >-
   Introduction to eth_sendRawTransaction v2 of BlockRazor BSC Fast mode and
   integration methods
+hidden: true
 ---
 
 # eth\_sendRawTransaction v2
@@ -33,13 +34,9 @@ http://bsc-fast.blockrazor.io/v2/sendRawTransaction
 {% endtab %}
 {% endtabs %}
 
-
-
 ### Rate Limit <a href="#xian-liu" id="xian-liu"></a>
 
 Fast Mode is not tied to the subscription plan, the rate limit default to 10 TPS for all users. Please contact us if you require an increase in your TPS limit.
-
-
 
 ### Request Example <a href="#jiao-yi-gou-jian-dai-ma-shi-li" id="jiao-yi-gou-jian-dai-ma-shi-li"></a>
 
@@ -59,8 +56,6 @@ curl -X POST 'http://bsc-fast.blockrazor.io/v2/sendRawTransaction?auth=<auth_tok
 * **the `auth` are compulsory to be added in URI params**
 * **the only header permitted in the request is `Content-Type: text/plain`**
 {% endhint %}
-
-
 
 ### Response
 
@@ -85,8 +80,6 @@ curl -X POST 'http://bsc-fast.blockrazor.io/v2/sendRawTransaction?auth=<auth_tok
 	"data": null
 }
 ```
-
-
 
 ### Keep Alive <a href="#keep-alive" id="keep-alive"></a>
 
