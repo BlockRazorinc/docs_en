@@ -1,10 +1,31 @@
 # Get FlashBlockStream
 
-### Introduction
+### What is Base Get FlashBlockStream
 
-This method is used to retrieve FlashBlock data from Base, supporting both gRPC and WebSocket protocols.
+`Get FlashBlockStream` is a real-time FlashBlock data subscription interface provided by BlockRazor for Base, used to obtain earlier stages of block data on Base with lower latency. This interface supports both gRPC and WebSocket protocols, making it suitable for trading systems, and monitoring systems that are more sensitive to data arrival time.
 
-Flashblocks are "sub-blocks" streamed on Base every 200 milliseconds, enabling transaction pre-confirmation 10 times faster than the standard 2-second block time. These sub-blocks, called Flashblocks, contain approximately 10% of a full block's transaction data, allowing applications to receive near-instant transaction feedback, suitable for low-latency scenarios.
+On Base, FlashBlock can be understood as a "sub-block" data stream that occurs before the formal block is formed, typically pushed continuously at a frequency of about 200ms. Compared to the standard block time of about 2 seconds, FlashBlock can provide transaction-related feedback much earlier, making it more suitable for low-latency scenarios that require quick on-chain awareness of changes.
+
+For trading bots, quantitative strategies, real-time monitoring platforms, and front-end trading applications, waiting for blocks often means longer response times. The value of Get FlashBlockStream is to help the system receive transaction and block change signals earlier, before the block arrives, thus buying more time for subsequent judgment and response.
+
+### Why choose Base Get FlashBlockStream
+
+BlockRazor, based on [BEF](../../../../core-technology/blockchain-edge-fabric.md), provides access points to multiple regions on Base, including Frankfurt, Virginia, and Tokyo. According to [Base Benchmark](https://blockrazor.io/zh/blog/20250922basebenchmark/), BlockRazor demonstrates an advantage over the official Base service in FlashBlock reception latency across multiple regions, with a particularly significant lead in the mid-to-high percentile range.
+
+### FAQ
+
+<details>
+
+<summary>What is the difference between Get BlockStream and Get FlashBlockStream</summary>
+
+The core difference between the two lies in the different data granularity, time points, and applicable scenarios.
+
+* Get BlockStream\
+  It is used to retrieve block that has already been formed on Base, focusing on confirmed blocks and transactions within. It is more suitable for monitoring confirmation results, block-level analysis, on-chain data processing, and data systems that need to stably consume blocks.
+* **Get FlashBlockStream**\
+  Used to retrieve FlashBlock data on Base. FlashBlock is a "sub-block" of data pushed by Base approximately every 200ms, providing pre-confirmation information for transactions much earlier than the standard 2-second formal block time. It is more suitable for scenarios that are more sensitive to low latency and want to see on-chain changes as early as possible.
+
+</details>
 
 ### Endpoint
 
@@ -21,6 +42,10 @@ Flashblocks are "sub-blocks" streamed on Base every 200 milliseconds, enabling t
 ### Price
 
 The price is $250 per data stream per month. Please go to the [Pricing](https://blockrazor.io/#/pricing) page to purchase.
+
+{% hint style="info" %}
+The number of data streams that can be subscribed to is calculated on a shared basis across all regions. For example, if you purchase one stream, you can only subscribe in one region; you will not be able to subscribe in other regions.
+{% endhint %}
 
 ### Request Example
 

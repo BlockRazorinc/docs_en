@@ -1,16 +1,20 @@
+---
+description: >-
+  Introduction to eth_sendRawTransaction of BlockRazor BSC Fast mode and
+  integration methods
+---
+
 # eth\_sendRawTransaction
 
 ### Introduction
 
-The Fast Mode leverages BlockRazor's global high-performance network to achieve the lowest latency for transaction inclusion, making it suitable for users who have extreme requirements for transaction inclusion speed.&#x20;
+`eth_sendRawTransaction` is a Fast mode transaction sending interface provided by BlockRazor for BSC. It is compatible with the standard `eth_sendRawTransaction`  method and is used to send signed transactions with lower latency.
 
-Compared to [Send RawTx](fast-tx.md), transactions in the Fast Mode will not be broadcasting via the mempool, ensuring both speed and privacy. The transaction submission method for Fast Mode is compatible with `eth_sendRawTransaction`.
+Transactions sent to Fast mode `eth_sendRawTransaction`are not broadcast through the public mempool, thus improving sending speed while preventing transactions from being exposed during public propagation.
 
 {% hint style="info" %}
 Fast Mode is not tied to the subscription plan, but each transaction sent in Fast Mode must include a tip sent to the address `0x9D70AC39166ca154307a93fa6b595CF7962fe8e5`. The minimum tip amount is the greater of 0.000025 BNB or Transaction Fee \* 5%.
 {% endhint %}
-
-
 
 ### Endpoint
 
@@ -24,13 +28,9 @@ http://bsc-fast.blockrazor.io
 {% endtab %}
 {% endtabs %}
 
-
-
 ### Rate Limit
 
 Fast Mode is not tied to the subscription plan, the rate limit default to 10 TPS for all users. Please contact us if you require an increase in your TPS limit.
-
-
 
 ### Request
 
@@ -51,8 +51,6 @@ curl http://bsc-fast.blockrazor.io \
   '
 ```
 
-
-
 ### Response
 
 **Normal**
@@ -64,8 +62,6 @@ curl http://bsc-fast.blockrazor.io \
  "result":"0xa06b……f7e8ec"
 }‍
 ```
-
-
 
 **Abnormal**
 
@@ -79,8 +75,6 @@ curl http://bsc-fast.blockrazor.io \
     }
 }
 ```
-
-
 
 ### Keep Alive <a href="#keep-alive" id="keep-alive"></a>
 

@@ -1,5 +1,9 @@
 # Gas Sponsor
 
+{% hint style="info" %}
+BlockRazor Gas Sponsor currently supports BSC, Solana, Ethereum, and Base. Please [contact](https://discord.com/invite/qqJuwRb8Nh) us if you wish to integrate with our Gas Sponsor service.
+{% endhint %}
+
 ### Introduction
 
 Gas Sponsor is a feature that enables traders to perform token swaps with zero native blockchain currency (e.g., ETH, BNB, SOL) or zero gas fee. The benefits that Gas Sponsor could bring to projects are:

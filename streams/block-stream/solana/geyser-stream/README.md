@@ -40,7 +40,7 @@ Geyser Stream charges based on monthly data usage, with the price remaining cons
 
 ### Integrate Geyser Stream
 
-For auth obtaining steps, see [Authentication](../../../../authentication.md) guide.
+For auth obtaining steps, see [Authentication](../../../../get-started/authentication.md) guide.
 
 For multi-language integration details, see:
 

@@ -1,8 +1,16 @@
 # NewBlocks
 
-### Introduction
+### What is BSC NewBlocks
 
-`NewBlocks`is used to subscribe to the block data stream in the high-performance network.
+NewBlocks is a high-performance block stream service provided by BlockRazor, used for low-latency subscription to the latest blocks and confirmed transactions. NewBlocks helps users receive the latest block content earlier, and integrates the block header, transaction list, and next validator info into their monitoring or strategy systems with lower latency.
+
+NewBlocks distributes the latest block data based on [BEF](../../../core-technology/blockchain-edge-fabric.md). When a block is generated in the network and begins to propagate, BlockRazor receives the block in multiple core areas as early as possible and then forwards it to subscribers through low-latency links, shortening the time for users to receive block data.
+
+### Scenarios of BSC NewBlocks
+
+* Confirmed Transaction Monitoring: Receives confirmed transactions from the latest block in real time, used to monitor target addresses, popular contracts, or abnormal transaction behavior.
+* Block-level data analysis: Obtaining block headers, transaction lists, and next validator info for block research, node observation, and network state analysis.
+* Strategy data input: Serving as the confirmed data source for the trading system, it works in conjunction with capabilities such as Public Mempool and Transaction Submission to build a more complete monitoring and execution chain.
 
 ### Endpoint
 
@@ -11,6 +19,10 @@
 ### Price
 
 The price is $500 per data stream per month. Please go to the [Pricing](https://blockrazor.io/#/pricing) page to purchase.
+
+{% hint style="info" %}
+The number of data streams that can be subscribed to is calculated on a shared basis across all regions. For example, if you purchase one stream, you can only subscribe in one region; you will not be able to subscribe in other regions.
+{% endhint %}
 
 ### Request Parameters
 

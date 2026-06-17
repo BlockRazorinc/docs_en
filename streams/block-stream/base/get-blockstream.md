@@ -1,8 +1,27 @@
 # Get BlockStream
 
-### Introduction
+### What is Base Get BlockStream
 
-This method is used to retrieve block data from Base and supports the gRPC protocol.
+`Get BlockStream` is a real-time block data subscription interface provided by BlockRazor for Base, used to continuously retrieve the latest generated block data on Base in a low-latency manner. This interface is based on the gRPC protocol and is suitable for trading systems and infrastructure systems that need to continuously consume block data.
+
+### Why choose Base Get BlockStream
+
+For trading systems and infrastructure systems, the ability to acquire block data is not just about "getting new blocks," but also about the timeliness of receiving in different regions, the stability of data links, and overall performance under long-term operation. BlockRazor, based on [BEF](../../../core-technology/blockchain-edge-fabric.md), provides access points to multiple regions such as Frankfurt, Virginia, and Tokyo on Base. According to [Base Benchmark](https://blockrazor.io/zh/blog/20250922basebenchmark/), BlockRazor demonstrates an advantage over Base's official service in block reception latency across multiple regions, with a particularly significant lead in the mid-to-high percentile range.
+
+### FAQ
+
+<details>
+
+<summary>What is the difference between Get BlockStream and Get FlashBlockStream</summary>
+
+The core difference between the two lies in the different data granularity, time points, and applicable scenarios.
+
+* Get BlockStream\
+  It is used to retrieve block that has already been formed on Base, focusing on confirmed blocks and transactions within. It is more suitable for monitoring confirmation results, block-level analysis, on-chain data processing, and data systems that need to stably consume blocks.
+* **Get FlashBlockStream**\
+  Used to retrieve FlashBlock data on Base. FlashBlock is a "sub-block" of data pushed by Base approximately every 200ms, providing pre-confirmation information for transactions much earlier than the standard 2-second formal block time. It is more suitable for scenarios that are more sensitive to low latency and want to see on-chain changes as early as possible.
+
+</details>
 
 ### Endpoint
 
@@ -15,6 +34,10 @@ This method is used to retrieve block data from Base and supports the gRPC proto
 ### Price
 
 The price is $300 per data stream per month. Please go to the [Pricing](https://blockrazor.io/#/pricing) page to purchase.
+
+{% hint style="info" %}
+The number of data streams that can be subscribed to is calculated on a shared basis across all regions. For example, if you purchase one stream, you can only subscribe in one region; you will not be able to subscribe in other regions.
+{% endhint %}
 
 ### Request Example
 

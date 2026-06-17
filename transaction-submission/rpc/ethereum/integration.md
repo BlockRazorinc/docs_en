@@ -1,16 +1,16 @@
+---
+description: Introduce the steps for integrating BlockRazor Ethereum RPC
+---
+
 # Integration
 
-### Introduction
-
 {% hint style="info" %}
-The builder of project can use RPC Exclusive for Project without subscribing to a plan.
+BlockRazor RPC is open to all users; no service purchase or authentication application is required.
 {% endhint %}
 
-BlockRzor RPC provides MEV protection for orderflow projects like Wallet, DEX, and Trading Bot on Ethereum, supporting refunds to the project users or project builders themselves.
+### Endpoint
 
-BlockRzor RPC provides each project builder with an exclusive RPC URL, supporting visual customization of RPC domain names, transaction disclosure, refund address, and revert protection, facilitating the project builder to integrate RPC at a low cost and quickly.
-
-
+<table><thead><tr><th width="203.8515625">Endpoint type</th><th width="483.47265625">URL</th></tr></thead><tbody><tr><td>General RPC</td><td>https://eth.blockrazor.xyz</td></tr><tr><td>Project Default RPC</td><td>https://eth.blockrazor.xyz/&#x3C;rpc_id></td></tr><tr><td>Project Custom RPC</td><td>https://&#x3C;custom_domain>.eth.blockrazor.xyz</td></tr></tbody></table>
 
 ### How to integrate RPC into your project
 

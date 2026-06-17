@@ -1,21 +1,23 @@
+---
+description: >-
+  Introduction to eth_sendRawTransaction v2 of BlockRazor BSC Fast mode and
+  integration methods
+---
+
 # eth\_sendRawTransaction v2
 
 ### Introduction <a href="#jie-shao" id="jie-shao"></a>
-
-The Fast Mode leverages BlockRazor's global high-performance network to achieve the lowest latency for transaction inclusion, making it suitable for users who have extreme requirements for transaction inclusion speed.&#x20;
-
-Compared to [Send RawTx](fast-tx.md),  `eth_sendRawTransaction` will not broadcasting txs via the mempool, ensuring both speed and privacy.
-
-{% hint style="info" %}
-Fast Mode is not tied to the subscription plan, but each transaction sent in Fast Mode must include a tip sent to the address `0x9D70AC39166ca154307a93fa6b595CF7962fe8e5`. The minimum tip amount is the greater of 0.000025 BNB or Transaction Fee \* 5%.
-{% endhint %}
 
 Compared with [eth\_sendRawTransaction](eth_sendrawtransaction.md), `eth_sendRawTransaction v2` presents a much more streamlined and rapid method for submitting transactions.
 
 * Bypasses CORS Preflight: It eliminates the delay (50-100ms) that is typically incurred by OPTIONS preflight.
 * Plain Text over JSON: Employing a simple plain text transmission circumvents the computational burden associated with parsing JSON. Furthermore, the resulting smaller data size serves to cut down on network transfer time and costs.
 
+The features of `eth_sendRawTransaction v2` are more suitable for front-end transaction application projects with a global user base.
 
+{% hint style="info" %}
+Fast Mode is not tied to the subscription plan, but each transaction sent in Fast Mode must include a tip sent to the address `0x9D70AC39166ca154307a93fa6b595CF7962fe8e5`. The minimum tip amount is the greater of 0.000025 BNB or Transaction Fee \* 5%.
+{% endhint %}
 
 ### Endpoint <a href="#xian-liu" id="xian-liu"></a>
 
