@@ -91,3 +91,7 @@ curl -X POST 'http://frankfurt.solana.blockrazor.xyz:443/health' \
 {% endtab %}
 {% endtabs %}
 
+### Send Binary Transaction
+
+Send Binary Transaction supports submitting signed transactions in binary form without first converting them to Base64. This eliminates the overhead of encoding and decoding, and because the data packets are smaller, transactions are less likely to be splitted during transmission, reducing latency. See the [transaction construction example](./#jiao-yi-gou-jian-dai-ma-shi-li) for details.
+
