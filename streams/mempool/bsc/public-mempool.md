@@ -24,6 +24,16 @@ In blockchain networks, blocks are typically generated and broadcast by validato
 
 [BEF](../../../core-technology/blockchain-edge-fabric.md) is designed around this principle: it gathers the latest transactions in multiple core areas and continuously optimizes connections with high-value nodes in the network to receive new transactions as quickly as possible before forwarding them to user subscriptions. The goal is not just to reduce average latency, but also to maximize the ability to "see transactions as soon as possible."
 
+### Benchmark
+
+In our transaction reception latency benchmark, we compared BlockRazor with a regular Node in four regions: Dublin, Frankfurt, Tokyo, and Virginia. The evaluation was based on the time difference for clients receiving the same transaction from BlockRazor and regular Node among comparable samples.
+
+<table><thead><tr><th width="134.609375">Region</th><th>BlockRazor Lead Rate</th><th>Avg Lead</th><th>P90 Lead</th></tr></thead><tbody><tr><td>Dublin</td><td>84.0%</td><td>102.4 ms</td><td>221.0 ms</td></tr><tr><td>Frankfurt</td><td>99.7%</td><td>30.4 ms</td><td>67.7 ms</td></tr><tr><td>Tokyo</td><td>99.9%</td><td>148.6 ms</td><td>264.4 ms</td></tr><tr><td>Virginia</td><td>99.7%</td><td>62.0 ms</td><td>190.7 ms</td></tr></tbody></table>
+
+The results show that BlockRazor maintained a significant lead in all four regions. Its transaction reception lead rate exceeded 99% in Frankfurt, Tokyo, and Virginia, while its lead rate in Dublin was 84.0%. In terms of lead magnitude, BlockRazor's average lead time in different regions was approximately 102.4ms, 30.4ms, 148.6ms, and 62.0ms; under the P90 dimension, the lead magnitudes reached 221.0ms, 67.7ms, 264.4ms, and 190.7ms, respectively.
+
+The results above demonstrate that BlockRazor exhibits a stable priority reception capability in the transaction propagation chain, enabling it to capture transactions earlier than ordinary nodes in the vast majority of comparable samples.
+
 ### Endpoint
 
 <table><thead><tr><th width="160">Region</th><th>Availability Zone(AWS)</th><th>Relay Address</th></tr></thead><tbody><tr><td>Frankfurt</td><td>euc1-az2</td><td>35.157.64.49:50051</td></tr><tr><td>Tokyo</td><td>apne1-az4</td><td>54.249.93.63:50051</td></tr><tr><td>Ireland</td><td>euw1-az1</td><td>3.248.65.151:50051</td></tr><tr><td>Virginia</td><td>use1-az4</td><td>52.205.173.134:50051</td></tr></tbody></table>

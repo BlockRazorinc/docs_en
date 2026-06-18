@@ -12,6 +12,16 @@ NewBlocks distributes the latest block data based on [BEF](../../../core-technol
 * Block-level data analysis: Obtaining block headers, transaction lists, and next validator info for block research, node observation, and network state analysis.
 * Strategy data input: Serving as the confirmed data source for the trading system, it works in conjunction with capabilities such as Public Mempool and Transaction Submission to build a more complete monitoring and execution chain.
 
+### Benchmark
+
+In our benchmark on the latency of receiving new blocks, we compared BlockRazor with a regular Node in four regions: Dublin, Frankfurt, Tokyo, and Virginia. The evaluation was based on the time difference for clients receiving the same block from BlockRazor and node in the comparable sample.
+
+<table><thead><tr><th width="134.953125">Region</th><th width="201.30859375">BlockRazor Lead Rate</th><th>Avg Lead</th><th>P90 Lead</th></tr></thead><tbody><tr><td>Dublin</td><td>99.5%</td><td>80.4 ms</td><td>130.9 ms</td></tr><tr><td>Frankfurt</td><td>100.0%</td><td>111.1 ms</td><td>189.1 ms</td></tr><tr><td>Tokyo</td><td>100.0%</td><td>223.0 ms</td><td>645.3 ms</td></tr><tr><td>Virginia</td><td>100.0%</td><td>133.6 ms</td><td>351.8 ms</td></tr></tbody></table>
+
+The results show that BlockRazor maintained a consistent lead across all four regions. In the Frankfurt, Tokyo, and Virginia regions, BlockRazor achieved a 100% lead rate; in the Dublin region, the lead rate reached 99.5%. In terms of lead magnitude, BlockRazor's average lead time across different regions was approximately 80.4ms, 111.1ms, 223.0ms, and 133.6ms; under the P90 dimension, the lead magnitudes were 130.9ms, 189.1ms, 645.3ms, and 351.8ms, respectively.
+
+This indicates that BlockRazor is able to receive block data more consistently ahead of ordinary nodes when new blocks arrive.
+
 ### Endpoint
 
 <table><thead><tr><th width="160">Region</th><th>Availability Zone(AWS)</th><th>Relay Address</th></tr></thead><tbody><tr><td>Frankfurt</td><td>euc1-az2</td><td>35.157.64.49:50051</td></tr><tr><td>Tokyo</td><td>apne1-az4</td><td>54.249.93.63:50051</td></tr><tr><td>Ireland</td><td>euw1-az1</td><td>3.248.65.151:50051</td></tr><tr><td>Virginia</td><td>use1-az4</td><td>52.205.173.134:50051</td></tr></tbody></table>

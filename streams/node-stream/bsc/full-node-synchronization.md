@@ -20,6 +20,16 @@ The advantage of Full Node Synchronization is not just "helping nodes connect to
 If your goal is simply to obtain confirmed block data with low latency, Block Stream is usually sufficient.\
 If your system needs its local nodes to synchronize with the latest blocks and world state as quickly as possible, then full node synchronization would be more appropriate.
 
+### Benchmark
+
+We compared nodes connected to BlockRazor Relay with nodes not connected to Relay in four regions: Dublin, Frankfurt, Tokyo, and Virginia. The evaluation method was based on the block reception logs of nodes, comparing the time difference between the two nodes receiving the same block to verify the improvement effect of full node synchronization on the local full node synchronization speed.
+
+<table><thead><tr><th width="117.09765625">Region</th><th width="264.55859375">Relay-Connected Node Lead Rate</th><th>Avg Lead</th><th>P90 Lead</th></tr></thead><tbody><tr><td>Dublin</td><td>98.7%</td><td>51.9 ms</td><td>90 ms</td></tr><tr><td>Frankfurt</td><td>98.2%</td><td>72.0 ms</td><td>140 ms</td></tr><tr><td>Tokyo</td><td>99.4%</td><td>155.2 ms</td><td>312 ms</td></tr><tr><td>Virginia</td><td>99.6%</td><td>113.7 ms</td><td>326 ms</td></tr></tbody></table>
+
+The results show that nodes connected to the Relay exhibit a consistent advantage across all four regions. Based on matched block samples, the leading percentage of nodes connected to the Relay in Dublin, Frankfurt, Tokyo, and Virginia reached 98.7%, 98.2%, 99.4%, and 99.6%. This indicates that in the vast majority of comparable samples, nodes connected to the BlockRazor Relay synchronize to new blocks earlier, thus obtaining the latest on-chain state more quickly.
+
+In terms of lead time, the average lead time of nodes connected to the relay in the four regions is approximately 51.9ms, 72.0ms, 155.2ms, and 113.7ms, respectively; in the P90 dimension, the lead time reaches 90ms, 140ms, 312ms, and 326ms, respectively. This indicates that full-node synchronization not only improves the lead probability but also maintains a considerable synchronization advantage in higher quantile scenarios.
+
 ### Price
 
 The price is $800 per enode per month. Please go to the [Pricing](https://blockrazor.io/#/pricing) page to purchase.

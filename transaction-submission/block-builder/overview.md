@@ -4,7 +4,7 @@ description: Introduction to BlockRazor Block Builder and how to choose endpoint
 
 # Overview
 
-### hWhat is Block Builder?
+### What is Block Builder?
 
 Block Builder is a BSC block building service provided by BlockRazor. It maintains competitive block building and high block production success rate based on [BEF](../../core-technology/blockchain-edge-fabric.md) and Flow Coordination Engine. Block Builder currently ranks first in block production rate across the entire BSC chain. Real-time block production rate can be viewed at [https://dune.com/bnbchain/bnb-smart-chain-mev-stats](https://dune.com/bnbchain/bnb-smart-chain-mev-stats).
 
