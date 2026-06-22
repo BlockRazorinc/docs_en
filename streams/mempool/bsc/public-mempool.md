@@ -2,7 +2,7 @@
 
 ### What is BSC Public Mempool
 
-Public Mempool is the high-performance pending transaction stream provided by BlockRazor, used for low-latency subscription to unconfirmed transactions in public propagation.
+Public Mempool is a high-performance pending transaction stream based on [BEF](../../../core-technology/blockchain-edge-fabric.md), used for low-latency subscription to unconfirmed transactions in public propagation.
 
 In the EVM network, transactions typically propagate through the mempool before entering a block. The core value of the Public Mempool is to help users obtain publicly available pending transaction signals earlier and integrate these signals into their strategy systems with lower latency. It is commonly used to monitor public trading activity, track Smart Money behavior, identify new opportunities, and provide faster signal input for strategies such as backrun, copy trading, and sniping. For systems that rely on pending signals to drive trading decisions, seeing transactions earlier often means:
 
@@ -17,12 +17,6 @@ In the EVM network, transactions typically propagate through the mempool before 
 * Backrun Discovery: Identifying publicly trades that may trigger backrun opportunities, allowing more time for subsequent strategy evaluation and trade submission.
 * Sniping Opportunities: Capture the first signals in the open market as early as possible when new pools launch, liquidity injections occur, or target trades emerge.
 * Real-time data input for strategies: Serving as a real-time input source for the trading system, it can be used in conjunction with capabilities such as Block Stream, Node Stream, RPC, or Block Builder to build a more complete monitoring and execution project.
-
-### Why is BSC Public Mempool faster?
-
-In blockchain networks, blocks are typically generated and broadcast by validators, while the generation and propagation of transactions are more decentralized. Users, bots, project teams, and various nodes can all become the starting point for new transactions. Therefore, the competitiveness of Public Mempool depends not only on the location of node deployments but also on network connection paths, forwarding hops, and whether it can be located as close as possible to the earliest occurrence of a transaction.
-
-[BEF](../../../core-technology/blockchain-edge-fabric.md) is designed around this principle: it gathers the latest transactions in multiple core areas and continuously optimizes connections with high-value nodes in the network to receive new transactions as quickly as possible before forwarding them to user subscriptions. The goal is not just to reduce average latency, but also to maximize the ability to "see transactions as soon as possible."
 
 ### Benchmark
 
