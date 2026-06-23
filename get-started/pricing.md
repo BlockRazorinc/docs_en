@@ -1,20 +1,36 @@
 ---
 description: Introduces the pricing of BlockRazor products and services
+layout:
+  width: wide
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
 ---
 
 # Pricing
 
 {% hint style="info" %}
-BlockRazor's pricing system has been fully upgraded, separating the functionalities of the original multi-chain, multi-tier system into independent services. These services support individual subscriptions or bundled purchases with other services, lowering the subscription threshold while precisely matching user needs. See [Subscription Services](pricing.md#subscription-service) for details. Furthermore, new registered users can still enjoy multi-mode transaction sending services on Solana, BSC, Ethereum, and Base with zero barriers to entry. See [New Registered Users](pricing.md#new-registered-users) for details.
+BlockRazor's pricing system now supports purchasing individual services across chains, purchasing packages at a lower price, and purchasing on a daily basis.
+
+New registered users can still enjoy multi-mode transaction sending services on Solana, BSC, Ethereum, and Base with zero barriers to entry. See [New Registered Users](pricing.md#new-registered-users) for details.
 {% endhint %}
 
 ### Subscription service
 
 #### Personalized
-
-{% hint style="info" %}
-Users can freely combine and purchase services across chains. Stream-type services support configuring quantities or traffic package specifications, and also support daily purchases; see [Pricing](https://blockrazor.io/#/pricing) page for details.
-{% endhint %}
 
 {% tabs %}
 {% tab title="BSC" %}
