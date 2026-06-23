@@ -1,7 +1,7 @@
 ---
 description: Introduces the pricing of BlockRazor products and services
 layout:
-  width: wide
+  width: default
   title:
     visible: true
   description:
