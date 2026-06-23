@@ -42,10 +42,6 @@ Fast Submit is more suitable for users who already have a mature submission proc
 * **Trading Bot / Quant Team**: Team with specific requirements for execution speed, high-frequency submissions, and regional consistency.
 * **Wallets / DEXs**: Team aiming to optimize the user transaction submission experience without altering the existing sending logic.
 
-### Benchmark
-
-
-
 ### Access method
 
 Developers simply need to switch their existing HTTP submission requests to the dedicated Fast Submit domain. The integration process is as follows:
