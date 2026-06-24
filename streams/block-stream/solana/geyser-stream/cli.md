@@ -44,17 +44,17 @@ chmod +x client
 
 ```
 # Subscribe transaction
-./client -e "https://geyserstream-frankfurt.blockrazor.xyz" --x-token "$AUTH_TOKEN" subscribe --transactions --transactions-vote false --transactions-failed false
+./client -e "https://geyserstream-tokyo.blockrazor.xyz" --x-token "$AUTH_TOKEN" subscribe --transactions --transactions-vote false --transactions-failed false
 ```
 
 ```
 # Subscribe account
-./client -e "https://geyserstream-frankfurt.blockrazor.xyz" --x-token "$AUTH_TOKEN" subscribe --accounts --accounts-owner 11111111111111111111111111111111
+./client -e "https://geyserstream-tokyo.blockrazor.xyz" --x-token "$AUTH_TOKEN" subscribe --accounts --accounts-owner 11111111111111111111111111111111
 ```
 
 ```
 # Subscribe block
-./client -e "https://geyserstream-frankfurt.blockrazor.xyz" --x-token "$AUTH_TOKEN" subsc
+./client -e "https://geyserstream-tokyo.blockrazor.xyz" --x-token "$AUTH_TOKEN" subsc
 ```
 {% endstep %}
 {% endstepper %}
