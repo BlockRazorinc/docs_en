@@ -12,6 +12,17 @@ In the BSC Builder scenario, transaction quality depends on more than just trans
 
 Fast Submit does not change the transaction logic, nor does it require users to rewrite the existing submission process. It optimizes the submission link between the client and the Builder, allowing transactions to reach the Builder faster and making the submission link more stable under high load and cross-region scenarios, reducing the additional overhead caused by intermediate forwarding, proxy processing, and public network fluctuations.
 
+### Benchmark
+
+According to benchmark results, Fast Submit can reduce latency by about 50ms on intercontinental routes and about 20ms on inland cross-region routes.
+
+**1. For orderflow projects**\
+For orderflow projects such as DEXs and wallets, transaction send timing is not fully controllable. In this case, a shorter submission path means the transaction has a higher probability of entering the Builder’s processing window earlier, helping deliver an optimal 0-block inclusion experience for end users.\
+Using BSC’s current block time of about 450ms as a rough reference, 50ms and 20ms of latency reduction correspond to roughly 11% and 4.4% improvements in time-window efficiency. If block time further shortens to around 250ms in the future, the improvement could expand to about 20% and 8%.
+
+**2. For trading systems competing for transaction position**\
+For strategy-driven systems such as backrunning, sniping, and copy trading, the value of Fast Submit is not only a better chance of making the target block, but also that under the same competitive conditions and the same target Builder arrival time, it leaves more time available for strategy computation.
+
 ### Why is Fast Submit faster and more stable?
 
 **Dedicated HTTP domain**
@@ -25,14 +36,6 @@ In contrast, Fast Submit supports submitting requests via a dedicated HTTP domai
 In cross-regional scenarios, regular submission channels rely on public network paths, making them susceptible to routing fluctuations, link congestion, and network jitter. Especially during intercontinental transmissions, these unstable factors amplify request latency and volatility, reducing the consistency of the submission link.
 
 Fast Submit submits transactions to Block Builder via intercontinental dedicated network lines, minimizing the impact of public network instability on the request link and providing a more stable and lower latency submission experience.
-
-### Benchmark
-
-Benchmark shows that Fast Submit can significantly reduce submission path latency compared with the standard submission channel.&#x20;
-
-On intercontinental routes, latency can be reduced by about 50 ms, which can improve the transaction’s 0-block inclusion rate by about 11% under BSC’s current block time of around 450 ms. If block time further decreases to 250 ms in the future, the improvement could increase to about 20%.&#x20;
-
-On inland routes, latency can be reduced by about 20 ms, improving the transaction’s 0-block inclusion rate by about 4.4% under the current block time. If block time decreases to 250 ms in the future, the improvement could further increase to about 8%.
 
 ### What users is Fast Submit suitable for?
 
