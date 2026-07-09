@@ -67,23 +67,32 @@ sudo firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source address
 * "source address" is the IP of Relay which can be acquired from [Relay IP](full-node-synchronization.md#relay-ip)
 * The port for the Ethereum client to allow Relay access is generally set as the default, which is 30311. You can modify this based on your own node configuration.
 
-
-
 2. Reload the firewall configuration to make the changes take effect.
 
 ```
 sudo firewall-cmd --reload
 ```
 
-#### Step 3: Check the connection status（Enable the admin namespace in the Geth node as an example）
+#### Step 3: Set the Relay to a TrustedNode (taking a Geth node as an example)
+
+To ensure a continuous connection between the Geth node and the Relay, it is recommended to add the Relay Enode to the Geth node's config.toml file.
+
+1. In the config.toml file, locate the TrustedNodes field in Node.P2P and add the Relay Enode obtained in step 1.
+
+```scheme
+[Node.P2P]
+TrustedNodes = ["enode://b5b4e5aa8d8f4568af755af6da0d4642b6475d8d87c3470632bdecab8f54e4e2936ec8ae0d6f34cff8b052235e81a281912c17dfcdbf40d6d3c281b78ada4134"]
+```
+
+2. Restart the Geth node, specifying config.toml as the starting command: `--config config.toml`&#x20;
+
+#### Step 4: Check the connection status（Enable the admin namespace in the Geth node as an example）
 
 1. Wait for 10 minutes, access the Geth node, execute the curl command to check the connection status
 
 ```json
 curl -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"admin_peers","params":[],"id":1}' http://localhost:8545
 ```
-
-
 
 2. In the returned data, query the Relay Enode address (which can be copied from the Portal). If the address is found, it proves that the connection is successful.
 
