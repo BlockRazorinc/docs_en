@@ -101,6 +101,7 @@
     * [Get BlockStream](streams/block-stream/base/get-blockstream.md)
     * [Get FlashBlockStream](streams/block-stream/base/get-flashblockstream/README.md)
       * [ParseFlashBlock](streams/block-stream/base/get-flashblockstream/parseflashblock.md)
+    * [Get FlashBlockTransaction](streams/block-stream/base/get-flashblocktransaction.md)
 * [Node Stream](streams/node-stream/README.md)
   * [BSC](streams/node-stream/bsc/README.md)
     * [Full Node Synchronization](streams/node-stream/bsc/full-node-synchronization.md)
