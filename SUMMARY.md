@@ -33,6 +33,8 @@
     * [Searcher](transaction-submission/rpc/ethereum/searcher.md)
   * [Base](transaction-submission/rpc/base/README.md)
     * [eth\_sendRawTransaction](transaction-submission/rpc/base/eth_sendrawtransaction.md)
+  * [Robinhood Chain](transaction-submission/rpc/robinhood-chain/README.md)
+    * [eth\_sendRawTransaction](transaction-submission/rpc/robinhood-chain/eth_sendrawtransaction.md)
   * [Monad](transaction-submission/rpc/monad.md)
 * [Block Builder](transaction-submission/block-builder/README.md)
   * [Overview](transaction-submission/block-builder/overview.md)

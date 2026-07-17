@@ -134,7 +134,7 @@ sudo firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source address
 ```
 
 * "source address" is the IP of Relay which can be acquired from [Endpoint](cl-el-client-sync.md#endpoint)
-* "port" is the port that the EL client allows the relay to access. Users can modify it according to the default value based on the CL client type.
+* "port" is the port that the CL client allows the relay to access. Users can modify it according to the default value based on the CL client type.
 
 2. Reload the firewall configuration to make the changes take effect.
 

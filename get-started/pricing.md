@@ -49,6 +49,10 @@ New registered users can still enjoy multi-mode transaction sending services on 
 <table><thead><tr><th width="133.1015625">Service</th><th>Description</th><th width="150.23828125">Monthly Purchase</th><th>Daily Purchase</th></tr></thead><tbody><tr><td><a href="../streams/block-stream/base/get-flashblockstream/">FlashBlock Stream</a></td><td>Low-latency acquisition of Base FlashBlock data</td><td>$250 / stream / month</td><td>$25 / stream / day</td></tr><tr><td><a href="../streams/block-stream/base/get-blockstream.md">Block Stream</a></td><td>Low-latency acquisition of Base Block data</td><td>$300 / stream / month</td><td>$30 / stream / day</td></tr><tr><td><a href="../transaction-submission/rpc/base/eth_sendrawtransaction.md">RPC-Send Tx</a></td><td>Low latency and high TPS for sending base transactions on-chain</td><td>$1000 / month</td><td>$100 / stream / day</td></tr></tbody></table>
 {% endtab %}
 
+{% tab title="Robinhood" %}
+<table><thead><tr><th width="136.328125">Service</th><th width="230.859375">Description</th><th>Monthly Purchase</th><th>Daily Purchase</th></tr></thead><tbody><tr><td>RPC-Send Tx</td><td>Low latency and high TPS for sending transactions on Robinhood</td><td>$1000 / month</td><td>$100 / stream / day</td></tr></tbody></table>
+{% endtab %}
+
 {% tab title="General" %}
 <table><thead><tr><th width="129.40234375">Service</th><th width="192.92578125">Description</th><th>Monthly Purchase</th><th>Daily Purchase</th></tr></thead><tbody><tr><td>Dedicated Channel</td><td>Dedicated technical support</td><td>$1000 / month</td><td>$100 / day</td></tr></tbody></table>
 {% endtab %}
@@ -102,7 +106,7 @@ BlockRazor offers new registered users multi-mode transaction sending services o
 
 #### RPC
 
-<table><thead><tr><th width="125.16015625">Chain</th><th>Methods</th><th>Limit</th></tr></thead><tbody><tr><td>BSC</td><td><ul><li><a href="../transaction-submission/rpc/bsc/eth_sendrawtransaction.md"><code>eth_sendRawTransaction</code></a></li><li><a href="../transaction-submission/rpc/bsc/eth_sendmevbundle/"><code>eth_sendMevBundle</code></a></li><li>Other JSON RPC methods</li></ul></td><td>-</td></tr><tr><td>Ethereum</td><td><ul><li><a href="../transaction-submission/rpc/ethereum/eth_sendrawtransaction.md"><code>eth_sendRawTransaction</code></a></li><li><a href="../transaction-submission/rpc/ethereum/eth_sendbundle.md"><code>eth_sendBundle</code></a></li><li>Other JSON RPC methods</li></ul></td><td>-</td></tr><tr><td>Base</td><td><ul><li><a href="../transaction-submission/rpc/base/eth_sendrawtransaction.md"><code>eth_sendRawTransaction</code></a></li></ul></td><td>1 Tx / 5s</td></tr></tbody></table>
+<table><thead><tr><th width="125.16015625">Chain</th><th>Methods</th><th>Limit</th></tr></thead><tbody><tr><td>BSC</td><td><ul><li><a href="../transaction-submission/rpc/bsc/eth_sendrawtransaction.md"><code>eth_sendRawTransaction</code></a></li><li><a href="../transaction-submission/rpc/bsc/eth_sendmevbundle/"><code>eth_sendMevBundle</code></a></li><li>Other JSON RPC methods</li></ul></td><td>-</td></tr><tr><td>Ethereum</td><td><ul><li><a href="../transaction-submission/rpc/ethereum/eth_sendrawtransaction.md"><code>eth_sendRawTransaction</code></a></li><li><a href="../transaction-submission/rpc/ethereum/eth_sendbundle.md"><code>eth_sendBundle</code></a></li><li>Other JSON RPC methods</li></ul></td><td>-</td></tr><tr><td>Base</td><td><ul><li><a href="../transaction-submission/rpc/base/eth_sendrawtransaction.md"><code>eth_sendRawTransaction</code></a></li></ul></td><td>1 Tx / 5s</td></tr><tr><td>Robinhood</td><td><ul><li><a href="../transaction-submission/rpc/robinhood-chain/eth_sendrawtransaction.md"><code>eth_sendRawTransaction</code></a></li></ul></td><td>1 Tx / 5s</td></tr></tbody></table>
 
 #### Block Builder
 

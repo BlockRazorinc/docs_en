@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Send BackBundle
 
 ### Introduction
