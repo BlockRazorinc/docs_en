@@ -12,10 +12,9 @@ Robinhood Chain Stats：[https://robinhoodchain.blockscout.com/stats](https://ro
 
 ### Price
 
-| User Type            | Limit      | Price     |
-| -------------------- | ---------- | --------- |
-| New registered users | 1 Tx / 5s  | 免費        |
-| Paid users           | 5 Txs / 1s | $1000 / 月 |
+| User Type            | Limit      | Price |
+| -------------------- | ---------- | ----- |
+| New registered users | 20 Tx / 1s | 免費    |
 
 ### Benchmark
 
