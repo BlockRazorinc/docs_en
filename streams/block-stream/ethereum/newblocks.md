@@ -14,7 +14,7 @@ NewBlocks distributes the latest block data based on [BEF](../../../core-technol
 
 ### Endpoint
 
-<table><thead><tr><th width="160">Region</th><th>Availability Zone(AWS)</th><th>Relay Address</th></tr></thead><tbody><tr><td>Frankfurt</td><td>euc1-az2</td><td>35.157.64.49:50061</td></tr><tr><td>Tokyo</td><td>apne1-az4</td><td>54.249.93.63:50061</td></tr><tr><td>Virginia</td><td>use1-az4</td><td>52.205.173.134:50061</td></tr></tbody></table>
+<table><thead><tr><th width="160">Region</th><th>Availability Zone(AWS)</th><th>Relay Address</th></tr></thead><tbody><tr><td>Frankfurt</td><td>euc1-az2</td><td>64.130.47.75:50061</td></tr><tr><td>Tokyo</td><td>apne1-az4</td><td>63.254.162.18:50061</td></tr><tr><td>Virginia</td><td>use1-az4</td><td>208.91.105.204:50061</td></tr></tbody></table>
 
 ### Price
 
