@@ -26,6 +26,10 @@ If your system needs its local nodes to synchronize with the latest blocks and w
 
 The price is $800 per enode per month. Please go to the [Pricing](https://blockrazor.io/#/pricing) page to purchase.
 
+### Relay IP
+
+<table><thead><tr><th width="160">Region</th><th>Availability Zone(AWS)</th><th>Relay Address</th></tr></thead><tbody><tr><td>Frankfurt</td><td>euc1-az2</td><td>64.130.47.75:50051</td></tr><tr><td>Tokyo</td><td>apne1-az4</td><td>63.254.162.18:50051</td></tr><tr><td>Dublin</td><td>euw1-az1</td><td>141.98.217.82:50051</td></tr><tr><td>Virginia</td><td>use1-az4</td><td>208.91.105.204:50051</td></tr></tbody></table>
+
 ### EL Client User Guide
 
 #### Step 1: Purchase Node Stream
@@ -45,10 +49,10 @@ If your EL client is deployed on AWS or other cloud services, you should additio
 1. Access your own EL client's server and execute commands to set up the firewall to allow Relay access.
 
 ```bash
-sudo firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source address="35.157.64.49" port port="30303" protocol="tcp" accept'
+sudo firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source address="63.254.162.18" port port="30303" protocol="tcp" accept'
 ```
 
-* "source address" is the IP of Relay which can be acquired from [Endpoint](cl-el-client-sync.md#endpoint)
+* "source address" is the IP of Relay which can be acquired from [Relay IP](cl-el-client-sync.md#relay-ip)
 * The port for the EL client to allow Relay access is generally set as the default, which is 30303. You can modify this based on your own node configuration
 
 2. Reload the firewall configuration to make the changes take effect.
@@ -128,12 +132,12 @@ If your CL client is deployed on AWS or other cloud services, you should additio
 1. Access your own CL client's server and execute commands to set up the firewall to allow Relay access.
 
 ```bash
-sudo firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source address="35.157.64.49" port port="9000" protocol="tcp" accept'
+sudo firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source address="63.254.162.18" port port="9000" protocol="tcp" accept'
 
-sudo firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source address="35.157.64.49" port port="9000" protocol="udp" accept'
+sudo firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source address="63.254.162.18" port port="9000" protocol="udp" accept'
 ```
 
-* "source address" is the IP of Relay which can be acquired from [Endpoint](cl-el-client-sync.md#endpoint)
+* "source address" is the IP of Relay which can be acquired from [Relay IP](cl-el-client-sync.md#relay-ip)
 * "port" is the port that the CL client allows the relay to access. Users can modify it according to the default value based on the CL client type.
 
 2. Reload the firewall configuration to make the changes take effect.
