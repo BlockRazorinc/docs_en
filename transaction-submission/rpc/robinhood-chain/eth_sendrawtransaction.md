@@ -39,10 +39,10 @@ Performance was evaluated by comparing the ratio of transactions that were ultim
 ```bash
 curl https://robinhood.blockrazor.io \
   -H 'content-type: application/json' \
-  -H 'Authorization: <auth-token>' \
+  -H 'Authorization: Bearer <auth-token>' \
   --data '{
   "jsonrpc": "2.0",
-  "id": "1",
+  "id": 1,
   "method": "eth_sendRawTransaction",
   "params": ["0x…9c"]
 }'
@@ -66,7 +66,7 @@ curl https://robinhood.blockrazor.io \
   "id":"1",
   "error":{
     "code":-32000,
-    "message":"nonce too low: next nonce 57, tx nonce 56"
+    "message":"auth is invalid"
     }
 }
 ```
