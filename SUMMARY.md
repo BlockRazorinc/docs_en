@@ -35,6 +35,8 @@
     * [eth\_sendRawTransaction](transaction-submission/rpc/base/eth_sendrawtransaction.md)
   * [Robinhood Chain](transaction-submission/rpc/robinhood-chain/README.md)
     * [eth\_sendRawTransaction](transaction-submission/rpc/robinhood-chain/eth_sendrawtransaction.md)
+    * [eth\_sendBatch](transaction-submission/rpc/robinhood-chain/eth_sendbatch.md)
+    * [Send Tx](transaction-submission/rpc/robinhood-chain/send-tx.md)
   * [Monad](transaction-submission/rpc/monad.md)
 * [Block Builder](transaction-submission/block-builder/README.md)
   * [Overview](transaction-submission/block-builder/overview.md)
