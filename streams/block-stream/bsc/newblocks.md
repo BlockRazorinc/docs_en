@@ -119,7 +119,7 @@ func main() {
 
 The code of `relay.proto` is as follows:
 
-```
+```go
 syntax = "proto3";
 
 package blockchain;
@@ -171,6 +171,7 @@ message BlockHeader{
   uint64 blob_gas_used = 18;
   uint64 excess_blob_gas = 19;
   string parent_beacon_block_root = 20;
+  string requests_hash = 21;
 }
 
 message NextValidator{
