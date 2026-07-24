@@ -1,7 +1,7 @@
 # Send Bundle
 
 {% hint style="warning" %}
-Solana's bundle sending service is not bound to the subscription plan, with rate limit default to 3 TPS. API key could be required from [Authentication](../../../../get-started/authentication.md). If you need to increase the TPS limit, please [contact](https://discord.com/invite/qqJuwRb8Nh) us and we will handle it as soon as possible.
+Solana's bundle sending service is not bound to the subscription plan and is not available by default. If you need to increase the BPS limit, please [contact](https://discord.com/invite/qqJuwRb8Nh) us and we will handle it as soon as possible.
 {% endhint %}
 
 `Send Bundle` is a bundle sending interface provided by BlockRazor for Solana, used to send signed transactions to the blockchain in bundle form with low latency.
