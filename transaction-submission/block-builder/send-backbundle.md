@@ -1,3 +1,9 @@
+---
+description: >-
+  This section introduces BlockRazor Block Builder's eth_sendBackBundle (0 Gwei)
+  and its integration method.
+---
+
 # Send BackBundle
 
 ### Introduction

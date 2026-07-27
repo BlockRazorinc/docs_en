@@ -1,3 +1,10 @@
+---
+description: >-
+  This section introduces the services, advantages, target users, and
+  integration methods of the BlockRazor Ethereum CL/EL client synchronization
+  feature.
+---
+
 # CL/EL Client Sync
 
 ### What is CL/EL client sync?

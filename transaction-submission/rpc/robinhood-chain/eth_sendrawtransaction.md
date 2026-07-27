@@ -1,3 +1,9 @@
+---
+description: >-
+  This section introduces the integration of eth_sendRawTransaction provided by
+  BlockRazor Robinhood Chain RPC
+---
+
 # eth\_sendRawTransaction
 
 {% hint style="info" %}

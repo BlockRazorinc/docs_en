@@ -1,3 +1,7 @@
+---
+description: Introducing the CLI request methods of BlockRazor Solana Geyser Stream
+---
+
 # CLI
 
 ### Quick Start

@@ -1,5 +1,7 @@
 ---
-description: Introduce how to obtain BlockRazor auth
+description: >-
+  This section explains how to obtain the auth information for BlockRazor, which
+  is used to send requests to the API.
 ---
 
 # Authentication

@@ -1,3 +1,9 @@
+---
+description: >-
+  This section introduces a Rust request example for Send Bundle in BlockRazor
+  Solana Fast mode.
+---
+
 # Rust
 
 #### 請求示例 <a href="#qing-qiu-shi-li" id="qing-qiu-shi-li"></a>

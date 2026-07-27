@@ -1,3 +1,9 @@
+---
+description: >-
+  Introducing the Broadcast Tx interface and integration method for BlockRazor
+  Ethereum Fast mode.
+---
+
 # Broadcast Tx
 
 ### What is Broadcast Tx

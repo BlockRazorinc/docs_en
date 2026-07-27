@@ -1,3 +1,7 @@
+---
+description: Introducing the Keep Alive integration method of BlockRazor Solana Fast mode
+---
+
 # Keep Alive
 
 Send post request to the health endpoint to keep connection alive, the request is as follows:

@@ -1,3 +1,10 @@
+---
+description: >-
+  This section introduces BlockRazor's core technology, Blockchain Edge Fabric,
+  including its core concepts, architectural components, target user, and role
+  within the product ecosystem
+---
+
 # Blockchain Edge Fabric
 
 Blockchain Edge Fabric (BEF) is BlockRazor’s blockchain-native edge infrastructure system built for high-performance blockchain propagation scenarios.

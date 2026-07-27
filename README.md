@@ -1,5 +1,7 @@
 ---
-description: Introduce BlockRazor and the services it provides
+description: >-
+  Introduce BlockRazor, its target users, and the services it provides,
+  including Transaction Submission and Streams.
 ---
 
 # About BlockRazor

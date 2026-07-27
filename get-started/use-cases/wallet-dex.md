@@ -1,7 +1,8 @@
 ---
 description: >-
-  Pain points for wallets and decentralized exchanges, and how they can use
-  BlockRazor’s services.
+  This section introduces the pain points of wallets/dexs in transaction sending
+  scenarios and how to solve these pain points by using Blockrazor services,
+  including RPC and Fast mode
 ---
 
 # Wallet / DEX

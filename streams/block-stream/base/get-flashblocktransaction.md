@@ -1,3 +1,9 @@
+---
+description: >-
+  Introduction to the BlockRazor Base Get FlashBlockTransaction service and its
+  access methods
+---
+
 # Get FlashBlockTransaction
 
 ### What is Base Get FlashBlockTransaction

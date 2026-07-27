@@ -1,3 +1,7 @@
+---
+description: Introduction to the method to parse BlockRazor Base FlashBlock
+---
+
 # ParseFlashBlock
 
 The parsing method for FlashBlock is as follows:

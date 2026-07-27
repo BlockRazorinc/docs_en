@@ -1,3 +1,9 @@
+---
+description: >-
+  This section introduces the integration of eth_sendBatch provided by
+  BlockRazor Robinhood Chain RPC
+---
+
 # eth\_sendBatch
 
 {% hint style="info" %}

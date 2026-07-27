@@ -1,3 +1,9 @@
+---
+description: >-
+  This section introduces the services, application scenarios, advantages, and
+  access methods of BlockRazor BSC Private Mempool.
+---
+
 # Private Mempool
 
 ### What is BSC Private Mempool

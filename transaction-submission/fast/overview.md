@@ -1,5 +1,5 @@
 ---
-description: Introduction to Fast Mode of BlockRazor
+description: Introducing BlockRazor Fast mode and its applicable users
 ---
 
 # Overview

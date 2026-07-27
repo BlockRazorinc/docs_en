@@ -1,3 +1,9 @@
+---
+description: >-
+  This section introduces the services, target users, advantages, and
+  integration methods of BlockRazor Solana Shred Stream.
+---
+
 # Shred Stream
 
 ### What is Shred Stream

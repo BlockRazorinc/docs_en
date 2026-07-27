@@ -1,3 +1,9 @@
+---
+description: >-
+  Introducing BlockRazor's Streams, the capabilities Streams provide, and how to
+  choose a Stream.
+---
+
 # Overview
 
 ### What are Streams

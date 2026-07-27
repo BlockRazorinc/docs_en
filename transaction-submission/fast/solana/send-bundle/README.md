@@ -1,3 +1,9 @@
+---
+description: >-
+  Introducing the integration method of BlockRazor Solana's Send Bundle in Fast
+  mode.
+---
+
 # Send Bundle
 
 {% hint style="warning" %}

@@ -1,3 +1,9 @@
+---
+description: >-
+  Introducing the integration method of BlockRazor Solana's Send Batch in Fast
+  mode.
+---
+
 # Send Batch
 
 {% hint style="warning" %}

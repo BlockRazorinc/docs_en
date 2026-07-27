@@ -1,3 +1,7 @@
+---
+description: Introduction to Priority Fee & Tips for BlockRazor Solana Fast Mode
+---
+
 # Priority Fee & Tip
 
 ### **Priority** Fee <a href="#priority-fee-and-tip" id="priority-fee-and-tip"></a>

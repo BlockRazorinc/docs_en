@@ -1,3 +1,9 @@
+---
+description: >-
+  This section introduces a JS request example for Send Bundle in BlockRazor
+  Solana Fast mode.
+---
+
 # JS
 
 #### Request Example <a href="#qing-qiu-shi-li" id="qing-qiu-shi-li"></a>

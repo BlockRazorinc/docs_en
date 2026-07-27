@@ -1,3 +1,9 @@
+---
+description: >-
+  This section introduces a Curl request example for Send Batch in BlockRazor
+  Solana Fast mode.
+---
+
 # Curl
 
 ### Request Example

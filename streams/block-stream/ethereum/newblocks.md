@@ -1,3 +1,9 @@
+---
+description: >-
+  This section introduces the services, application scenarios, and integration
+  methods of BlockRazor Ethereum NewBlocks.
+---
+
 # NewBlocks
 
 ### What is Ethereum NewBlocks

@@ -1,3 +1,9 @@
+---
+description: >-
+  This section introduces the services, application scenarios, and integration
+  methods of BlockRazor BSC Tx Trace.
+---
+
 # Tx Trace
 
 ### What is BSC Tx Trace

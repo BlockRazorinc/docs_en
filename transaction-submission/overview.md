@@ -1,5 +1,8 @@
 ---
-description: Introduce the Transaction Submission modes and how to choose the right one.
+description: >-
+  This section introduces the transaction submission modes, including RPC, Block
+  Builder, Fast, Gas Sponsor, and others, and explains how to choose the
+  appropriate mode based on the scenario.
 ---
 
 # Overview

@@ -1,5 +1,7 @@
 ---
-description: Pain points for Searcher, and how they can use BlockRazor’s services.
+description: >-
+  This section discusses the pain points of Searcher in handling bundles and how
+  to use Blockrazor services to enhance competitiveness.
 ---
 
 # Searcher

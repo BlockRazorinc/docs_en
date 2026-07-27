@@ -1,3 +1,9 @@
+---
+description: >-
+  Introducing the BlockRazor Base Get BlockStream service, its advantages, and
+  how to integrate it.
+---
+
 # Get BlockStream
 
 ### What is Base Get BlockStream

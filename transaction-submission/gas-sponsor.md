@@ -1,3 +1,7 @@
+---
+description: Introducing BlockRazor's Gas Sponsor, its core features, and access process.
+---
+
 # Gas Sponsor
 
 {% hint style="info" %}

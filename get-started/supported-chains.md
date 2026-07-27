@@ -1,5 +1,7 @@
 ---
-description: Introduce BlockRazor’s services from the blockchain perspective.
+description: >-
+  From a blockchain perspective, BlockRazor offers services that currently
+  support Solana, BSC, Ethereum, Base, and Robinhood.
 ---
 
 # Supported Chains
@@ -14,9 +16,13 @@ description: Introduce BlockRazor’s services from the blockchain perspective.
 
 ### Ethereum
 
-<table><thead><tr><th width="241.84765625">Service</th><th>Index</th></tr></thead><tbody><tr><td>Transaction Submission</td><td><ul><li><a href="../transaction-submission/rpc/ethereum/integration.md">RPC</a></li><li><a href="../transaction-submission/gas-sponsor.md">Gas Sponsor</a></li></ul></td></tr></tbody></table>
+<table><thead><tr><th width="241.84765625">Service</th><th>Index</th></tr></thead><tbody><tr><td>Transaction Submission</td><td><ul><li><a href="../transaction-submission/rpc/ethereum/integration.md">RPC</a></li><li>Fast</li><li><a href="../transaction-submission/gas-sponsor.md">Gas Sponsor</a></li></ul></td></tr><tr><td>Streams</td><td><ul><li><a href="../streams/mempool/ethereum/public-mempool.md">Public Mempool</a></li><li><a href="../streams/block-stream/ethereum/newblocks.md">Block Stream</a></li><li><a href="../streams/node-stream/ethereum/cl-el-client-sync.md">Node Stream</a></li></ul></td></tr></tbody></table>
 
 ### Base
 
 <table><thead><tr><th width="240.02734375">Service</th><th>Index</th></tr></thead><tbody><tr><td>Transaction Submission</td><td><ul><li><a href="../transaction-submission/fast/base/eth_sendrawtransaction.md">RPC</a></li><li><a href="../transaction-submission/fast/base/eth_sendrawtransaction.md">Fast</a></li></ul></td></tr><tr><td>Streams</td><td><ul><li><a href="../streams/block-stream/base/get-blockstream.md">Block Stream</a></li></ul></td></tr></tbody></table>
+
+### Robinhood Chain
+
+<table><thead><tr><th width="239">Service</th><th>Index</th></tr></thead><tbody><tr><td>Transaction Submission</td><td><ul><li><a href="../transaction-submission/rpc/robinhood-chain/eth_sendrawtransaction.md">RPC</a></li></ul></td></tr></tbody></table>
 

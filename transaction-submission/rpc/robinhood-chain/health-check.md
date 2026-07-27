@@ -1,3 +1,9 @@
+---
+description: >-
+  This section introduces the integration of Health Check method provided by
+  BlockRazor Robinhood Chain RPC
+---
+
 # Health Check
 
 Send post request to the health endpoint to keep connection alive, the request is as follows:

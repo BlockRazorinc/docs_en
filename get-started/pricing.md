@@ -1,5 +1,8 @@
 ---
-description: Introduces the pricing of BlockRazor products and services
+description: >-
+  This section introduces the pricing for subscription services (personalized
+  and packages), and the services that new registered users can enjoy with zero
+  minimum purchase requirem
 layout:
   width: default
   title:

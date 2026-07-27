@@ -1,3 +1,9 @@
+---
+description: >-
+  This section introduces the services, advantages, target users, and access
+  methods for BlockRazor BSC full node synchronization.
+---
+
 # Full Node Synchronization
 
 ### What is Full Node Synchronization

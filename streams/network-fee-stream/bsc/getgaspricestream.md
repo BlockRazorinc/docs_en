@@ -1,3 +1,7 @@
+---
+description: Introducing the access method of BlockRazor BSC GetGasPriceStream
+---
+
 # GetGasPriceStream
 
 ### Introduction

@@ -1,3 +1,9 @@
+---
+description: >-
+  Introducing the BlockRazor Base Get FlashBlockStream service, its advantages,
+  and how to access it.
+---
+
 # Get FlashBlockStream
 
 ### What is Base Get FlashBlockStream

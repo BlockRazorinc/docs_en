@@ -1,3 +1,9 @@
+---
+description: >-
+  This section introduces a Go request example for Send Batch in BlockRazor
+  Solana Fast mode.
+---
+
 # Go
 
 ### Request Example

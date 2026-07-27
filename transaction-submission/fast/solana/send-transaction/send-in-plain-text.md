@@ -1,7 +1,7 @@
 ---
 description: >-
-  Introduction to Send Transaction v2 of BlockRazor Solana Fast mode and
-  integration methods
+  Introduce the integration of 'Send Transaction in Plain Text' in BlockRazor
+  Solana Fast mode
 ---
 
 # Send in Plain Text

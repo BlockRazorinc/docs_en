@@ -1,5 +1,7 @@
 ---
-description: Introduction to Broadcast Tx of BlockRazor and integration methods
+description: >-
+  Introducing the Broadcast Tx interface and integration method for BlockRazor
+  BSC Fast mode.
 ---
 
 # Broadcast Tx

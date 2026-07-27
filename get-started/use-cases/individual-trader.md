@@ -1,5 +1,7 @@
 ---
-description: Pain points for Individual Trader, and how they can use BlockRazor’s services.
+description: >-
+  This section addresses the pain points of individual traders and explains how
+  to add BlockRazor RPC to your wallet.
 ---
 
 # Individual Trader

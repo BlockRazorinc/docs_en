@@ -1,5 +1,8 @@
 ---
-description: Pain points for Trading Bot, and how they can use BlockRazor’s services.
+description: >-
+  This section introduces the pain points of Trading Bots in signal listening
+  and transaction sending scenarios, and how to use Blockrazor to extend and
+  accelerate signal listening and transactions
 ---
 
 # Trading Bot

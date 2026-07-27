@@ -1,5 +1,7 @@
 ---
-description: Introduction to BlockRazor Block Builder and how to choose endpoint
+description: >-
+  Introducing BlockRazor Block Builder: Who is it suitable for? What
+  capabilities does it provide? And how to choose endpoint?
 ---
 
 # Overview

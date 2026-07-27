@@ -1,5 +1,7 @@
 ---
-description: Introduce BlockRazor RPC’s services, users, and advantages.
+description: >-
+  This article introduces what BlockRazor RPC is, what services it provides,
+  which users it is suitable for, and why you should choose BlockRazor RPC.
 ---
 
 # Overview

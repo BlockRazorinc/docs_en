@@ -1,3 +1,9 @@
+---
+description: >-
+  Introducing the integration method of 'Send Batch in Binary' in BlockRazor
+  Solana Fast mode.
+---
+
 # Send in Binary
 
 `Send in Binary` is a batch sending interface provided by BlockRazor for Solana, used to send signed transactions to the blockchain in batch form with low latency. A maximum of 25 transactions can be sent in a single batch.

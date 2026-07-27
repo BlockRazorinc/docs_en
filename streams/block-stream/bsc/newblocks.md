@@ -1,3 +1,9 @@
+---
+description: >-
+  Introducing the services, application scenarios, and integration methods of
+  BlockRazor BSC NewBlocks.
+---
+
 # NewBlocks
 
 ### What is BSC NewBlocks

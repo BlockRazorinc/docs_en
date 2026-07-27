@@ -1,7 +1,7 @@
 ---
 description: >-
-  Pain points for Algorithmic Trading, and how they can use BlockRazor’s
-  services.
+  This section introduces the pain points of quantitative trading systems and
+  explains how to use Blockrazor services to improve on-chain certainty.
 ---
 
 # Algorithmic Trading

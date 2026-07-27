@@ -1,3 +1,9 @@
+---
+description: >-
+  This section introduces a Rust request example for Send Batch in BlockRazor
+  Solana Fast mode.
+---
+
 # Rust
 
 ### Request Example
