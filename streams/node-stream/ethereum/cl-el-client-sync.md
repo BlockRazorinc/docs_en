@@ -35,7 +35,7 @@ The price is $800 per enode per month. Please go to the [Pricing](https://blockr
 
 ### Relay IP
 
-<table><thead><tr><th width="160">Region</th><th>Availability Zone(AWS)</th><th>Relay Address</th></tr></thead><tbody><tr><td>Frankfurt</td><td>euc1-az2</td><td>64.130.47.75:50051</td></tr><tr><td>Tokyo</td><td>apne1-az4</td><td>63.254.162.18:50051</td></tr><tr><td>Dublin</td><td>euw1-az1</td><td>141.98.217.82:50051</td></tr><tr><td>Virginia</td><td>use1-az4</td><td>208.91.105.204:50051</td></tr></tbody></table>
+<table><thead><tr><th width="160">Region</th><th>Relay Address</th></tr></thead><tbody><tr><td>Frankfurt</td><td>64.130.47.75:50051</td></tr><tr><td>Tokyo</td><td>63.254.162.18:50051</td></tr><tr><td>Dublin</td><td>141.98.217.82:50051</td></tr><tr><td>Virginia</td><td>208.91.105.204:50051</td></tr></tbody></table>
 
 ### EL Client User Guide
 
