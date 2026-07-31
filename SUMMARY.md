@@ -4,7 +4,8 @@
 
 * [About BlockRazor](README.md)
 * [Supported Chains](get-started/supported-chains.md)
-* [Pricing](get-started/pricing.md)
+* [Start for free](get-started/start-for-free.md)
+* [Subscription Service](get-started/subscription-service.md)
 * [Authentication](get-started/authentication.md)
 * [Use Cases](get-started/use-cases/README.md)
   * [Wallet / DEX](get-started/use-cases/wallet-dex.md)
