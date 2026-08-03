@@ -10,9 +10,9 @@ description: Introducing the access method of BlockRazor Solana Get TransactionF
 
 ### Limit
 
-| User Type | Limit  | Price        |
-| --------- | ------ | ------------ |
-| paid user | 10 qps | $300 / month |
+| User Type | Limit  | Price        | Action                                                                                                                                                                                                         |
+| --------- | ------ | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| paid user | 10 QPS | $300 / month | <a href="https://blockrazor.io/#/login?redirect=pricing&#x26;purchaseMode=personalized&#x26;chain=solana&#x26;serviceId=solana_network_fee_stream&#x26;billing=day" class="button primary small">Subscribe</a> |
 
 ### Request Parameter
 

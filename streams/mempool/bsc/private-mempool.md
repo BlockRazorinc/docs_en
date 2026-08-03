@@ -56,7 +56,7 @@ For Details, see [Bundle](../../../transaction-submission/rpc/bsc/eth_sendmevbun
 
 ### Price
 
-The monthly price is $1000; ​​please visit the [Pricing](https://blockrazor.io/#/pricing) page to purchase. Two data streams are allowed per region.
+The price is $100 / day and $1000 / month. 2 data streams are allowed per region. <a href="https://blockrazor.io/#/login?redirect=pricing&#x26;purchaseMode=personalized&#x26;chain=bsc&#x26;serviceId=bsc_private_mempool&#x26;billing=day" class="button primary small">Subscribe</a>
 
 ### Endpoint
 

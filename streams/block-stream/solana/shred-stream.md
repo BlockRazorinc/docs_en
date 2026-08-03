@@ -55,7 +55,7 @@ If you need earlier transaction signals, choose Shred Stream; if you need more c
 
 ### Price
 
-The price is $500 per data stream per month. Please go to the [Pricing](https://blockrazor.io/#/pricing) page to purchase.
+The price is $50 / stream / day and $500 / stream / month. <a href="https://blockrazor.io/#/portal/pricing?redirect=pricing&#x26;purchaseMode=personalized&#x26;chain=solana&#x26;serviceId=solana_shreds_stream&#x26;billing=day" class="button primary small">Subscribe</a>
 
 ### Instruction
 

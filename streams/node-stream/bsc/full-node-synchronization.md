@@ -38,7 +38,7 @@ In terms of lead time, the average lead time of nodes connected to the relay in 
 
 ### Price
 
-The price is $800 per enode per month. Please go to the [Pricing](https://blockrazor.io/#/pricing) page to purchase.
+The price is $80 / enode / day and $800 / enode / month. <a href="https://blockrazor.io/#/login?redirect=pricing&#x26;purchaseMode=personalized&#x26;chain=bsc&#x26;serviceId=bsc_enode&#x26;billing=day" class="button primary small">Subscribe</a>
 
 ### Relay IP
 

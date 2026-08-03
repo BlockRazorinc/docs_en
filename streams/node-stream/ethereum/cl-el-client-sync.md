@@ -31,7 +31,7 @@ If your system needs its local nodes to synchronize with the latest blocks and w
 
 ### Price
 
-The price is $800 per enode per month. Please go to the [Pricing](https://blockrazor.io/#/pricing) page to purchase.
+The price is $80 / day and $800 / client / month. <a href="https://blockrazor.io/#/login?redirect=pricing&#x26;purchaseMode=personalized&#x26;chain=ethereum&#x26;serviceId=ethereum_enode&#x26;billing=day" class="button primary small">Subscribe</a>
 
 ### Relay IP
 

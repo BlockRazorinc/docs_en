@@ -27,7 +27,7 @@ It's important to note that while Broadcast Tx belongs to the Fast ecosystem, it
 
 ### Rate Limit
 
-<table><thead><tr><th width="203.09375">User Type</th><th>Limit</th><th>Price</th></tr></thead><tbody><tr><td>New registered users</td><td><p><code>SendTx</code></p><ul><li>TPS：10 Txs / 5s</li><li>Daily Tx Limit：10</li></ul></td><td>Free</td></tr><tr><td>Paid users</td><td><p><code>SendTx</code></p><ul><li>TPS：100 Txs / 5s</li><li>每日交易上限：100000</li></ul></td><td>$500 / month</td></tr></tbody></table>
+<table><thead><tr><th width="203.09375">User Type</th><th>Limit</th><th>Price</th></tr></thead><tbody><tr><td>New registered users</td><td><p><code>SendTx</code></p><ul><li>TPS：10 Txs / 5s</li><li>Daily Tx Limit：10</li></ul></td><td>Free</td></tr><tr><td>Paid users</td><td><p><code>SendTx</code></p><ul><li>TPS：100 Txs / 5s</li><li>每日交易上限：100000</li></ul></td><td>$50 / day<br>$500 / month<br><br><a href="https://blockrazor.io/#/login?redirect=pricing&#x26;purchaseMode=personalized&#x26;chain=ethereum&#x26;serviceId=ethereum_fast_tx&#x26;billing=day" class="button primary small">Subscribe</a></td></tr></tbody></table>
 
 ### SendTx
 

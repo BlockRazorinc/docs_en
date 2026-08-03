@@ -13,12 +13,10 @@ This method supports querying the current status of the bundle by bundle hash. P
 ### Price
 
 {% hint style="info" %}
-Users who purchase the Trace Bundle service can also access the Bundle Explorer in the console.
+Users who purchase the Trace Bundle service can also access the Bundle Explorer in the portal.
 {% endhint %}
 
-| User Type | Limit          | Price         |
-| --------- | -------------- | ------------- |
-| Paid User | 1000 txs / day | $1500 / month |
+<table><thead><tr><th width="131.859375">User Type</th><th width="179.0234375">Limit</th><th>Price</th><th>Action</th></tr></thead><tbody><tr><td>Paid User</td><td>1000 txs / day</td><td>$150 / day<br>$1500 / month</td><td><a href="https://blockrazor.io/#/login?redirect=pricing&#x26;purchaseMode=personalized&#x26;chain=bsc&#x26;serviceId=bsc_bundle_tracing&#x26;billing=day" class="button primary small">Subscribe</a></td></tr></tbody></table>
 
 ### Request Parameter
 

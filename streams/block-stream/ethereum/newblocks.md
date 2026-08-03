@@ -24,7 +24,7 @@ NewBlocks distributes the latest block data based on [BEF](../../../core-technol
 
 ### Price
 
-The price is $500 per data stream per month. Please go to the [Pricing](https://blockrazor.io/#/pricing) page to purchase.
+The price is $50 / day and $500 / stream / month. <a href="https://blockrazor.io/#/login?redirect=pricing&#x26;purchaseMode=personalized&#x26;chain=ethereum&#x26;serviceId=ethereum_block_stream&#x26;billing=day" class="button primary small">Subscribe</a>
 
 {% hint style="info" %}
 The number of data streams that can be subscribed to is calculated on a shared basis across all regions. For example, if you purchase one stream, you can only subscribe in one region; you will not be able to subscribe in other regions.

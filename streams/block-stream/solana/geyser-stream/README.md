@@ -35,10 +35,10 @@ High Stability: Operates across multiple cloud instances with seamless failover,
 ### Pricing
 
 {% hint style="info" %}
-Geyser Stream charges based on monthly data usage, with the price remaining consistent across new purchases, renewals, and additional data allowances.
+Geyser Stream charges based on monthly data usage, with the price remaining consistent across new purchases, renewals, and additional data allowances. <a href="https://blockrazor.io/#/login?redirect=pricing&#x26;purchaseMode=personalized&#x26;chain=solana&#x26;serviceId=solana_geyser_stream&#x26;billing=month" class="button primary small">Subscribe</a>
 {% endhint %}
 
-<table><thead><tr><th width="210.55859375">Periodic Data Allowance</th><th width="136.5546875">Discount</th><th>Price / Cycle</th></tr></thead><tbody><tr><td>5 TiB</td><td>100%</td><td>$250</td></tr><tr><td>10 TiB</td><td>100%</td><td>$500</td></tr><tr><td>50 TiB</td><td>100%</td><td>$2500</td></tr><tr><td>100 TiB</td><td>95%</td><td>$4750</td></tr><tr><td>150 TiB</td><td>90%</td><td>$6750</td></tr><tr><td>200 TiB</td><td>85%</td><td>$8500</td></tr><tr><td>250 TiB</td><td>80%</td><td>$10000</td></tr></tbody></table>
+<table data-search="false"><thead><tr><th width="210.109375">Periodic Data Allowance</th><th width="136.5546875">Discount</th><th>Price / Cycle</th></tr></thead><tbody><tr><td>5 TiB</td><td>100%</td><td>$250</td></tr><tr><td>10 TiB</td><td>100%</td><td>$500</td></tr><tr><td>50 TiB</td><td>100%</td><td>$2500</td></tr><tr><td>100 TiB</td><td>95%</td><td>$4750</td></tr><tr><td>150 TiB</td><td>90%</td><td>$6750</td></tr><tr><td>200 TiB</td><td>85%</td><td>$8500</td></tr><tr><td>250 TiB</td><td>80%</td><td>$10000</td></tr></tbody></table>
 
 #### Procurement Instructions
 

@@ -10,7 +10,7 @@ description: Introducing the access method of BlockRazor BSC GetAllGasPriceStrea
 
 ### Price
 
-The price is $300 per data stream per month. Please go to the [Pricing](https://blockrazor.io/#/pricing) page to purchase.
+The price is $30 / day and $300 / month. <a href="https://blockrazor.io/#/login?redirect=pricing&#x26;purchaseMode=personalized&#x26;chain=bsc&#x26;serviceId=bsc_fee_stream&#x26;billing=day" class="button primary small">Subscribe</a>
 
 ### Request Parameter
 
