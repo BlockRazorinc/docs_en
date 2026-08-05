@@ -1,0 +1,122 @@
+# Sequencer Feed
+
+### What is Sequencer Feed?
+
+The Sequencer Feed is a real-time data stream pushed by the Robinhood Chain Sequencer. Nodes subscribe to the Feed via WebSocket to quickly receive block data and keep track of the latest on-chain status.
+
+For node operators, e.g. searchers, the transmission speed and stability of the Sequencer Feed directly impact the speed at which nodes catch up with blocks and update their state. When the official Feed endpoint experiences issues such as network latency, network jitter, or unstable connections, nodes may fail to receive the latest data in a timely manner, resulting in node height lag and data update delays.
+
+### Why BlockRazor Sequencer Feed
+
+BlockRazor Sequencer Feed provides Robinhood Chain nodes with a more stable and efficient Sequencer Feed access service.
+
+Compared to directly connecting to the official feed endpoint, BlockRazor Sequencer Feed reduces latency caused by network jitter and connection interruptions during feed synchronization by using the nearest access point and optimizing the transmission path.
+
+Furthermore, the BlockRazor Sequencer Feed is compatible with the official standard access method. Nodes only need to replace the Feed URL to receive the latest data faster and more stably, reducing block tracking latency and keeping the on-chain state synchronized in real time.
+
+### Benchmark
+
+We established WSS connections with both the Robinhood Chain Sequencer Feed and the BlockRazor Sequencer Feed using the same test client, comparing the relative latency of receiving blocks from both. The Sequencer Feed that received the block first had a relative latency of 0ms, while the Sequencer Feed that received the block later had a relative latency equal to the difference in timestamps between the received blocks. Specific data is as follows:
+
+<table><thead><tr><th width="299.70703125">Sequencer Feed</th><th>Win rate</th><th>P50</th><th>P90</th></tr></thead><tbody><tr><td>BlockRazor Sequencer Feed</td><td><strong>88.40%</strong></td><td><strong>0.000 ms</strong></td><td><strong>0.293 ms</strong></td></tr><tr><td>Robinhood Chain Sequencer Feed</td><td><strong>11.60%</strong></td><td><strong>6.520 ms</strong></td><td><strong>14.579 ms</strong></td></tr></tbody></table>
+
+In terms of latency distribution, BlockRazor not only arrives first on most blocks, but this lead is also highly consistent; in contrast, Robinhood Chain Sequencer Feed is more often in a lagging position and has more pronounced latency fluctuations.
+
+In summary, BlockRazor Sequencer Feed demonstrates significant advantages in block transmission speed, first-to-delivery rate, and latency stability, providing a more reliable first-to-delivery window for latency-sensitive transactions.
+
+### Price
+
+The price is $80 per unit per day and $800 per unit per month.
+
+### Endpoint
+
+wss://us.robinhood-feeder.blockrazor.io/ws/{authToken}
+
+### Usage Instructions
+
+{% stepper %}
+{% step %}
+**Subscribe BlockRazor Sequencer Feed**
+{% endstep %}
+
+{% step %}
+**Retrieve the auth from the portal and append it as the URI to the WSS URL.**
+
+wss://us.robinhood-feeder.blockrazor.io/ws/{authToken}
+{% endstep %}
+
+{% step %}
+**Stop the running Robinhood Chain node**
+
+The specific command depends on the current deployment method, such as Docker, Docker Compose, or systemd. Before stopping, it is recommended to ensure that the node data directory is correctly mounted to avoid losing existing synchronized data after restarting.
+{% endstep %}
+
+{% step %}
+**Add Feed URL**
+
+The following configuration can be found in the node startup command:
+
+```bash
+--node.feed.input.url=wss://feed.mainnet.chain.robinhood.com
+```
+
+replace it with BlockRazor Sequencer Feed：
+
+```bash
+--node.feed.input.url=wss://feed.mainnet.chain.robinhood.com
+--node.feed.input.url=wss://us.robinhood-feeder.blockrazor.io/ws/{authToken}
+```
+
+The complete mainnet startup example is as follows:
+
+```bash
+DATA_DIR="$HOME/rh/robinhood-nitro-data"
+
+docker run --rm -it \
+  -v "$DATA_DIR":/home/nitro/.arbitrum \
+  -v "$HOME/rh/config":/home/nitro/config \
+  -p 8547:8547 \
+  -p 8548:8548 \
+  offchainlabs/nitro-node:v3.11.2-3599aca \
+    --chain.info-files=/home/nitro/config/robinhood-chain-info.json \
+    --parent-chain.connection.url=<L1_EXECUTION_RPC_URL> \
+    --parent-chain.blob-client.beacon-url=<L1_BEACON_URL> \
+    --init.genesis-json-file=/home/nitro/config/robinhood-genesis.json \
+    --node.feed.input.url=wss://<BLOCKRAZOR_FEED_URL> \
+    --http.addr=0.0.0.0 \
+    --http.port=8547 \
+    --http.api=net,web3,eth
+```
+{% endstep %}
+
+{% step %}
+**Restart the node**
+
+After saving the configuration and restarting the node, the node will receive Robinhood Sequencer data via the BlockRazor Sequencer Feed.
+
+Check the node logs to confirm:
+
+* BlockRazor Feed connection successful
+* No persistent reconnection, timeout, or WebSocket error.
+* The node continuously receives the latest Sequencer data.
+* Node height is keeping up with Robinhood Chain
+{% endstep %}
+
+{% step %}
+**Verify node status**
+
+Check synchronization status:
+
+```bash
+curl -d '{"id":0,"jsonrpc":"2.0","method":"eth_syncing","params":[]}' \
+  -H "Content-Type: application/json" \
+  http://localhost:8547
+```
+
+After full synchronization, eth\_syncing should return:
+
+```bash
+false
+```
+{% endstep %}
+{% endstepper %}
