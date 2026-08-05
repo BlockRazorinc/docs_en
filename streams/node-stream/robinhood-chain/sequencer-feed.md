@@ -18,7 +18,21 @@ Furthermore, the BlockRazor Sequencer Feed is compatible with the official stand
 
 We established WSS connections with both the Robinhood Chain Sequencer Feed and the BlockRazor Sequencer Feed using the same test client, comparing the relative latency of receiving blocks from both. The Sequencer Feed that received the block first had a relative latency of 0ms, while the Sequencer Feed that received the block later had a relative latency equal to the difference in timestamps between the received blocks. Specific data is as follows:
 
-<table><thead><tr><th>Sequencer Feed</th><th width="115.6171875">Win rate</th><th width="116.63671875">P50</th><th width="115.63671875">P90</th><th width="112.65234375">P95</th><th width="121.796875">P99</th></tr></thead><tbody><tr><td>BlockRazor Sequencer Feed</td><td><strong>88.40%</strong></td><td><strong>0.000 ms</strong></td><td><strong>0.293 ms</strong></td><td><strong>1.500 ms</strong></td><td><strong>4.515 ms</strong></td></tr><tr><td>Robinhood Chain Sequencer Feed</td><td><strong>11.60%</strong></td><td><strong>6.520 ms</strong></td><td><strong>14.579 ms</strong></td><td><strong>17.613 ms</strong></td><td><strong>32.520 ms</strong></td></tr></tbody></table>
+We established WSS connections with both the Robinhood Chain Sequencer Feed and the BlockRazor Sequencer Feed using one test client deployed in each AWS US East (Ohio) Availability Zone (use2-az1, use2-az2, use2-az3) , comparing the relative latency of receiving blocks from both. The Sequencer Feed that received the block first had a relative latency of 0ms, while the Sequencer Feed that received the block later had a relative latency equal to the difference in timestamps between the received blocks. Specific data is as follows:
+
+{% tabs %}
+{% tab title="use2-az1" %}
+<table><thead><tr><th>Sequencer Feed</th><th width="102.546875">Win rate</th><th width="107.2578125">P50</th><th width="104.953125">P90</th><th width="101.41796875">P95</th><th>P99</th></tr></thead><tbody><tr><td>BlockRazor Sequencer Feed</td><td><strong>90.51%</strong></td><td><strong>0.000 ms</strong></td><td><strong>0.000 ms</strong></td><td><strong>1.095 ms</strong></td><td><strong>3.812 ms</strong></td></tr><tr><td>Robinhood Chain Sequencer Feed</td><td><strong>9.49%</strong></td><td><strong>6.573 ms</strong></td><td><strong>15.456 ms</strong></td><td><strong>19.721 ms</strong></td><td><strong>42.707 ms</strong></td></tr></tbody></table>
+{% endtab %}
+
+{% tab title="use2-az2" %}
+<table><thead><tr><th width="124.6484375">Sequencer Feed</th><th width="109.03125">Win rate</th><th width="106.3671875">P50</th><th width="106.953125">P90</th><th width="113.9609375">P95</th><th width="112.87890625">P99</th></tr></thead><tbody><tr><td>BlockRazor Sequencer Feed</td><td><strong>69.16%</strong></td><td><strong>0.000 ms</strong></td><td><strong>2.151 ms</strong></td><td><strong>3.230 ms</strong></td><td><strong>5.589 ms</strong></td></tr><tr><td>Robinhood Chain Sequencer Feed</td><td><strong>30.84%</strong></td><td><strong>1.719 ms</strong></td><td><strong>6.754 ms</strong></td><td><strong>9.782 ms</strong></td><td><strong>31.128 ms</strong></td></tr></tbody></table>
+{% endtab %}
+
+{% tab title="use2-az3" %}
+<table><thead><tr><th>Sequencer Feed</th><th width="101.28515625">Win rate</th><th width="101.90234375">P50</th><th width="108.97265625">P90</th><th width="106.0859375">P95</th><th width="110.6796875">P99</th></tr></thead><tbody><tr><td>BlockRazor Sequencer Feed</td><td><strong>75.08%</strong></td><td><strong>0.000 ms</strong></td><td><strong>1.764 ms</strong></td><td><strong>2.861 ms</strong></td><td><strong>5.330 ms</strong></td></tr><tr><td>Robinhood Chain Sequencer Feed</td><td><strong>24.92%</strong></td><td><strong>2.524 ms</strong></td><td><strong>12.306 ms</strong></td><td><strong>16.728 ms</strong></td><td><strong>37.805 ms</strong></td></tr></tbody></table>
+{% endtab %}
+{% endtabs %}
 
 In terms of latency distribution, BlockRazor not only arrives first on most blocks, but this lead is also highly consistent; in contrast, Robinhood Chain Sequencer Feed is more often in a lagging position and has more pronounced latency fluctuations.
 
