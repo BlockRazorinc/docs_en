@@ -22,15 +22,21 @@ We established WSS connections with both the Robinhood Chain Sequencer Feed and 
 
 {% tabs %}
 {% tab title="use2-az1" %}
-<table><thead><tr><th>Sequencer Feed</th><th width="102.546875">Win rate</th><th width="107.2578125">P50</th><th width="104.953125">P90</th><th width="101.41796875">P95</th><th>P99</th></tr></thead><tbody><tr><td>BlockRazor Sequencer Feed</td><td><strong>90.51%</strong></td><td><strong>0.000 ms</strong></td><td><strong>0.000 ms</strong></td><td><strong>1.095 ms</strong></td><td><strong>3.812 ms</strong></td></tr><tr><td>Robinhood Chain Sequencer Feed</td><td><strong>9.49%</strong></td><td><strong>6.573 ms</strong></td><td><strong>15.456 ms</strong></td><td><strong>19.721 ms</strong></td><td><strong>42.707 ms</strong></td></tr></tbody></table>
+快照時間：2026-08-12T10:18:57.825039121Z，测试測試區塊總數：252798
+
+<table><thead><tr><th>Sequencer Feed</th><th width="109.0546875">Win rate</th><th width="101.1484375">P50</th><th width="110.5859375">P90</th><th width="105.84375">P95</th><th width="117.4296875">P99</th></tr></thead><tbody><tr><td>BlockRazor Sequencer Feed</td><td><strong>80.27%</strong></td><td><strong>0.000 ms</strong></td><td><strong>0.000 ms</strong></td><td><strong>2.771 ms</strong></td><td><strong>6.116 ms</strong></td></tr><tr><td>Robinhood Chain Sequencer Feed</td><td><strong>19.73%</strong></td><td><strong>4.640 ms</strong></td><td><strong>9.604 ms</strong></td><td><strong>15.651 ms</strong></td><td><strong>19.749 ms</strong></td></tr></tbody></table>
 {% endtab %}
 
 {% tab title="use2-az2" %}
-<table><thead><tr><th width="124.6484375">Sequencer Feed</th><th width="109.03125">Win rate</th><th width="106.3671875">P50</th><th width="106.953125">P90</th><th width="113.9609375">P95</th><th width="112.87890625">P99</th></tr></thead><tbody><tr><td>BlockRazor Sequencer Feed</td><td><strong>69.16%</strong></td><td><strong>0.000 ms</strong></td><td><strong>2.151 ms</strong></td><td><strong>3.230 ms</strong></td><td><strong>5.589 ms</strong></td></tr><tr><td>Robinhood Chain Sequencer Feed</td><td><strong>30.84%</strong></td><td><strong>1.719 ms</strong></td><td><strong>6.754 ms</strong></td><td><strong>9.782 ms</strong></td><td><strong>31.128 ms</strong></td></tr></tbody></table>
+快照時間：2026-08-12T10:18:56.218075456Z，测试測試區塊總數：252451
+
+<table><thead><tr><th>Sequencer Feed</th><th width="103.23046875">Win rate</th><th width="108.203125">P50</th><th width="105.90234375">P90</th><th width="101.8671875">P95</th><th width="109.13671875">P99</th></tr></thead><tbody><tr><td>BlockRazor Sequencer Feed</td><td><strong>87.01%</strong></td><td><strong>0.000 ms</strong></td><td><strong>0.445 ms</strong></td><td><strong>1.659 ms</strong></td><td><strong>4.831 ms</strong></td></tr><tr><td>Robinhood Chain Sequencer Feed</td><td><strong>12.98%</strong></td><td><strong>5.302 ms</strong></td><td><strong>17.379 ms</strong></td><td><strong>23.194 ms</strong></td><td><strong>70.723 ms</strong></td></tr></tbody></table>
 {% endtab %}
 
 {% tab title="use2-az3" %}
-<table><thead><tr><th>Sequencer Feed</th><th width="101.28515625">Win rate</th><th width="101.90234375">P50</th><th width="108.97265625">P90</th><th width="106.0859375">P95</th><th width="110.6796875">P99</th></tr></thead><tbody><tr><td>BlockRazor Sequencer Feed</td><td><strong>75.08%</strong></td><td><strong>0.000 ms</strong></td><td><strong>1.764 ms</strong></td><td><strong>2.861 ms</strong></td><td><strong>5.330 ms</strong></td></tr><tr><td>Robinhood Chain Sequencer Feed</td><td><strong>24.92%</strong></td><td><strong>2.524 ms</strong></td><td><strong>12.306 ms</strong></td><td><strong>16.728 ms</strong></td><td><strong>37.805 ms</strong></td></tr></tbody></table>
+快照時間：2026-08-12T10:18:17.587552975Z，测试測試區塊總數：251670
+
+<table><thead><tr><th>Sequencer Feed</th><th width="97.79296875">Win rate</th><th width="108.33984375">P50</th><th width="103.75">P90</th><th width="107.421875">P95</th><th width="102.87890625">P99</th></tr></thead><tbody><tr><td>BlockRazor Sequencer Feed</td><td><strong>76.48%</strong></td><td><strong>0.000 ms</strong></td><td><strong>1.640 ms</strong></td><td><strong>2.842 ms</strong></td><td><strong>6.336 ms</strong></td></tr><tr><td>Robinhood Chain Sequencer Feed</td><td><strong>23.52%</strong></td><td><strong>2.742 ms</strong></td><td><strong>11.219 ms</strong></td><td><strong>16.373 ms</strong></td><td><strong>32.839 ms</strong></td></tr></tbody></table>
 {% endtab %}
 {% endtabs %}
 
