@@ -18,7 +18,11 @@ Furthermore, the BlockRazor Sequencer Feed is compatible with the official stand
 
 We established WSS connections with both the Robinhood Chain Sequencer Feed and the BlockRazor Sequencer Feed using the same test client, comparing the relative latency of receiving blocks from both. The Sequencer Feed that received the block first had a relative latency of 0ms, while the Sequencer Feed that received the block later had a relative latency equal to the difference in timestamps between the received blocks. Specific data is as follows:
 
-We established WSS connections with both the Robinhood Chain Sequencer Feed and the BlockRazor Sequencer Feed using one test client deployed in each AWS US East (Ohio) Availability Zone (use2-az1, use2-az2, use2-az3) , comparing the relative latency of receiving blocks from both. The Sequencer Feed that received the block first had a relative latency of 0ms, while the Sequencer Feed that received the block later had a relative latency equal to the difference in timestamps between the received blocks. Specific data is as follows:
+We established WSS connections with both the Robinhood Chain Sequencer Feed and the BlockRazor Sequencer Feed using one test client deployed in each AWS US East (Ohio) Availability Zone (use2-az1, use2-az2, use2-az3) , comparing the relative latency of receiving blocks from both. The Sequencer Feed that received the block first had a relative latency of 0ms, while the Sequencer Feed that received the block later had a relative latency equal to the difference in timestamps between the received blocks.&#x20;
+
+You can go to [GitHub - BlockRazorinc/robinhood-feed-speed](https://github.com/BlockRazorinc/robinhood-feed-speed) to get the benckmark tool.
+
+Benchmark data is as follows:
 
 {% tabs %}
 {% tab title="use2-az1" %}
