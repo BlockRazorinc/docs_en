@@ -7,49 +7,99 @@ description: >-
 
 # Trading Bot
 
-In the high-frequency trading (HFT) ecosystems of Solana and EVM, the success of a Trading Bot depends on two dimensions: the speed of signal acquisition and the speed of transaction execution. BlockRazor provides the underlying technology and infrastructure support for Trading Bots based on these criteria. Using a Solana sniping scenario as a case study, this article introduces how BlockRazor ensures that Trading Bots maintain a leading edge in fierce on-chain competition.
+In onchain trading, a Trading Bot's competitiveness depends not only on its strategy, but also on two critical dimensions of speed:
 
-### Pain Point Analysis
+1. **Signal monitoring speed**: How early the bot can detect a new pool, market-opening event, or target-wallet transaction.
+2. **Transaction submission speed**: How quickly the bot can deliver a transaction to a Leader, Builder, Validator, or Sequencer.
 
-#### **Lagging Sniping Signals**
+The complete transaction path is as follows:
 
-For bots sniping newly launched tokens, data transmission through traditional public nodes suffers from severe physical latency. Due to a lack of staking, these nodes are often at the tail end of the block broadcasting routing. By the time a bot receives signals for new token deployment or liquidity addition, the optimal sniping window has often passed, causing buy-in costs to skyrocket.
+> Onchain event → Signal monitoring and parsing → Strategy evaluation → Transaction construction and signing → Transaction submission → Ordering node receives the transaction → Onchain inclusion
 
-#### **Risks and Obstacles in Transaction Execution**
+Signal monitoring determines when a bot can act, while transaction submission determines when its transaction reaches the chain. Latency at either stage can eliminate the strategy's original advantage.
 
-* Transaction Latency: For bots pursuing sub-second settlement, slow on-chain inclusion means profit giveback for users.
-* Sandwich Attacks: When performing large-scale snipes or swaps, if the bot's transaction intent is exposed, it becomes an easy target for MEV bots or malicious validators.
-* Execution Barriers: When bots frequently switch wallets or operate new accounts, critical transactions may fail due to a lack of native tokens (e.g., SOL) to cover account rent or transaction fees.
+### Typical Trading Bot Scenarios
 
-### Services
+#### **Sniper**
 
-BlockRazor provides targeted services for Trading Bots to address these pain points.
+A Sniper Bot monitors new token deployments, new liquidity pools, market-opening transactions, or other predefined events. Once a target signal appears, it immediately constructs and submits a transaction.
 
-#### **Sniping Signal Monitoring**
+Its primary objective is to discover trading opportunities earlier, enter the target block or slot, and secure a more favorable ordering position.
 
-To solve the problem of signal lag, BlockRazor offers Geyser Stream and Shred Stream. With high-stake validators and globally distributed network, we help Trading Bots acquire sniping signals at extreme speeds.&#x20;
+#### **Copy Trading**
 
-For Ethereum & BSC: Where pending transactions can be monitored, BlockRazor provides Public Mempool and Private Mempool for tracking pending "Smart Money" transactions, as well as New Blocks for monitoring confirmed trades.
+A Copy Trading Bot monitors the buys, sells, or position changes of a designated Leader wallet. It then constructs a Follower transaction according to predefined amounts, ratios, and strategy rules.
 
-<table><thead><tr><th width="142.38671875">Chain</th><th width="286.75">pending Sinping Signal</th><th>confirmed Sinping Signal</th></tr></thead><tbody><tr><td>Ethereum</td><td><ul><li><a href="../../streams/mempool/bsc/public-mempool.md">Public Mempool</a></li><li><a href="../../streams/mempool/bsc/private-mempool.md">Private Mempool</a></li></ul></td><td>-</td></tr><tr><td>BSC</td><td><ul><li><a href="../../streams/mempool/bsc/public-mempool.md">Public Mempool</a></li><li><a href="../../streams/mempool/bsc/private-mempool.md">Private Mempool</a></li></ul></td><td><a href="../../streams/block-stream/bsc/newblocks.md">Block Stream</a></td></tr><tr><td>Solana</td><td>-</td><td><a href="../../streams/block-stream/solana/geyser-stream/">Geyser Stream</a><br><a href="../../streams/block-stream/solana/shred-stream.md">Shred Stream</a></td></tr><tr><td>Base</td><td>-</td><td><a href="../../streams/block-stream/base/get-flashblockstream/">FlashBlock Stream</a></td></tr></tbody></table>
+Its primary objective is to reduce the inclusion-time gap between the Leader and Follower and minimize their execution-price difference.
 
-#### **Multi-Mode Transaction Execution Optimization**
+Sniper and Copy Trading Bots monitor different targets: the former focuses on new pools, market openings, and contract events, while the latter focuses on designated wallet activity. However, both depend on the same underlying path: receiving signals, parsing signals, constructing transactions, and submitting them quickly.
 
-[**Fast**](../../transaction-submission/fast/): Utilizes a globally accelerated high-performance network and SWQoS (Stake-Weighted Quality of Service) from high-stake validators to achieve the lowest possible on-chain latency.
+### Trading Bot Pain Points
 
-[**Gas Sponsor**](../../transaction-submission/gas-sponsor.md): Enables Trading Bot users to perform sniping transactions without holding SOL by sponsoring transaction fees and rent. Integrating Gas Sponsor brings additional benefits:
+#### **Pain Point 1: Slow Signal Monitoring**
 
-* Attract Incremental Traffic: Serves as a powerful branding and marketing tool to draw in new users and increase overall trading activity.
-* Increase Revenue: Higher transaction success rates and volume lead to increased commission/fee revenue for the bot project.
+**Waiting for complete blocks delays signals**
 
-[**Sandwich Mitigation**](../../transaction-submission/fast/solana/send-transaction/): Provides a protection mechanism that monitors and skips blacklisted validators in real-time, shielding transaction profits from slippage erosion.
+Standard RPC or WebSocket services often deliver transaction data only after a node has received, processed, or even reconstructed a block.
 
-**Bundle**: Upon detecting a token launch transaction, the Trading Bot can use a Bundle to ensure the sniping trade is placed immediately after the launch transaction, eliminating price volatility risks caused by execution delays.
+This can mean:
+
+* A competitor has already submitted a transaction when a Sniper Bot detects a new pool.
+* The market price has already changed when a Copy Trading Bot detects the Leader's transaction.
+* The original opportunity decays while the bot waits for data.
+
+**Public nodes introduce longer data paths**
+
+Public nodes may introduce cross-region transmission, multiple proxy layers, shared-resource queues, rate limits during peak traffic, and connection jitter.
+
+Even a difference of tens of milliseconds can directly affect the final execution position in competitive Sniper and Copy Trading scenarios.
+
+**A single data source provides limited signal coverage**
+
+On chains that support Pending Transactions, public and private transactions may propagate through different paths:
+
+* Public Mempool mainly covers publicly broadcast Pending Transactions.
+* Private transactions may not appear in the Public Mempool.
+* Confirmed onchain signals offer greater certainty but arrive later.
+
+A Trading Bot should select Pending data, private order flow, or block data according to its target chain and strategy.
+
+#### **Pain Point 2: Slow Transaction Submission**
+
+Receiving a signal first does not guarantee execution first. After strategy evaluation, a transaction may still pass through a public RPC, proxy layers, cross-region networks, and intermediate relay nodes.
+
+These stages consume the lead gained during signal monitoring and can cause:
+
+* A Sniper Bot to miss the target block or slot.
+* A Copy Trading Bot to land several blocks behind the Leader.
+* A Follower to receive a materially worse execution price than the Leader.
+* A transaction to fail because the market state has changed.
+
+The destination that must receive a transaction quickly differs by chain:
+
+<table><thead><tr><th width="170.10546875">Chain</th><th width="211.27734375">Transaction Destination</th><th>Primary Speed Consideration</th></tr></thead><tbody><tr><td>Solana</td><td>Current and upcoming Leaders</td><td>Leader routing and SWQoS transmission</td></tr><tr><td>Ethereum</td><td>Builder / Validator</td><td>Faster entry into propagation and block-building paths</td></tr><tr><td>BSC</td><td>Builder / Validator</td><td>Reaching the target block's processing window in time</td></tr><tr><td>Base</td><td>Sequencer</td><td>Shortening the transaction path to the Sequencer</td></tr><tr><td>Robinhood Chain</td><td>Official Sequencer</td><td>Arrival time under FCFS ordering</td></tr></tbody></table>
+
+Note: Robinhood Chain uses First-Come, First-Served ordering. Transaction order depends on arrival time at the Sequencer, and a higher fee cannot move a transaction ahead of one that arrived earlier. The submission path is therefore a direct competitive variable.
+
+### Recommended Services
+
+BlockRazor provides low-latency infrastructure for Sniper and Copy Trading Bots across both signal monitoring and transaction submission.
+
+#### Signal Monitoring Services
+
+<table><thead><tr><th width="151.9765625">Chain</th><th width="207.79296875">Recommended Services</th><th>Differences and Selection Guidance</th></tr></thead><tbody><tr><td>Solana</td><td><a href="../../streams/block-stream/solana/shred-stream.md"><strong>Shred Stream</strong></a><br><a href="../../streams/block-stream/solana/geyser-stream/"><strong>Geyser Stream</strong></a></td><td>Shred Stream transmits shreds before complete block reconstruction; Geyser Stream provides structured transaction and account data.</td></tr><tr><td>Ethereum</td><td><a href="../../streams/mempool/ethereum/public-mempool.md"><strong>Public Mempool</strong></a><br><a href="https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/streams/block-stream/ethereum/newblocks"><strong>Block Stream</strong></a></td><td>Public Mempool monitors publicly broadcast Pending Transactions; Block Stream monitors confirmed onchain signals.</td></tr><tr><td>BSC</td><td><a href="../../streams/mempool/bsc/public-mempool.md"><strong>Public Mempool</strong></a><br><a href="../../streams/mempool/bsc/private-mempool.md"><strong>Private Mempool</strong></a><br><a href="../../streams/block-stream/bsc/newblocks.md"><strong>Block Stream</strong></a></td><td>Public and Private Mempool complement each other to provide earlier Pending signals; Block Stream monitors confirmed onchain signals.</td></tr><tr><td>Base</td><td><a href="../../streams/block-stream/base/get-flashblockstream/"><strong>FlashBlock Stream</strong></a><br><a href="../../streams/block-stream/base/get-blockstream.md"><strong>Block Stream</strong></a></td><td>FlashBlock Stream provides preconfirmation data before a complete block is formed; Block Stream provides complete block data.</td></tr><tr><td>Robinhood Chain</td><td><a href="../../streams/node-stream/robinhood-chain/sequencer-feed.md"><strong>Sequencer Feed</strong></a></td><td>Proximity-based access and optimized transmission paths provide faster and more stable delivery of block data pushed by the Sequencer.</td></tr></tbody></table>
+
+> Sniper and Copy Trading Bots can use the same monitoring services. The difference lies in the signals each bot filters and parses.
+
+#### Transaction Submission Services
+
+<table><thead><tr><th width="149.85546875">Chain</th><th width="228.19140625">Recommended Services</th><th>Differences and Selection Guidance</th></tr></thead><tbody><tr><td>Solana</td><td><a href="../../transaction-submission/fast/solana/send-transaction/"><strong>Send Transaction</strong></a></td><td>Uses a global high-performance network and SWQoS paths to deliver transactions quickly to current and upcoming Leaders.</td></tr><tr><td>Ethereum</td><td><a href="../../transaction-submission/fast/ethereum/broadcast-tx.md"><strong>Broadcast Tx</strong></a></td><td>Optimized for maximum broadcast speed but does not provide MEV protection. Use BlockRazor RPC when MEV protection is required.</td></tr><tr><td>BSC</td><td><p><a href="../../transaction-submission/fast/bsc/broadcast-tx.md"><strong>Broadcast Tx</strong></a></p><p><a href="../../transaction-submission/block-builder/fast-submit.md"><strong>Fast Submit</strong></a></p></td><td>Broadcast Tx provides maximum transaction broadcast speed but no MEV protection; use BlockRazor RPC when MEV protection is required. Fast Submit uses a dedicated submission entry point and optimized cross-region paths to shorten the route to the BlockRazor Builder.</td></tr><tr><td>Base</td><td><a href="../../transaction-submission/rpc/base/eth_sendrawtransaction.md"><strong>eth_sendRawTransaction</strong></a></td><td>Provides standardized, multi-region transaction submission for quickly delivering signed transactions to the Base Sequencer.</td></tr><tr><td>Robinhood Chain</td><td><a href="../../transaction-submission/rpc/robinhood-chain/eth_sendrawtransaction.md"><strong>eth_sendRawTransaction</strong></a></td><td>Uses multi-region entry points and optimized routing to reach the official FCFS Sequencer faster.</td></tr></tbody></table>
+
+> Signal monitoring services determine when a bot can act. Transaction submission services determine when the transaction reaches the ordering node. Prefer a regional endpoint close to the bot's deployment location.
 
 ### Benchmark
 
-BlockRazor aims to be the most reliable infrastructure partner for Trading Bots. By integrating our services, Trading Bots gain superior on-chain monitoring and execution performance. Our benchmarks are as follows:
+BlockRazor has published the following relevant performance tests:
 
-* [Shred Stream](https://blockrazor.io/#/blogs/20250818shredbenchmark)
-* [Fast](https://blockrazor.io/#/blogs/20250801Benchmarking)
-* [End to End Latency](https://blockrazor.io/#/blogs/20250826e2etest)
+<table data-search="false"><thead><tr><th width="116.55859375">Chain</th><th width="169.1484375">Service</th><th>Benchmark</th><th>What It Measures</th></tr></thead><tbody><tr><td>Solana</td><td>Shred Stream</td><td><a href="https://blockrazor.io/blog/20250818shredbenchmark/">Solana Shred Stream Benchmark</a></td><td>Compares the first-arrival rate and arrival-time difference of BlockRazor and Jito shreds across multiple regions.</td></tr><tr><td>Solana</td><td>Send Transaction</td><td><a href="https://blockrazor.io/blog/20250801Benchmarking/">Benchmarking Solana Send Transaction Service</a></td><td>Uses consistent Tips, Priority Fees, and Durable Nonce transactions to compare transaction races over SWQoS paths.</td></tr><tr><td>BSC</td><td>Fast Submit</td><td><a href="https://blockrazor.io/blog/20260625BSC-Builder-Fast-Submit/">BSC Fast Submit Benchmark</a></td><td>Measures submission-latency improvements from fewer proxies, network hops, and optimized cross-region paths.</td></tr><tr><td>Base</td><td>RPC<br>Block Stream<br>FlashBlock Stream</td><td><a href="https://blockrazor.io/blog/20250922basebenchmark/">Base Benchmark</a></td><td>Compares transaction ordering positions and the data-arrival latency of Block Stream and FlashBlock Stream.</td></tr><tr><td>Robinhood Chain</td><td>Sequencer Feed</td><td><a href="https://docs.blockrazor.io/streams/node-stream/robinhood-chain/sequencer-feed">Sequencer Feed Benchmark</a></td><td>Compares first-arrival rates and latency distributions between BlockRazor and the official Feed across three AWS Ohio Availability Zones.</td></tr><tr><td>Robinhood Chain</td><td>Robinhood Chain RPC</td><td><a href="https://www.blockrazor.io/blog/RobinhoodChainRPC/">Robinhood Chain RPC Benchmark</a></td><td>Uses same-nonce transactions to compare the competitive inclusion rates of BlockRazor RPC and the official RPC across multiple regions.</td></tr></tbody></table>
+
