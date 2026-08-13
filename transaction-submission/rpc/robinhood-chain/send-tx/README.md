@@ -1,4 +1,7 @@
 ---
+description: >-
+  This section introduces the integration of sendTx provided by BlockRazor
+  Robinhood Chain RPC
 hidden: true
 ---
 
@@ -6,7 +9,7 @@ hidden: true
 
 `eth_sendRawTransaction` is a transaction sending interface provided by BlockRazor for Robinhood Chain. Users can use this method to send signed raw transactions to the chain with low latency. Currently, HTTPS protocol is supported.
 
-Compared to [`eth_sendRawTransaction`](eth_sendrawtransaction.md), `Send Tx` undergo pre-flight checks before being sent to the Robinhood Chain official sequencer, including but not limited to whether the nonce is correct, whether the balance is sufficient, and whether contract execution has been reverted.
+Compared to [`eth_sendRawTransaction`](../eth_sendrawtransaction/), `Send Tx` undergo pre-flight checks before being sent to the Robinhood Chain official sequencer, including but not limited to whether the nonce is correct, whether the balance is sufficient, and whether contract execution has been reverted.
 
 ### Endpoint
 

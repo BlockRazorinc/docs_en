@@ -24,5 +24,5 @@ description: >-
 
 ### Robinhood Chain
 
-<table><thead><tr><th width="239">Service</th><th>Index</th></tr></thead><tbody><tr><td>Transaction Submission</td><td><ul><li><a href="../transaction-submission/rpc/robinhood-chain/eth_sendrawtransaction.md">RPC</a></li></ul></td></tr></tbody></table>
+<table><thead><tr><th width="239">Service</th><th>Index</th></tr></thead><tbody><tr><td>Transaction Submission</td><td><ul><li><a href="../transaction-submission/rpc/robinhood-chain/eth_sendrawtransaction/">RPC</a></li></ul></td></tr></tbody></table>
 
