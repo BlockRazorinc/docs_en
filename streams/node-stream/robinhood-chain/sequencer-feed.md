@@ -1,3 +1,9 @@
+---
+description: >-
+  This section introduces the services, advantages, benchmark, price and
+  integration methods of the BlockRazor Robinhood Chain Sequencer Feed.
+---
+
 # Sequencer Feed
 
 ### What is Sequencer Feed?
