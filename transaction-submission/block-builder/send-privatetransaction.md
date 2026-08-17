@@ -1,10 +1,10 @@
 ---
 description: >-
-  Introduction to Send PrivateTransaction of BlockRazor Block Builder and
+  Introduction to Send PrivateTransaction of BlockRazor BSC Block Builder and
   integration methods
 ---
 
-# Send PrivateTransaction
+# BSC Block Builder Send PrivateTransaction
 
 ### Introduction
 

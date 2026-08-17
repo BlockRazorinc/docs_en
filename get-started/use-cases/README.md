@@ -5,5 +5,28 @@ description: >-
   quantitative trading systems
 ---
 
-# Use Cases
+# Who Do We Serve
 
+### Wallet
+
+* [wallet-dex.md](wallet-dex.md "mention")
+
+### DEX
+
+* [wallet-dex.md](wallet-dex.md "mention")
+
+### Sniper
+
+* [trading-bot.md](trading-bot.md "mention")
+
+### Copy Trading
+
+* [trading-bot.md](trading-bot.md "mention")
+
+### Algorithmic Trading
+
+* [algorithmic-trading.md](algorithmic-trading.md "mention")
+
+### Individual Trader
+
+* [individual-trader.md](individual-trader.md "mention")

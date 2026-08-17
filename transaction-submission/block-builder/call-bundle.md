@@ -1,10 +1,10 @@
 ---
 description: >-
-  Introduction to Call Bundle of BlockRazor Block Builder and integration
+  Introduction to Call Bundle of BlockRazor BSC Block Builder and integration
   methods
 ---
 
-# Call Bundle
+# BSC Block Builder Call Bundle
 
 ### Introduction
 

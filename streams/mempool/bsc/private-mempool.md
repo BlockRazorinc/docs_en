@@ -4,7 +4,7 @@ description: >-
   access methods of BlockRazor BSC Private Mempool.
 ---
 
-# Private Mempool
+# BSC Private Mempool
 
 ### What is BSC Private Mempool
 
@@ -50,7 +50,7 @@ For Details, see [Request Example](private-mempool.md#request-example)
 {% step %}
 **Construct &  submit bundle**
 
-For Details, see [Bundle](../../../transaction-submission/rpc/bsc/eth_sendmevbundle/searcher.md)
+For Details, see [Bundle](../../../transaction-submission/rpc/bsc/orderflow-auction.md)
 {% endstep %}
 {% endstepper %}
 

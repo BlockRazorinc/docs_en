@@ -1,8 +1,8 @@
 ---
-description: Introduction to Fast Submit of BlockRazor Block Builder and access methods
+description: Introduction to Fast Submit of BlockRazor BSC Block Builder and access methods
 ---
 
-# Fast Submit
+# BSC Block Builder Fast Submit
 
 ### What is Fast Submit?
 

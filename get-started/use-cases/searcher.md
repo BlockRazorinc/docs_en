@@ -41,7 +41,7 @@ The execution of Alpha strategies incurs computational costs. Since the Alpha st
 
 Improving speed invloves cost of development and server. To reduce transaction subscription latency, bundle sending latency, and the latency in synchronizing the latest world state, it is necessary to develop algorithms and build a high-speed backbone network. This is too costly for a Searcher, so utilizing established third-party services is a cost-effective choice.
 
-Enhancing inclusion certainty primarily involves the cost of removing Builder rate limits. Searchers can attempt to freely integrate with RPCs that allow sending [bundles](../../transaction-submission/rpc/bsc/eth_sendmevbundle/), which will forward the bundles to mainstream Builders. This approach not only saves costs but also ensures speed and inclusion certainty of transactions.
+Enhancing inclusion certainty primarily involves the cost of removing Builder rate limits. Searchers can attempt to freely integrate with RPCs that allow sending [bundles](../../transaction-submission/rpc/bsc/orderflow-auction.md), which will forward the bundles to mainstream Builders. This approach not only saves costs but also ensures speed and inclusion certainty of transactions.
 
 #### **Transaction Fee**
 
@@ -61,7 +61,7 @@ Benchmark shows that compared to the industry-leading high-performance network p
 
 Additionally, BlockRazor also demonstrates excellent performance in terms of latency of synchronization of the latest world state, better meeting the needs of speed-sensitive users. For the complete comparison results, please refer to the [benchmark](https://medium.com/@blockrazor/to-build-the-competitive-high-performance-network-d7c0705b5171).
 
-Searchers can directly integrate with [Bundle](../../transaction-submission/rpc/bsc/eth_sendmevbundle/), constructing a bundle consisting of mempool transactions and strategy transactions and submitting it to BlockRazor RPC, which will forward it to mainstream Builders at the earliest opportunity. Additionally, based on a globally distributed network, BlockRazor RPC achieves end-to-end low-latency forwarding at the network level.
+Searchers can directly integrate with [Bundle](../../transaction-submission/rpc/bsc/orderflow-auction.md), constructing a bundle consisting of mempool transactions and strategy transactions and submitting it to BlockRazor RPC, which will forward it to mainstream Builders at the earliest opportunity. Additionally, based on a globally distributed network, BlockRazor RPC achieves end-to-end low-latency forwarding at the network level.
 
 <figure><img src="../../.gitbook/assets/image (36).png" alt=""><figcaption><p>The benchmark client sends transactions to BlockRazor RPC, A RPC, and B RPC, recording the difference between the latest block number at the time of sending the transaction and the block number in which the transaction is included. A smaller difference indicates a faster on-chain speed.</p></figcaption></figure>
 
@@ -78,14 +78,14 @@ BlockRazor's subscription plans are highly competitive in terms of pricing, and 
 1. [Register](https://www.blockrazor.io/#/register) for BlockRazor
 2. [Log in](https://www.blockrazor.io/#/login) to BlockRazor, purchase Private Mempool, and go to the account module to obtain the auth token
 3. Subscribe to the [Private Mempool](../../streams/mempool/bsc/public-mempool.md)
-4. Execute the arbitrage strategy, and submit bundle to BlockRazor RPC using [Bundle](../../transaction-submission/rpc/bsc/eth_sendmevbundle/)
+4. Execute the arbitrage strategy, and submit bundle to BlockRazor RPC using [Bundle](../../transaction-submission/rpc/bsc/orderflow-auction.md)
 
 #### **Arbitrage of Public Mempool**
 
 1. [Register](https://www.blockrazor.io/#/register) for BlockRazor
 2. [Log in](https://www.blockrazor.io/#/login) to BlockRazor, purchase Public Mempool, and go to the account module to obtain the auth token
 3. Integrate the [<mark style="color:blue;">Public Mempool</mark>](../../streams/mempool/bsc/public-mempool.md) to subscribe to the latest transactions with low latency; synchronize blocks with low latency through [Node Stream](../../streams/node-stream/bsc/full-node-synchronization.md) if you have local node.
-4. Execute the arbitrage strategy, and submit bundle to BlockRazor RPC using [Bundle](../../transaction-submission/rpc/bsc/eth_sendmevbundle/).
+4. Execute the arbitrage strategy, and submit bundle to BlockRazor RPC using [Bundle](../../transaction-submission/rpc/bsc/orderflow-auction.md).
 
 #### **0 Gwei Transaction at End of Block**
 

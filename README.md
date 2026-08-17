@@ -4,7 +4,7 @@ description: >-
   including Transaction Submission and Streams.
 ---
 
-# About BlockRazor
+# About Us
 
 BlockRazor is a research institution focused on Web3 infrastructure and DeFi trading. It focuses on solving key problems in trading scenarios and continuously transforms its [research results](https://blockrazor.io/blog/) into infrastructure products and services, creating a globally distributed, high-performance multi-chain infrastructure system for builders who pursue excellence.
 
@@ -14,9 +14,9 @@ Through long-term research and engineering practice, BlockRazor provides integra
 
 BlockRazor offers multiple transaction submission modes to adapt to the different needs of various businesses in terms of mev protection, inclusion speed, and transaction costs:
 
-* [RPC](transaction-submission/rpc/overview.md): Provides standard JSON-RPC methods, offers MEV protection for transactions, and supports real-time rebates.
-* [Block Builder](transaction-submission/block-builder/overview.md): A block building service for BSC, providing users with a high-win-rate block building commitment and low-latency access capabilities.
-* [Fast](transaction-submission/fast/overview.md): Utilizes [BEF](core-technology/blockchain-edge-fabric.md) to improve inclusion speed, suitable for users with extremely high requirements for transaction speed.
+* [RPC](transaction-submission/rpc/): Provides standard JSON-RPC methods, offers MEV protection for transactions, and supports real-time rebates.
+* [Block Builder](transaction-submission/block-builder/): A block building service for BSC, providing users with a high-win-rate block building commitment and low-latency access capabilities.
+* [Transaction Sending](transaction-submission/transaction-sending/): Utilizes [BEF](core-technology/blockchain-edge-fabric.md) to improve inclusion speed, suitable for users with extremely high requirements for transaction speed.
 * [Gas Sponsor](transaction-submission/gas-sponsor.md): Provides gas sponsorship for users whose native tokens are insufficient to cover transaction fees, enhancing the user trading experience.
 
 ### Streams

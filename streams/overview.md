@@ -47,16 +47,7 @@ Unlike subscribing to Block Stream, Node Stream doesn't simply push block data; 
 
 ### How to choose a suitable Stream
 
-| 場景                                                                  | 適用用戶                                            | 推薦能力               |
-| ------------------------------------------------------------------- | ----------------------------------------------- | ------------------ |
-| monitor pending transactions and backrun / copy trading / sniping   | Searcher, Trading Bot                           | Public Mempool     |
-| subscribe provite orderflow and backrun / copy trading / sniping    | Searcher, Trading Bot                           | Private Mempool    |
-| Dynamic optimization for Gas / Priority Fee / Tip                   | Searcher, Trading Bot, Quant Team, Wallets, DEX | Network Fee Stream |
-| Keep local nodes and world state up-to-date                         | Searcher, Trading Bot, Quant Team, Wallets, DEX | Node Stream        |
-| Observe the transaction propagation path and cross-regional latency | Searcher, Trading Bot, Quant Team               | Tx Trace           |
-| Subscribe Base FlashBlock Stream                                    | Searcher, Trading Bot, Quant Team, Wallets, DEX | FlashBlock Stream  |
-| Subscribe Solana accounts、transactions、slots and blocks             | Searcher, Trading Bot, Quant Team, Wallets, DEX | Geyser Stream      |
-| Obtain shreds from Solana with extremely low latency.               | Searcher, Trading Bot                           | Shred Stream       |
+<table data-search="false"><thead><tr><th>場景</th><th>適用用戶</th><th>推薦能力</th></tr></thead><tbody><tr><td>monitor pending transactions and backrun / copy trading / sniping</td><td>Searcher, Trading Bot</td><td><a href="mempool/bsc/public-mempool.md">Public Mempool</a></td></tr><tr><td>subscribe provite orderflow and backrun / copy trading / sniping</td><td>Searcher, Trading Bot</td><td><a href="mempool/bsc/private-mempool.md">Private Mempool</a></td></tr><tr><td>Dynamic optimization for Gas / Priority Fee / Tip</td><td>Searcher, Trading Bot, Quant Team, Wallets, DEX</td><td><a href="network-fee-stream/">Network Fee Stream</a></td></tr><tr><td>Keep local nodes and world state up-to-date</td><td>Searcher, Trading Bot, Quant Team, Wallets, DEX</td><td><a href="node-stream/">Node Stream</a></td></tr><tr><td>Observe the transaction propagation path and cross-regional latency</td><td>Searcher, Trading Bot, Quant Team</td><td><a href="mempool/bsc/tx-trace.md">Tx Trace</a></td></tr><tr><td>Subscribe Base FlashBlock Stream</td><td>Searcher, Trading Bot, Quant Team, Wallets, DEX</td><td><a href="block-stream/base/get-flashblocktransaction.md">FlashBlock Stream</a></td></tr><tr><td>Subscribe Solana accounts、transactions、slots and blocks</td><td>Searcher, Trading Bot, Quant Team, Wallets, DEX</td><td><a href="block-stream/solana/geyser-stream/">Geyser Stream</a></td></tr><tr><td>Obtain shreds from Solana with extremely low latency.</td><td>Searcher, Trading Bot</td><td><a href="block-stream/solana/shred-stream.md">Shred Stream</a></td></tr></tbody></table>
 
 ### Quick Start
 

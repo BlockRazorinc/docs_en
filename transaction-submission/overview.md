@@ -1,13 +1,13 @@
 ---
 description: >-
   This section introduces the transaction submission modes, including RPC, Block
-  Builder, Fast, Gas Sponsor, and others, and explains how to choose the
-  appropriate mode based on the scenario.
+  Builder, Transaction Sending, and Gas Sponsor, and explains how to choose the
+  appropriate mode based on the scena
 ---
 
-# Overview
+# Transaction Submission Overview
 
-### What is Transaction Submission&#x20;
+### What is Transaction Submission
 
 Transaction Submission is a collection of transaction submission capabilities in BlockRazor. Based on different transaction submission modes, it meets users' needs for fast transaction inclusion, gas sponsorship, MEV protection, and real-time rebates, providing a better trading experience and execution results for wallets, DEXs, Trading Bots, Searchers, and quantitative trading systems.
 
@@ -21,7 +21,7 @@ RPC is the standard transaction submission entry point for Transaction Submissio
 
 Block Builder is the block building infrastructure provided by BlockRazor on BSC, supporting core capabilities such as bundle submission, private transaction submission, and bundle trace. It enhances block building competitiveness and block success rate through global deployment, low-latency communication with validators, and various block building algorithms.
 
-#### Fast
+#### Transaction Sending
 
 Fast is the "speed-first" mode in Transaction Submission, suitable for scenarios highly sensitive to on-chain latency. It uses [BEF](../core-technology/blockchain-edge-fabric.md) to allow transactions to reach the block-producing node within a shorter time window.
 
@@ -31,7 +31,7 @@ Gas Sponsor is a "cost-first" model within Transaction Submission. By paying gas
 
 ### How to choose the Transaction Submission mode
 
-<table><thead><tr><th width="287">Scene</th><th>User</th><th width="213">Mode</th></tr></thead><tbody><tr><td>Protect against MEV attack and get refunds</td><td>Wallets / DEX</td><td>RPC - RawTransaction</td></tr><tr><td>Extreme speed boost and lower latency</td><td>Wallets / DEX / Trading Bot</td><td>Fast</td></tr><tr><td>No gas cost for users</td><td>Wallets / DEX</td><td>Gas Sponsor</td></tr><tr><td>Approve + Swap / Backrun / Copy Trading / Sniping </td><td>Wallets / DEX / Trading Bot / Searcher</td><td>RPC - Bundle</td></tr></tbody></table>
+<table><thead><tr><th width="287">Scene</th><th width="223.80859375">User</th><th width="213">Mode</th></tr></thead><tbody><tr><td>Protect against MEV attack and get refunds</td><td>Wallets / DEX</td><td>RPC - RawTransaction</td></tr><tr><td>Extreme speed boost and lower latency</td><td>Wallets / DEX / Trading Bot</td><td>Transaction Sending</td></tr><tr><td>No gas cost for users</td><td>Wallets / DEX</td><td>Gas Sponsor</td></tr><tr><td>Approve + Swap / Backrun / Copy Trading / Sniping </td><td>Wallets / DEX / Trading Bot / Searcher</td><td>RPC - Bundle</td></tr></tbody></table>
 
 ### FAQ
 

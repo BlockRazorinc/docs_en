@@ -1,10 +1,10 @@
 ---
 description: >-
   This section introduces the services, application scenarios, and integration
-  methods of BlockRazor BSC Tx Trace.
+  methods of BlockRazor BSC Public Mempool Tx Trace.
 ---
 
-# Tx Trace
+# BSC Public Mempool Tx Trace
 
 ### What is BSC Tx Trace
 

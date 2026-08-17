@@ -19,7 +19,7 @@ In the current DeFi ecosystem, wallets andvDEXs are facing increasingly severe c
 
 BlockRazor provides targeted product services for wallets and DEXs to address the aforementioned pain points.
 
-**MEV Protection**: To combat MEV attacks and value leakage, BlockRazor offers MEV-protected RPC services. Transactions are under full-privacy protection during the submission and inclusion process, being shielded from MEV bot monitoring and malicious attacks. Additionally, RPC service allows wallets and DEXs to securely disclose transaction data to earn real-time rebates. Currently, BlockRazor provides [MEV-protected RPC](../../transaction-submission/rpc/overview.md) for Ethereum and BSC.
+**MEV Protection**: To combat MEV attacks and value leakage, BlockRazor offers MEV-protected RPC services. Transactions are under full-privacy protection during the submission and inclusion process, being shielded from MEV bot monitoring and malicious attacks. Additionally, RPC service allows wallets and DEXs to securely disclose transaction data to earn real-time rebates. Currently, BlockRazor provides [MEV-protected RPC](../../transaction-submission/rpc/) for Ethereum and BSC.
 
 **Gas Sponsor**: To solve the issue of native token shortages, BlockRazor provides [Gas Sponsor ](../../transaction-submission/gas-sponsor.md)service. This allows users to perform swaps without paying any native blockchain currency (e.g., ETH, BNB, SOL). For wallets and DEXs, integrating Gas Sponsor brings additional benefits:
 
@@ -28,4 +28,4 @@ BlockRazor provides targeted product services for wallets and DEXs to address th
 
 Currently, BlockRazor provides Gas Sponsor services for Ethereum, BSC, and Solana.
 
-**Fast Mode**: To address slow on-chain speeds, BlockRazor offers "[Fast Mode](../../transaction-submission/fast/overview.md)", which utilizes a globally accelerated, high-performance network to achieve the lowest possible latency for transaction inclusion—ideal for global user bases with extreme speed requirements.
+**Transaction Sending Mode**: To address slow on-chain speeds, BlockRazor offers "[Transaction Sending Mode](../../transaction-submission/transaction-sending/)", which utilizes a globally accelerated, high-performance network to achieve the lowest possible latency for transaction inclusion—ideal for global user bases with extreme speed requirements.

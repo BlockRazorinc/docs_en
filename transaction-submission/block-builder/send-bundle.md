@@ -1,10 +1,10 @@
 ---
 description: >-
-  Introduction to Send Bundle of BlockRazor Block Builder and integration
+  Introduction to Send Bundle of BlockRazor BSC Block Builder and integration
   methods
 ---
 
-# Send Bundle
+# BSC Block Builder Send Bundle
 
 ### Introduction
 
