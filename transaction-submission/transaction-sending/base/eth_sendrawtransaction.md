@@ -2,9 +2,14 @@
 description: >-
   Introduce how to integrate BlockRazor Base RPC’s `eth_sendRawTransaction`
   method.
+metaLinks:
+  canonical: eth_sendrawtransaction.md
+  alternates:
+    - >-
+      https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/transaction-submission/transaction-sending/base/eth_sendrawtransaction
 ---
 
-# eth\_sendRawTransaction
+# Base eth\_sendRawTransaction
 
 ### Endpoint
 

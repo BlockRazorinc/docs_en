@@ -2,6 +2,11 @@
 description: >-
   This section introduces a Curl request example for Send Bundle in BlockRazor
   Solana Transaction Sending mode.
+metaLinks:
+  canonical: curl.md
+  alternates:
+    - >-
+      https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/transaction-submission/transaction-sending/solana/send-bundle/curl
 ---
 
 # Solana Send Bundle Curl Example

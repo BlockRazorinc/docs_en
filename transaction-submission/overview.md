@@ -3,6 +3,11 @@ description: >-
   This section introduces the transaction submission modes, including RPC, Block
   Builder, Transaction Sending, and Gas Sponsor, and explains how to choose the
   appropriate mode based on the scena
+metaLinks:
+  canonical: overview.md
+  alternates:
+    - >-
+      https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/transaction-submission/overview
 ---
 
 # Transaction Submission Overview

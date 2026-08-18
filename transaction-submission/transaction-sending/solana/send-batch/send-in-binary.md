@@ -2,6 +2,11 @@
 description: >-
   Introducing the integration method of 'Send Batch in Binary' in BlockRazor
   Solana Transaction Sending mode.
+metaLinks:
+  canonical: send-in-binary.md
+  alternates:
+    - >-
+      https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/transaction-submission/transaction-sending/solana/send-batch/send-in-binary
 ---
 
 # Solana Send Batch in Binary

@@ -1,8 +1,13 @@
 ---
 description: Introducing the JS request methods of BlockRazor Solana Geyser Stream
+metaLinks:
+  canonical: js.md
+  alternates:
+    - >-
+      https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/streams/block-stream/solana/geyser-stream/js
 ---
 
-# JS
+# Solana Geyser Stream JS Subscription Example
 
 ### Quick Start
 

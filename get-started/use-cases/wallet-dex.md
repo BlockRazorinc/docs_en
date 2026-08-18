@@ -3,6 +3,11 @@ description: >-
   This section introduces the pain points of wallets/dexs in transaction sending
   scenarios and how to solve these pain points by using Blockrazor services,
   including RPC and Fast mode
+metaLinks:
+  canonical: wallet-dex.md
+  alternates:
+    - >-
+      https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/get-started/use-cases/wallet-dex
 ---
 
 # Wallet / DEX

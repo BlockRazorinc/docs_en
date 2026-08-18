@@ -2,9 +2,14 @@
 description: >-
   This section introduces the services, target users, advantages, and
   integration methods of BlockRazor Solana Shred Stream.
+metaLinks:
+  canonical: shred-stream.md
+  alternates:
+    - >-
+      https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/streams/block-stream/solana/shred-stream
 ---
 
-# Shred Stream
+# Solana Shred Stream
 
 ### What is Shred Stream
 

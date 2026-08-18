@@ -2,9 +2,14 @@
 description: >-
   This section introduces the services, application scenarios, and integration
   methods of BlockRazor Ethereum NewBlocks.
+metaLinks:
+  canonical: newblocks.md
+  alternates:
+    - >-
+      https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/streams/block-stream/ethereum/newblocks
 ---
 
-# NewBlocks
+# Ethereum Block Stream
 
 ### What is Ethereum NewBlocks
 

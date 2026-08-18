@@ -3,6 +3,10 @@ description: >-
   This analysis examines pain points from a user perspective and explains how to
   use BlockRazor's services, including wallets/DEXs, trading bots, searchers,
   quantitative trading systems
+metaLinks:
+  canonical: ./
+  alternates:
+    - https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/get-started/use-cases
 ---
 
 # Who Do We Serve

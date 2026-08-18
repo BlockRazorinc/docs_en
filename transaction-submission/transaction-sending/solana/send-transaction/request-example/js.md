@@ -1,8 +1,13 @@
 ---
 description: This page describes how to build and send Solana transactions using JS
+metaLinks:
+  canonical: js.md
+  alternates:
+    - >-
+      https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/transaction-submission/transaction-sending/solana/send-batch/request-example/js
 ---
 
-# JS
+# Solana Send Transaction JS Example
 
 {% hint style="info" %}
 Solana's transaction sending service is no longer bound to the subscription plan, with rate limit default to 3 TPS. API key could be required from [Authentication](../../../../../get-started/authentication.md). If you need to increase the TPS limit, please [contact](https://discord.com/invite/qqJuwRb8Nh) us and we will handle it as soon as possible.

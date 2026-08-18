@@ -2,6 +2,11 @@
 description: >-
   This section introduces the pain points of quantitative trading systems and
   explains how to use Blockrazor services to improve on-chain certainty.
+metaLinks:
+  canonical: algorithmic-trading.md
+  alternates:
+    - >-
+      https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/get-started/use-cases/algorithmic-trading
 ---
 
 # Algorithmic Trading

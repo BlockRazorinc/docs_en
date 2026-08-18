@@ -2,6 +2,11 @@
 description: >-
   Introducing the Broadcast Tx interface and integration method for BlockRazor
   Ethereum Fast mode.
+metaLinks:
+  canonical: broadcast-tx.md
+  alternates:
+    - >-
+      https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/transaction-submission/transaction-sending/ethereum/broadcast-tx
 ---
 
 # Ethereum Broadcast Tx

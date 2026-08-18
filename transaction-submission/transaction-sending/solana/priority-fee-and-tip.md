@@ -2,6 +2,11 @@
 description: >-
   Introduction to Priority Fee & Tips for BlockRazor Solana Transaction Sending
   Mode
+metaLinks:
+  canonical: priority-fee-and-tip.md
+  alternates:
+    - >-
+      https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/transaction-submission/transaction-sending/solana/priority-fee-and-tip
 ---
 
 # Solana Transaction Sending Priority Fee & Tip

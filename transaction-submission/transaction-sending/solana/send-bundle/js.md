@@ -2,9 +2,14 @@
 description: >-
   This section introduces a JS request example for Send Bundle in BlockRazor
   Solana Fast mode.
+metaLinks:
+  canonical: js.md
+  alternates:
+    - >-
+      https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/transaction-submission/transaction-sending/solana/send-bundle/js
 ---
 
-# JS
+# Solana Send Bundle JS Example
 
 #### Request Example <a href="#qing-qiu-shi-li" id="qing-qiu-shi-li"></a>
 

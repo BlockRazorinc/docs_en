@@ -2,9 +2,14 @@
 description: >-
   Introduction to Trace Bundle of BlockRazor Block Builder and integration
   methods
+metaLinks:
+  canonical: trace-bundle.md
+  alternates:
+    - >-
+      https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/transaction-submission/block-builder/trace-bundle
 ---
 
-# Trace Bundle
+# BSC Block Builder Trace Bundle
 
 ### Introduction
 

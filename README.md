@@ -2,6 +2,10 @@
 description: >-
   Introduce BlockRazor, its target users, and the services it provides,
   including Transaction Submission and Streams.
+metaLinks:
+  canonical: ./
+  alternates:
+    - https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/get-started/about-us
 ---
 
 # About Us

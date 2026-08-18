@@ -1,5 +1,10 @@
 ---
 description: Introducing the endpoints of BlockRazor Solana Transaction Sending mode
+metaLinks:
+  canonical: endpoint.md
+  alternates:
+    - >-
+      https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/transaction-submission/transaction-sending/solana/endpoint
 ---
 
 # Solana Transaction Sending Endpoint

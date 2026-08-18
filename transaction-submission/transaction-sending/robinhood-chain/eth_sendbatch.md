@@ -2,6 +2,11 @@
 description: >-
   This section introduces the integration of eth_sendBatch provided by
   BlockRazor Robinhood Chain Transaction Sending mode
+metaLinks:
+  canonical: eth_sendbatch.md
+  alternates:
+    - >-
+      https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/transaction-submission/transaction-sending/robinhood-chain/send-batch
 ---
 
 # Robinhood Chain eth\_sendBatch

@@ -2,9 +2,14 @@
 description: >-
   Introduction to the BlockRazor Base Get FlashBlockTransaction service and its
   access methods
+metaLinks:
+  canonical: get-flashblocktransaction.md
+  alternates:
+    - >-
+      https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/streams/block-stream/base/get-flashblocktransaction
 ---
 
-# Get FlashBlockTransaction
+# Base Get FlashBlockTransaction
 
 ### What is Base Get FlashBlockTransaction
 

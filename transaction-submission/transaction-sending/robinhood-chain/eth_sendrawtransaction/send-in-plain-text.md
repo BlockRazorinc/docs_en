@@ -2,9 +2,14 @@
 description: >-
   This section introduces the integration of eth_sendRawTransaction(Send in
   Plain Text) provided by BlockRazor Robinhood Chain RPC
+metaLinks:
+  canonical: send-in-plain-text.md
+  alternates:
+    - >-
+      https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/transaction-submission/transaction-sending/robinhood-chain/eth_sendrawtransaction/send-in-plain-text
 ---
 
-# Send in Plain Text
+# Robinhood Chain Send Transaction in Plain Text
 
 `Send in Plain Text` is used to send signed transaction on Robinhood. It presents a much more streamlined and rapid method for submitting transactions compared with [eth\_sendRawTransaction](./)
 

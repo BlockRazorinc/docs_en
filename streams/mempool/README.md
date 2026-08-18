@@ -2,6 +2,10 @@
 description: >-
   Viewing specific Mempool services from a blockchain perspective, supporting
   BSC Public Mempool, BSC Private Mempool, and Ethereum Public Mempool.
+metaLinks:
+  canonical: ./
+  alternates:
+    - https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/streams/mempool
 ---
 
 # Mempool

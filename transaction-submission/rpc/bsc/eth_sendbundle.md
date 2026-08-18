@@ -2,6 +2,11 @@
 description: >-
   Introduce how Project Builders can integrate BlockRazor BSC RPC’s
   `eth_sendMevBundle` method.
+metaLinks:
+  canonical: eth_sendbundle.md
+  alternates:
+    - >-
+      https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/transaction-submission/rpc/bsc/eth_sendbundle
 ---
 
 # BSC RPC eth\_sendBundle

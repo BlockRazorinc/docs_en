@@ -3,6 +3,11 @@ description: >-
   This section introduces the pain points of Trading Bots in signal listening
   and transaction sending scenarios, and how to use Blockrazor to extend and
   accelerate signal listening and transactions
+metaLinks:
+  canonical: trading-bot.md
+  alternates:
+    - >-
+      https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/get-started/use-cases/trading-bot
 ---
 
 # Trading Bot

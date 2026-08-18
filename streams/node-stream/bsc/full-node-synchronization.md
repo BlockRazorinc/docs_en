@@ -2,9 +2,14 @@
 description: >-
   This section introduces the services, advantages, target users, and access
   methods for BlockRazor BSC full node synchronization.
+metaLinks:
+  canonical: full-node-synchronization.md
+  alternates:
+    - >-
+      https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/streams/node-stream/bsc/full-node-synchronization
 ---
 
-# Full Node Synchronization
+# BSC Full Node Synchronization
 
 ### What is Full Node Synchronization
 

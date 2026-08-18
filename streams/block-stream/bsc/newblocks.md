@@ -2,9 +2,14 @@
 description: >-
   Introducing the services, application scenarios, and integration methods of
   BlockRazor BSC NewBlocks.
+metaLinks:
+  canonical: newblocks.md
+  alternates:
+    - >-
+      https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/streams/block-stream/bsc/newblocks
 ---
 
-# NewBlocks
+# BSC Block Stream
 
 ### What is BSC NewBlocks
 

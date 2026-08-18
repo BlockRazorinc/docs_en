@@ -1,8 +1,13 @@
 ---
 description: Introduce the steps for integrating BlockRazor BSC RPC.
+metaLinks:
+  canonical: integration.md
+  alternates:
+    - >-
+      https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/transaction-submission/rpc/bsc/integration
 ---
 
-# Integration
+# How to integrate BSC RPC into Project
 
 {% hint style="info" %}
 BlockRazor RPC is open to all users; no service purchase or authentication application is required.

@@ -2,6 +2,11 @@
 description: >-
   This section introduces the services, application scenarios, advantages, and
   access methods of BlockRazor BSC Private Mempool.
+metaLinks:
+  canonical: private-mempool.md
+  alternates:
+    - >-
+      https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/streams/mempool/bsc/private-mempool
 ---
 
 # BSC Private Mempool

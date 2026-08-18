@@ -2,6 +2,11 @@
 description: >-
   This section introduces a Rust request example for Send Batch in BlockRazor
   Solana Transaction Sending mode.
+metaLinks:
+  canonical: rust.md
+  alternates:
+    - >-
+      https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/transaction-submission/transaction-sending/solana/send-batch/request-example/rust
 ---
 
 # Solana Send Batch Rust Example

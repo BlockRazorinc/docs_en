@@ -1,8 +1,13 @@
 ---
 description: Introducing the access method of BlockRazor BSC GetGasPriceStream
+metaLinks:
+  canonical: getgaspricestream.md
+  alternates:
+    - >-
+      https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/streams/network-fee-stream/bsc/getgaspricestream
 ---
 
-# GetGasPriceStream
+# BSC GetGasPriceStream
 
 ### Introduction
 

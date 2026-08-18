@@ -2,6 +2,11 @@
 description: >-
   This section addresses the pain points of individual traders and explains how
   to add BlockRazor RPC to your wallet.
+metaLinks:
+  canonical: individual-trader.md
+  alternates:
+    - >-
+      https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/get-started/use-cases/individual-trader
 ---
 
 # Individual Trader

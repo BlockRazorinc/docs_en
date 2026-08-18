@@ -2,6 +2,11 @@
 description: >-
   Introducing the Keep Alive integration method of BlockRazor Solana Transaction
   Sending mode
+metaLinks:
+  canonical: keep-alive.md
+  alternates:
+    - >-
+      https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/transaction-submission/transaction-sending/solana/keep-alive
 ---
 
 # Solana Transaction Sending Keep Alive

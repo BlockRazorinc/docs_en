@@ -3,6 +3,11 @@ description: >-
   This section introduces BlockRazor's core technology, Blockchain Edge Fabric,
   including its core concepts, architectural components, target user, and role
   within the product ecosystem
+metaLinks:
+  canonical: blockchain-edge-fabric.md
+  alternates:
+    - >-
+      https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/he-xin-ji-shu/blockchain-edge-fabric
 ---
 
 # Blockchain Edge Fabric

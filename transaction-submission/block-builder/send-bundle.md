@@ -2,6 +2,11 @@
 description: >-
   Introduction to Send Bundle of BlockRazor BSC Block Builder and integration
   methods
+metaLinks:
+  canonical: send-bundle.md
+  alternates:
+    - >-
+      https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/transaction-submission/block-builder/send-bundle
 ---
 
 # BSC Block Builder Send Bundle

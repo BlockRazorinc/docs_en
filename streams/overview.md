@@ -2,9 +2,13 @@
 description: >-
   Introducing BlockRazor's Streams, the capabilities Streams provide, and how to
   choose a Stream.
+metaLinks:
+  canonical: overview.md
+  alternates:
+    - https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/streams/overview
 ---
 
-# Overview
+# Streams Overview
 
 ### What are Streams
 

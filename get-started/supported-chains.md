@@ -2,6 +2,11 @@
 description: >-
   From a blockchain perspective, BlockRazor offers services that currently
   support Solana, BSC, Ethereum, Base, and Robinhood.
+metaLinks:
+  canonical: supported-chains.md
+  alternates:
+    - >-
+      https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/get-started/supported-chains
 ---
 
 # Which Chains Do We Support

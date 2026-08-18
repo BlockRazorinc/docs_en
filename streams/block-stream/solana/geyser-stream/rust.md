@@ -1,8 +1,13 @@
 ---
 description: Introducing the Rust request methods of BlockRazor Solana Geyser Stream
+metaLinks:
+  canonical: rust.md
+  alternates:
+    - >-
+      https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/streams/block-stream/solana/geyser-stream/rust
 ---
 
-# Rust
+# Solana Geyser Stream Rust Subscription Example
 
 ### Quick Start
 

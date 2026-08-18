@@ -2,6 +2,11 @@
 description: >-
   Introduction to Call Bundle of BlockRazor BSC Block Builder and integration
   methods
+metaLinks:
+  canonical: call-bundle.md
+  alternates:
+    - >-
+      https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/transaction-submission/block-builder/call-bundle
 ---
 
 # BSC Block Builder Call Bundle

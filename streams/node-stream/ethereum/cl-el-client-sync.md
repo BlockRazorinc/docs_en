@@ -3,9 +3,14 @@ description: >-
   This section introduces the services, advantages, target users, and
   integration methods of the BlockRazor Ethereum CL/EL client synchronization
   feature.
+metaLinks:
+  canonical: cl-el-client-sync.md
+  alternates:
+    - >-
+      https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/streams/node-stream/ethereum/cl-el-client-sync
 ---
 
-# CL/EL Client Sync
+# Ethereum CL/EL Client Sync
 
 ### What is CL/EL client sync?
 

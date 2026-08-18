@@ -3,6 +3,10 @@ description: >-
   BlockRazor offers new registered users multi-mode transaction sending modes on
   Solana, BSC, Etherem, and Base, including RPC, Fast, Bundle, and Block Builder
   modes for free.
+metaLinks:
+  canonical: start-for-free.md
+  alternates:
+    - https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/get-started/start-for-free
 ---
 
 # Start for Free

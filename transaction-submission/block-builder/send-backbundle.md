@@ -2,9 +2,14 @@
 description: >-
   This section introduces BlockRazor Block Builder's eth_sendBackBundle (0 Gwei)
   and its integration method.
+metaLinks:
+  canonical: send-backbundle.md
+  alternates:
+    - >-
+      https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/transaction-submission/block-builder/send-backbundle
 ---
 
-# Send BackBundle
+# BSC Block Builder 0 Gwei
 
 ### Introduction
 

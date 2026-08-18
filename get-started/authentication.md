@@ -2,9 +2,13 @@
 description: >-
   This section explains how to obtain the auth information for BlockRazor, which
   is used to send requests to the API.
+metaLinks:
+  canonical: authentication.md
+  alternates:
+    - https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/get-started/authentication
 ---
 
-# Authentication
+# How to Obtain Auth
 
 When integrating with BlockRazor services, if "auth" is required in the request, please follow the steps below to obtain it:
 

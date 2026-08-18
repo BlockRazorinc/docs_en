@@ -2,6 +2,11 @@
 description: >-
   This section introduces the integration of eth_sendRawTransaction provided by
   BlockRazor Robinhood Chain Transaction Sending Mode
+metaLinks:
+  canonical: ./
+  alternates:
+    - >-
+      https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/transaction-submission/transaction-sending/robinhood-chain/eth_sendrawtransaction
 ---
 
 # Robinhood Chain eth\_sendRawTransaction

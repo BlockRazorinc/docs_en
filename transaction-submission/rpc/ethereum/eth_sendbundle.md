@@ -1,8 +1,13 @@
 ---
 description: Introduce how to integrate BlockRazor Ethereum RPC’s `eth_sendBundle` method.
+metaLinks:
+  canonical: eth_sendbundle.md
+  alternates:
+    - >-
+      https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/transaction-submission/rpc/ethereum-rpc/eth_sendbundle
 ---
 
-# eth\_sendBundle
+# Ethereum RPC eth\_sendBundle
 
 ### Endpoint
 

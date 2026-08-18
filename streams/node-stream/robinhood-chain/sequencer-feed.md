@@ -2,9 +2,14 @@
 description: >-
   This section introduces the services, advantages, benchmark, price and
   integration methods of the BlockRazor Robinhood Chain Sequencer Feed.
+metaLinks:
+  canonical: sequencer-feed.md
+  alternates:
+    - >-
+      https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/streams/node-stream/robinhood-chain/sequencer-feed
 ---
 
-# Sequencer Feed
+# Robinhood Chain Sequencer Feed
 
 ### What is Sequencer Feed?
 

@@ -2,6 +2,11 @@
 description: >-
   Introducing the integration method of BlockRazor Solana's Send Batch in
   Transaction Sending mode.
+metaLinks:
+  canonical: ./
+  alternates:
+    - >-
+      https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/transaction-submission/transaction-sending/solana/send-batch
 ---
 
 # Solana Send Batch

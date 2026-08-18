@@ -2,9 +2,14 @@
 description: >-
   This section introduces the services, application scenarios, key features, and
   integration methods of BlockRazor Solana Geyser Stream.
+metaLinks:
+  canonical: ./
+  alternates:
+    - >-
+      https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/streams/block-stream/solana/geyser-stream
 ---
 
-# Geyser Stream
+# Solana Geyser Stream
 
 ### Introduction
 

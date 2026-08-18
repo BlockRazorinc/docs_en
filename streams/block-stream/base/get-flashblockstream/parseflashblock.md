@@ -1,8 +1,13 @@
 ---
 description: Introduction to the method to parse BlockRazor Base FlashBlock
+metaLinks:
+  canonical: parseflashblock.md
+  alternates:
+    - >-
+      https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/streams/block-stream/base/get-flashblockstream/parseflashblock
 ---
 
-# ParseFlashBlock
+# Base ParseFlashBlock
 
 The parsing method for FlashBlock is as follows:
 

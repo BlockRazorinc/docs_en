@@ -2,9 +2,14 @@
 description: >-
   Introducing the BlockRazor Base Get BlockStream service, its advantages, and
   how to integrate it.
+metaLinks:
+  canonical: get-blockstream.md
+  alternates:
+    - >-
+      https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/streams/block-stream/base/get-blockstream
 ---
 
-# Get BlockStream
+# Base Get BlockStream
 
 ### What is Base Get BlockStream
 

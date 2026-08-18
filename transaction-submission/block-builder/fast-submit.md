@@ -1,5 +1,10 @@
 ---
 description: Introduction to Fast Submit of BlockRazor BSC Block Builder and access methods
+metaLinks:
+  canonical: fast-submit.md
+  alternates:
+    - >-
+      https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/transaction-submission/block-builder/bsc-block-builder-fast-submit
 ---
 
 # BSC Block Builder Fast Submit

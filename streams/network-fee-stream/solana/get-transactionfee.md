@@ -1,8 +1,13 @@
 ---
 description: Introducing the access method of BlockRazor Solana Get TransactionFee
+metaLinks:
+  canonical: get-transactionfee.md
+  alternates:
+    - >-
+      https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/streams/network-fee-stream/solana/get-transactionfee
 ---
 
-# Get TransactionFee
+# Solana Get TransactionFee
 
 ### Introduction
 

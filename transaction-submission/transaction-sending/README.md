@@ -2,6 +2,11 @@
 description: >-
   This document introduces BlockRazor's Transaction Sending mode, along with the
   provided services and API integration documentation.
+metaLinks:
+  canonical: ./
+  alternates:
+    - >-
+      https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/transaction-submission/transaction-sending
 ---
 
 # Transaction Sending

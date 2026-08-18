@@ -1,5 +1,9 @@
 ---
 description: Viewing specific Block Stream services from a chain perspective
+metaLinks:
+  canonical: ./
+  alternates:
+    - https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/streams/block-stream
 ---
 
 # Block Stream

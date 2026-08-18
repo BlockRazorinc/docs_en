@@ -2,6 +2,11 @@
 description: >-
   Introducing BlockRazor Block Builder: Who is it suitable for? What
   capabilities does it provide? And how to choose endpoint?
+metaLinks:
+  canonical: ./
+  alternates:
+    - >-
+      https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/transaction-submission/block-builder
 ---
 
 # BSC Block Builder
@@ -30,22 +35,6 @@ Block Builder currently supports the following core capabilities:
 * **Send Bundle**: Suitable for scenarios that require transaction order, atomicity, and execution within the same block.
 * **Send PrivateTransaction**: Suitable for scenarios where you want to avoid exposing transactions to the public mempool and reduce the risk of being preempted or maliciously observed.
 * **Trace Bundle**: Suitable for scenarios that track and analyze Bundle submission results and execution performance. Combined with Bundle Explorer, it can help users observe the performance of Bundle in the Builder chain in a more granular way, providing a reference for strategy optimization, problem investigation and effect review.
-
-### Endpoint
-
-**Default Access**
-
-Prioritize using a global, universal entry point, suitable for quickly completing integration and serving global requests. Endpoint: <mark style="color:$primary;">**https://rpc.blockrazor.builders**</mark>
-
-**Regional optimization**
-
-If your bot or service is already deployed in a specific region and is more sensitive to latency and consistency, you can further connect to a regional entry point on top of connecting to a globally universal endpoint.
-
-<table><thead><tr><th width="127">Region</th><th width="190.97265625">Available area（AWS）</th><th>RPC Endpoint</th></tr></thead><tbody><tr><td>Tokyo</td><td>apne1-az4</td><td>https://tokyo.builder.blockrazor.io</td></tr><tr><td>Frankfurt</td><td>euc1-az2</td><td>https://frankfurt.builder.blockrazor.io</td></tr><tr><td>Virginia</td><td>use1-az4</td><td>https://virginia.builder.blockrazor.io</td></tr><tr><td>Dublin</td><td>euw1-az1</td><td>https://dublin.builder.blockrazor.io</td></tr></tbody></table>
-
-**Quality Enhancement**
-
-If you have already completed the basic integration and are starting to focus on the additional overhead in the commit path, cross-region fluctuations, and stability under high load, you can further integrate [Fast Submit](fast-submit.md).
 
 ### Quick Start
 

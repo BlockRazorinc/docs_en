@@ -2,6 +2,11 @@
 description: >-
   This section discusses the pain points of Searcher in handling bundles and how
   to use Blockrazor services to enhance competitiveness.
+metaLinks:
+  canonical: searcher.md
+  alternates:
+    - >-
+      https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/get-started/use-cases/searcher
 ---
 
 # Searcher

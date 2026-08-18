@@ -2,6 +2,11 @@
 description: >-
   This section introduces a JS request example for Send Batch in BlockRazor
   Solana Transaction Sending mode.
+metaLinks:
+  canonical: js.md
+  alternates:
+    - >-
+      https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/transaction-submission/transaction-sending/solana/send-batch/request-example/js
 ---
 
 # Solana Send Batch JS Example

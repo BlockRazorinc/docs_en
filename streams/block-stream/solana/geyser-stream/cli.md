@@ -1,8 +1,13 @@
 ---
 description: Introducing the CLI request methods of BlockRazor Solana Geyser Stream
+metaLinks:
+  canonical: cli.md
+  alternates:
+    - >-
+      https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/streams/block-stream/solana/geyser-stream/cli
 ---
 
-# CLI
+# Solana Geyser Stream CLI Subscription Example
 
 ### Quick Start
 

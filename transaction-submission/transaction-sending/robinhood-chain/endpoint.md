@@ -2,6 +2,11 @@
 description: >-
   Introduction to the endpoints of BlockRazor Robinhood Chain Transaction
   Sending
+metaLinks:
+  canonical: endpoint.md
+  alternates:
+    - >-
+      https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/transaction-submission/transaction-sending/robinhood-chain/endpoint
 ---
 
 # Robinhood Chain Transaction Sending Endpoint

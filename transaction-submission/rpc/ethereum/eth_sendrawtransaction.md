@@ -2,9 +2,14 @@
 description: >-
   Introduce how to integrate BlockRazor Ethereum RPC’s `eth_sendRawTransaction`
   method.
+metaLinks:
+  canonical: eth_sendrawtransaction.md
+  alternates:
+    - >-
+      https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/transaction-submission/rpc/ethereum-rpc/eth_sendrawtransaction
 ---
 
-# eth\_sendRawTransaction
+# Ethereum RPC eth\_sendRawTransaction
 
 &#x20;`eth_sendRawTransaction` of BlockRazor RPC is compatible with native JSON-RPC methods and requires no additional modifications.&#x20;
 
