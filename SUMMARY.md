@@ -37,7 +37,7 @@
     * [Ethereum RPC eth\_sendBundle](transaction-submission/rpc/ethereum/eth_sendbundle.md "eth_sendBundle")
     * [Searcher](transaction-submission/rpc/ethereum/searcher.md)
 * [BSC Block Builder](transaction-submission/block-builder/README.md "Block Builder")
-  * [Block Builder Endpoint](transaction-submission/block-builder/endpoint.md "Endpoint")
+  * [BSC Block Builder Endpoint](transaction-submission/block-builder/endpoint.md "Endpoint")
   * [BSC Block Builder Fast Submit](transaction-submission/block-builder/fast-submit.md "Fast Submit")
   * [BSC Block Builder Send Bundle](transaction-submission/block-builder/send-bundle.md "Send Bundle")
   * [BSC Block Builder Send PrivateTransaction](transaction-submission/block-builder/send-privatetransaction.md "Send PrivateTransaction")
