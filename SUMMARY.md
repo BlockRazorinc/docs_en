@@ -6,7 +6,7 @@
 * [Which Chains Do We Support](get-started/supported-chains.md "Supported Chains")
 * [Start for Free](get-started/start-for-free.md)
 * [Subscription Service](get-started/subscription-service.md)
-* [How to Obtain Auth](get-started/authentication.md "Authentication")
+* [How to Obtain Auth](get-started/authentication.md "Obtain Auth Token")
 * [Who Do We Serve](get-started/use-cases/README.md "Use Cases")
   * [Wallet / DEX](get-started/use-cases/wallet-dex.md)
   * [Trading Bot](get-started/use-cases/trading-bot.md)
