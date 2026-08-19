@@ -25,33 +25,9 @@ Multi-region deployment evaluation: When a team deploys a bot or sending service
 
 High-frequency trading path optimization: For trading systems that rely on timing and speed, Tx Trace can be used to analyze the spread of trading in different regions, providing a reference for path optimization.
 
-### FAQ
+### Price & Rate Limit
 
-<details>
-
-<summary>Which transactions can Tx Trace track?</summary>
-
-Tx Trace is primarily suitable for querying the propagation status, arrival time, and latency distribution of transactions that have entered the public propagation process across different regions. If a transaction has not entered the public propagation path, or is outside the valid query window, Tx Trace cannot provide corresponding propagation results.
-
-</details>
-
-<details>
-
-<summary>What is the difference between Tx Trace and Public Mempool?</summary>
-
-The two have different positioning:
-
-* Public Mempool is a real-time subscription service used for low-latency reception of pending transactions in public circulation, with the emphasis on "seeing transactions as early as possible".
-* Tx Trace is a propagation observation tool used to query the propagation path and cross-regional latency distribution of a specified transaction within a global network, focusing on "seeing how transactions propagate."
-
-</details>
-
-### Price
-
-| User Type            | Limit                | Price        |
-| -------------------- | -------------------- | ------------ |
-| New registered users | 20 requests per day  | Free         |
-| Paid users           | 500 requests per day | $500 / month |
+<table><thead><tr><th width="132.03515625">Payment Method</th><th width="197.1875">Rate Limit</th><th width="265.8828125">Price</th><th width="127.80078125">Action</th></tr></thead><tbody><tr><td>Free</td><td>20 requests / day</td><td>Free</td><td>-</td></tr><tr><td>Personalized</td><td>500 requests / day</td><td>$20 / month<br>$200 / month</td><td><a href="https://blockrazor.io/#/portal/pricing?purchaseMode=personalized&#x26;chain=bsc&#x26;serviceId=bsc_tx_trace&#x26;billing=day" class="button primary small">Subscribe</a></td></tr><tr><td>Package</td><td>500 requests / day</td><td>$1250 / month<br>packaged with 9 other services</td><td><a href="https://blockrazor.io/#/portal/pricing?redirect=pricing&#x26;purchaseMode=package&#x26;billing=month" class="button primary small">Subscribe</a></td></tr></tbody></table>
 
 ### Endpoint
 
@@ -105,3 +81,24 @@ curl -H "Authorization: <YOUR_AUTHORIZATION>" \
 ```json
 {"error":"daily limit exceeded"}
 ```
+
+### FAQ
+
+<details>
+
+<summary>Which transactions can Tx Trace track?</summary>
+
+Tx Trace is primarily suitable for querying the propagation status, arrival time, and latency distribution of transactions that have entered the public propagation process across different regions. If a transaction has not entered the public propagation path, or is outside the valid query window, Tx Trace cannot provide corresponding propagation results.
+
+</details>
+
+<details>
+
+<summary>What is the difference between Tx Trace and Public Mempool?</summary>
+
+The two have different positioning:
+
+* Public Mempool is a real-time subscription service used for low-latency reception of pending transactions in public circulation, with the emphasis on "seeing transactions as early as possible".
+* Tx Trace is a propagation observation tool used to query the propagation path and cross-regional latency distribution of a specified transaction within a global network, focusing on "seeing how transactions propagate."
+
+</details>

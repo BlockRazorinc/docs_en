@@ -28,6 +28,10 @@ Using BSC’s current block time of about 450ms as a rough reference, 50ms and 2
 **2. For trading systems competing for transaction position**\
 For strategy-driven systems such as backrunning, sniping, and copy trading, the value of Fast Submit is not only a better chance of making the target block, but also that under the same competitive conditions and the same target Builder arrival time, it leaves more time available for strategy computation.
 
+### Price
+
+<table><thead><tr><th width="134.90625">Payment</th><th width="370.83984375">Price</th><th>Action</th></tr></thead><tbody><tr><td>Personalized</td><td><strong>$100</strong> / day<br><strong>$1000</strong> / month</td><td><a href="https://blockrazor.io/#/portal/pricing?purchaseMode=personalized&#x26;chain=bsc&#x26;serviceId=bsc_fast_submit&#x26;billing=day" class="button primary small">Subscribe</a></td></tr><tr><td>Package</td><td><strong>$1250 / month</strong><br>packaged with 9 other services.</td><td><a href="https://blockrazor.io/#/portal/pricing?redirect=pricing&#x26;purchaseMode=package&#x26;billing=month" class="button primary small">Subscribe</a></td></tr></tbody></table>
+
 ### Why is Fast Submit faster and more stable?
 
 **Dedicated HTTP domain**

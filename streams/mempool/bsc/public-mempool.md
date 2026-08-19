@@ -39,17 +39,17 @@ The results show that BlockRazor maintained a significant lead in all four regio
 
 The results above demonstrate that BlockRazor exhibits a stable priority reception capability in the transaction propagation chain, enabling it to capture transactions earlier than ordinary nodes in the vast majority of comparable samples.
 
-### Endpoint
+### Price
 
-<table><thead><tr><th width="160">Region</th><th>Relay Address</th></tr></thead><tbody><tr><td>Frankfurt</td><td>64.130.47.75:50051</td></tr><tr><td>Tokyo</td><td>63.254.162.18:50051</td></tr><tr><td>Dublin</td><td>141.98.217.82:50051</td></tr><tr><td>Virginia</td><td>208.91.105.204:50051</td></tr></tbody></table>
-
-### Rate Limit
-
-The price is $30 / stream / day and $300 / stream / month. <a href="https://blockrazor.io/#/login?redirect=pricing&#x26;purchaseMode=personalized&#x26;chain=bsc&#x26;serviceId=bsc_public_mempool&#x26;billing=day" class="button primary small">Subscribe</a>
+<table><thead><tr><th width="167.296875">Payment Method</th><th>Price</th><th>Action</th></tr></thead><tbody><tr><td>Personalized</td><td>$30 / stream / day<br>$300 / stream / month</td><td><a href="https://blockrazor.io/#/login?redirect=pricing&#x26;purchaseMode=personalized&#x26;chain=bsc&#x26;serviceId=bsc_public_mempool&#x26;billing=day" class="button primary small">Subscribe</a></td></tr><tr><td>Package</td><td>$1250 /  month <br>packaged with 9 other services. </td><td><a href="https://blockrazor.io/#/portal/pricing?redirect=pricing&#x26;purchaseMode=package&#x26;billing=month" class="button primary small">Subscribe</a></td></tr></tbody></table>
 
 {% hint style="info" %}
 The number of data streams that can be subscribed to is calculated on a shared basis across all regions. For example, if you purchase one stream, you can only subscribe in one region; you will not be able to subscribe in other regions.
 {% endhint %}
+
+### Endpoint
+
+<table><thead><tr><th width="160">Region</th><th>Relay Address</th></tr></thead><tbody><tr><td>Frankfurt</td><td>64.130.47.75:50051</td></tr><tr><td>Tokyo</td><td>63.254.162.18:50051</td></tr><tr><td>Dublin</td><td>141.98.217.82:50051</td></tr><tr><td>Virginia</td><td>208.91.105.204:50051</td></tr></tbody></table>
 
 ### Request Parameters
 

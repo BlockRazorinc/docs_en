@@ -17,7 +17,11 @@ This API is used to receive requests for simulating bundles. The method name is 
 
 ### Price
 
-Call Bundle is only included in the Package; please go to the [Pricing](https://blockrazor.io/#/pricing) page to purchase the Package. Rate limit default to 1 TPS.
+<table><thead><tr><th width="134.90625">Payment</th><th width="370.83984375">Price</th><th>Action</th></tr></thead><tbody><tr><td>Personalized</td><td><strong>$20</strong> / day<br><strong>$200</strong> / month</td><td><a href="https://blockrazor.io/#/portal/pricing?purchaseMode=personalized&#x26;chain=bsc&#x26;serviceId=bsc_call_bundle&#x26;billing=day" class="button primary small">訂閱</a></td></tr><tr><td>Package</td><td><strong>$1250</strong> / month<br>packaged with 9 other services.</td><td><a href="https://blockrazor.io/#/portal/pricing?redirect=pricing&#x26;purchaseMode=package&#x26;billing=month" class="button primary small">訂閱</a></td></tr></tbody></table>
+
+### Rate Limit
+
+1 TPS
 
 ### Request Parameter
 

@@ -23,17 +23,17 @@ NewBlocks distributes the latest block data based on [BEF](../../../core-technol
 * Block-level data analysis: Obtaining block headers, transaction lists, and next validator info for block research, node observation, and network state analysis.
 * Strategy data input: Serving as the confirmed data source for the trading system, it works in conjunction with capabilities such as Public Mempool and Transaction Submission to build a more complete monitoring and execution chain.
 
-### Endpoint
-
-<table><thead><tr><th width="160">Region</th><th>Relay Address</th></tr></thead><tbody><tr><td>Frankfurt</td><td>64.130.47.75:50061</td></tr><tr><td>Tokyo</td><td>63.254.162.18:50061</td></tr><tr><td>Virginia</td><td>208.91.105.204:50061</td></tr></tbody></table>
-
 ### Price
 
-The price is $50 / day and $500 / stream / month. <a href="https://blockrazor.io/#/login?redirect=pricing&#x26;purchaseMode=personalized&#x26;chain=ethereum&#x26;serviceId=ethereum_block_stream&#x26;billing=day" class="button primary small">Subscribe</a>
+<table><thead><tr><th width="167.296875">Payment Method</th><th>Price</th><th>Action</th></tr></thead><tbody><tr><td>Personalized</td><td>$50 / stream / day<br>$500 / stream / month</td><td><a href="https://blockrazor.io/#/login?redirect=pricing&#x26;purchaseMode=personalized&#x26;chain=ethereum&#x26;serviceId=ethereum_block_stream&#x26;billing=day" class="button primary small">Subscribe</a></td></tr><tr><td>Package</td><td>$1250 / 2streams / month <br>packaged with 9 other services.</td><td><a href="https://blockrazor.io/#/portal/pricing?redirect=pricing&#x26;purchaseMode=package&#x26;billing=month" class="button primary small">Subscribe</a></td></tr></tbody></table>
 
 {% hint style="info" %}
 The number of data streams that can be subscribed to is calculated on a shared basis across all regions. For example, if you purchase one stream, you can only subscribe in one region; you will not be able to subscribe in other regions.
 {% endhint %}
+
+### Endpoint
+
+<table><thead><tr><th width="160">Region</th><th>Relay Address</th></tr></thead><tbody><tr><td>Frankfurt</td><td>64.130.47.75:50061</td></tr><tr><td>Tokyo</td><td>63.254.162.18:50061</td></tr><tr><td>Virginia</td><td>208.91.105.204:50061</td></tr></tbody></table>
 
 ### Request Example
 
