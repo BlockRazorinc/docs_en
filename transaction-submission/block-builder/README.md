@@ -72,3 +72,13 @@ When submitting a Bundle to BlockRazor RPC, BlockRazor RPC forwards the Bundle t
 When you submit a Bundle to Block Builder, the Bundle is sent directly to BlockRazor Builder. This is more suitable for scenarios where you explicitly want to use BlockRazor Builder capabilities and the access path.
 
 </details>
+
+<details>
+
+<summary><strong>How to understand that the average gas price of a bundle must not be less than 0.05 gwei?</strong></summary>
+
+Assume a bundle contains three transactions: `{tx1, tx2, tx3}`. Since `tx1` comes from the mempool, BlockRazor Builder excludes it and calculates the average gas price using only `tx2` and `tx3`. If `tx3` includes an additional tip paid to the Builder, the tip amount is added to the numerator, while the denominator still includes only the gas used by `tx2` and `tx3`. The formula is:
+
+`(tx2.gasPrice × tx2.gasUsed + tx3.gasPrice × tx3.gasUsed + tx3.tip) / (tx2.gasUsed + tx3.gasUsed)`
+
+</details>
