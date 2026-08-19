@@ -17,7 +17,7 @@ This interface is used to receive bundle which is put at the block tail, allowin
 
 ### Price
 
-<table><thead><tr><th width="134.90625">Payment</th><th width="370.83984375">Price</th><th>Action</th></tr></thead><tbody><tr><td>Personalized</td><td><strong>$100</strong> / day<br><strong>$1000</strong> / month</td><td><a href="https://blockrazor.io/#/portal/pricing?purchaseMode=personalized&#x26;chain=bsc&#x26;serviceId=bsc_0_gwei&#x26;billing=day" class="button primary small">Subscribe</a></td></tr><tr><td>Package</td><td><strong>$1250</strong> / month<br>packaged with 9 other services. </td><td><a href="https://blockrazor.io/#/portal/pricing?redirect=pricing&#x26;purchaseMode=package&#x26;billing=month" class="button primary small">Subscribe</a></td></tr></tbody></table>
+<table><thead><tr><th width="134.90625">Payment</th><th width="370.83984375">Price</th><th>Action</th></tr></thead><tbody><tr><td>Personalized</td><td><strong>$100</strong> / day</td><td><a href="https://blockrazor.io/#/portal/pricing?purchaseMode=personalized&#x26;chain=bsc&#x26;serviceId=bsc_0_gwei&#x26;billing=day" class="button primary small">Subscribe</a></td></tr><tr><td>Package</td><td><strong>$1250</strong> / month<br>packaged with 9 other services. </td><td><a href="https://blockrazor.io/#/portal/pricing?redirect=pricing&#x26;purchaseMode=package&#x26;billing=month" class="button primary small">Subscribe</a></td></tr></tbody></table>
 
 ### Endpoint
 
