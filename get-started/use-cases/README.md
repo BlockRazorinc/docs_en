@@ -29,7 +29,7 @@ metaLinks:
 
 ### Algorithmic Trading
 
-* [algorithmic-trading.md](algorithmic-trading.md "mention")
+* [quantitative-trading.md](quantitative-trading.md "mention")
 
 ### Individual Trader
 

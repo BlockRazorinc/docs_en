@@ -21,13 +21,13 @@ layout:
   actions:
     visible: true
 metaLinks:
-  canonical: subscription-service.md
+  canonical: pricing.md
   alternates:
     - >-
       https://app.gitbook.com/s/QJcHRn7SY50Ny5UQhXHy/get-started/subscription-service
 ---
 
-# Subscription Service
+# Pricing
 
 ### Personalized
 

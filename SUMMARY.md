@@ -5,13 +5,13 @@
 * [About Us](README.md)
 * [Which Chains Do We Support](get-started/supported-chains.md "Supported Chains")
 * [Start for Free](get-started/start-for-free.md)
-* [Subscription Service](get-started/subscription-service.md)
-* [How to Obtain Auth](get-started/authentication.md "Obtain Auth Token")
+* [Pricing](get-started/pricing.md)
+* [How to Obtain Auth Token](get-started/authentication.md "Obtain Auth Token")
 * [Who Do We Serve](get-started/use-cases/README.md "Use Cases")
   * [Wallet / DEX](get-started/use-cases/wallet-dex.md)
   * [Trading Bot](get-started/use-cases/trading-bot.md)
   * [Searcher](get-started/use-cases/searcher.md)
-  * [Algorithmic Trading](get-started/use-cases/algorithmic-trading.md)
+  * [Quantitative Trading](get-started/use-cases/quantitative-trading.md)
   * [Individual Trader](get-started/use-cases/individual-trader.md)
 
 ## Transaction Submission
