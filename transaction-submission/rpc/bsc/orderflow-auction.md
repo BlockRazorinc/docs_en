@@ -13,7 +13,7 @@ metaLinks:
 
 ### Introduction
 
-Searcher can subscribe [Private Mempool](../../../streams/mempool/bsc/private-mempool.md) to execute the backrun strategy, and then send the [backrun bundles](orderflow-auction.md#request-parameters) to BlockRazor RPC to obtain benefits via backrun auction.
+Searcher can subscribe [Private Mempool](../../../streams/mempool/bsc/private-mempool.md) to execute the backrun strategy, and then send the backrun bundles to BlockRazor RPC to obtain benefits via backrun auction.
 
 In addition, Searcher can also skip bundle subscription and send the raw bundle directly to BlockRazor RPC. With the high-performance network, BlockRazor can forward the bundle to mainstream builders with extremely low latency, eliminating the need for repeated integrations with each builder.
 
@@ -27,7 +27,7 @@ Searcher can continuously submit bundles (repeated submissions are not allowed),
 
 #### Auction rules
 
-BlockRazor RPC conducts English bidding based on the bid value, of which the receipt and distribution([click](https://blockrazor.gitbook.io/blockrazor/tc/scutummev-bao-hu-rpc#ge-ge-jue-se-jian-de-li-run-fen-pei-bi-li-shi-zen-mo-yang-de) to see details) is realized via smart contract.
+BlockRazor RPC conducts English bidding based on the bid value, of which the receipt and distribution is realized via smart contract.
 
 #### Bidding method
 
@@ -61,7 +61,7 @@ Please keep the domain for subscribing to the bundle consistent with the domain 
 
 The disclosure for the transaction data in field `txs`is set by hint.  If it is set to true, it will be regarded as disclosing the corresponding transaction field. If it is false, it will be regarded as not disclosing the corresponding transaction field. If it is not set, the default is false.
 
-<table><thead><tr><th width="143">Parameters</th><th width="113">Mandatory</th><th width="97">Format</th><th width="104">Example</th><th>Remark</th></tr></thead><tbody><tr><td>hash</td><td>optional</td><td>bool</td><td>true</td><td>transaction hash</td></tr><tr><td>from</td><td>optional</td><td>bool</td><td>false</td><td>sender of the transaction</td></tr><tr><td>to</td><td>optional</td><td>bool</td><td>true</td><td>receiver of the transaction</td></tr><tr><td>value</td><td>optional</td><td>bool</td><td>false</td><td>value being transacted</td></tr><tr><td>nonce</td><td>optional</td><td>bool</td><td>false</td><td>nonce</td></tr><tr><td>calldata</td><td>optional</td><td>bool</td><td>true</td><td>calldata</td></tr><tr><td>functionSelector</td><td>optional</td><td>bool</td><td>true</td><td>the first 4 bytes of the contract function signature hash</td></tr><tr><td>logs</td><td>optional</td><td>bool</td><td>true</td><td>event logs emitted during transaction execution(this field synchronously sets whether to disclose state changes in the state object)</td></tr></tbody></table>
+<table data-search="false"><thead><tr><th width="143">Parameters</th><th width="113">Mandatory</th><th width="97">Format</th><th width="104">Example</th><th>Remark</th></tr></thead><tbody><tr><td>hash</td><td>optional</td><td>bool</td><td>true</td><td>transaction hash</td></tr><tr><td>from</td><td>optional</td><td>bool</td><td>false</td><td>sender of the transaction</td></tr><tr><td>to</td><td>optional</td><td>bool</td><td>true</td><td>receiver of the transaction</td></tr><tr><td>value</td><td>optional</td><td>bool</td><td>false</td><td>value being transacted</td></tr><tr><td>nonce</td><td>optional</td><td>bool</td><td>false</td><td>nonce</td></tr><tr><td>calldata</td><td>optional</td><td>bool</td><td>true</td><td>calldata</td></tr><tr><td>functionSelector</td><td>optional</td><td>bool</td><td>true</td><td>the first 4 bytes of the contract function signature hash</td></tr><tr><td>logs</td><td>optional</td><td>bool</td><td>true</td><td>event logs emitted during transaction execution(this field synchronously sets whether to disclose state changes in the state object)</td></tr></tbody></table>
 
 ### Request Example
 
