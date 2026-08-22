@@ -47,7 +47,7 @@ In terms of lead time, the average lead time of nodes connected to the relay in 
 
 ### Relay IP
 
-<table><thead><tr><th width="160">Region</th><th>Relay Address</th></tr></thead><tbody><tr><td>Frankfurt</td><td>64.130.47.75:50051</td></tr><tr><td>Tokyo</td><td>63.254.162.18:50051</td></tr><tr><td>Dublin</td><td>141.98.217.82:50051</td></tr><tr><td>Virginia</td><td>208.91.105.204:50051</td></tr></tbody></table>
+<table><thead><tr><th width="160">Region</th><th>Relay IP</th></tr></thead><tbody><tr><td>Frankfurt</td><td>64.130.47.75</td></tr><tr><td>Tokyo</td><td>63.254.162.18</td></tr><tr><td>Dublin</td><td>141.98.217.82</td></tr><tr><td>Virginia</td><td>208.91.105.204</td></tr></tbody></table>
 
 ### Instruction
 
